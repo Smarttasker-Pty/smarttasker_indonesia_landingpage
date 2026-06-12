@@ -320,6 +320,14 @@ function initWaitlistForm() {
     e.preventDefault();
     if (errorMsg) errorMsg.classList.add('hidden');
 
+    // Honeypot tripped — pretend success so the bot moves on, submit nothing
+    const honeypot = form.querySelector('#field-website');
+    if (honeypot && honeypot.value) {
+      if (successMsg) successMsg.classList.remove('hidden');
+      form.classList.add('hidden');
+      return;
+    }
+
     const lang = getLang();
     const dict = (typeof i18n !== 'undefined' && i18n[lang]) ? i18n[lang] : {};
 

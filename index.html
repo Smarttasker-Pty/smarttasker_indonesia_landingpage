@@ -458,6 +458,12 @@
           <!-- Hidden: language preference (auto-filled from toggle state) -->
           <input type="hidden" name="language" id="field-language" value="en">
 
+          <!-- Honeypot: invisible to humans, bots auto-fill it; non-empty value = spam -->
+          <div style="position:absolute; left:-9999px; top:-9999px;" aria-hidden="true">
+            <label for="field-website">Website</label>
+            <input type="text" id="field-website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
           <!-- Full name -->
           <div class="form-group">
             <label for="field-name"><span data-i18n="waitlist.field.name">Full Name</span> <span aria-hidden="true" style="color:#b91c1c">*</span></label>
