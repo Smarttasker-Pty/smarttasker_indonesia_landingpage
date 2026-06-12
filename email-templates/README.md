@@ -52,5 +52,8 @@ as reference, do NOT send them).
 - The Honda Vario 160 sharing pitch deliberately promises NO extra entries for
   referrals (no referral mechanic exists in the competition terms) — friends
   get *their own* entry by joining.
-- Social-media icon blocks and the Mailchimp tracking script were removed per
-  the client request; everything else keeps the AU template structure.
+- Social icon rows (Facebook, Instagram, YouTube, TikTok, website) are copied
+  from the AU sources and point at the client-confirmed Indonesian accounts;
+  the website icon targets the Vercel staging URL until smarttasker.id is live.
+  The Mailchimp tracking script was removed; everything else keeps the AU
+  template structure.
