@@ -155,7 +155,7 @@
         <button class="lang-btn active" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="id">ID</button>
       </div>
-      <a href="#waitlist" class="btn btn-accent" data-i18n="header.cta" data-cta="mobile-header">JOIN WAITLIST</a>
+      <a href="#waitlist" class="btn btn-dark" data-i18n="header.cta" data-cta="mobile-header">JOIN WAITLIST</a>
     </nav>
   </header>
 
@@ -177,14 +177,6 @@
           <p data-i18n="hero.subline2">Find, compare and hire local professionals with confidence.</p>
         </div>
 
-        <!-- Waitlist card — adapts the original download card (#5066E2 / border-radius 16px).
-             App Store / Google Play badges REMOVED per change-requests.md #2/#3:
-             one single button for "Join the waitlist" only. -->
-        <div class="download-card">
-          <h3 data-i18n="hero.card.h3">Join the waitlist now</h3>
-          <p data-i18n="hero.card.body">It's free to post tasks and make job offers. Join SmartTasker Indonesia today!</p>
-          <a href="#waitlist" class="btn btn-light" data-i18n="hero.cta" data-cta="hero-card">JOIN WAITLIST</a>
-        </div>
       </div>
 
       <!-- Right: app screenshot (keep original per spec) -->
@@ -192,6 +184,22 @@
         <img src="assets/images/hero-image.png" alt="SmartTasker app — find and hire local professionals in Indonesia" width="720">
       </div>
 
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       HERO CTA BAND — full-width blue band below hero
+       ══════════════════════════════════════════════════════════ -->
+  <section class="hero-band" aria-label="Join the waitlist">
+    <div class="hero-band__inner">
+      <div class="hero-band__text">
+        <h3 data-i18n="hero.card.h3">Join the waitlist now</h3>
+        <p data-i18n="hero.card.body">It's free to post tasks and make job offers. Join SmartTasker Indonesia today!</p>
+      </div>
+      <div class="hero-band__cta">
+        <a href="#waitlist" class="btn btn-light" data-i18n="hero.cta" data-cta="hero-card">JOIN WAITLIST</a>
+      </div>
     </div>
   </section>
 
@@ -319,7 +327,7 @@
 
         <p class="earn__closing" data-i18n="earn.closing">Join SmartTasker Indonesia and get ready to start earning!</p>
 
-        <a href="#waitlist" class="btn btn-accent" data-i18n="earn.cta" data-cta="earn">JOIN WAITLIST</a>
+        <a href="#waitlist" class="btn btn-dark" data-i18n="earn.cta" data-cta="earn">JOIN WAITLIST</a>
       </div>
 
     </div>
@@ -327,53 +335,7 @@
 
 
   <!-- ══════════════════════════════════════════════════════════
-       SECTION 5 — PROMOTE YOUR BUSINESS
-       Per change-requests.md table row #5: retain structure,
-       Indonesian service provider imagery, localised copy.
-       ══════════════════════════════════════════════════════════ -->
-  <section class="promote" aria-label="Promote your business">
-    <div class="promote-inner">
-
-      <!-- Left: text + features -->
-      <div class="promote__text">
-        <h2 data-i18n="promote.h2">Promote your business.</h2>
-        <p class="promote__body" data-i18n="promote.body">SmartTasker gives Indonesian service providers the tools to grow their business, build their reputation and reach more customers.</p>
-
-        <ul class="benefit-list" aria-label="Business promotion benefits">
-          <li class="benefit-item">
-            <img src="assets/images/tick-icon.svg" alt="" role="presentation" width="28" height="28">
-            <p><strong data-i18n="promote.bullet1.bold">Build your profile</strong><span data-i18n="promote.bullet1.rest"> and showcase your skills to thousands of customers</span></p>
-          </li>
-          <li class="benefit-item">
-            <img src="assets/images/tick-icon.svg" alt="" role="presentation" width="28" height="28">
-            <p><strong data-i18n="promote.bullet2.bold">Collect real reviews</strong><span data-i18n="promote.bullet2.rest"> that help you win more work</span></p>
-          </li>
-          <li class="benefit-item">
-            <img src="assets/images/tick-icon.svg" alt="" role="presentation" width="28" height="28">
-            <p><strong data-i18n="promote.bullet3.bold">Get verified</strong><span data-i18n="promote.bullet3.rest"> and earn the SmartTasker trust badge</span></p>
-          </li>
-          <li class="benefit-item">
-            <img src="assets/images/tick-icon.svg" alt="" role="presentation" width="28" height="28">
-            <p><strong data-i18n="promote.bullet4.bold">Grow your income</strong><span data-i18n="promote.bullet4.rest"> with a steady stream of local jobs near you</span></p>
-          </li>
-        </ul>
-
-        <a href="#waitlist" class="btn btn-accent" data-i18n="promote.cta" data-cta="promote">JOIN WAITLIST</a>
-      </div>
-
-      <!-- Right: service provider imagery
-           NOTE: Interim stock photo — replace with client photography.
-           See IMAGE-SWAP-LIST.md -->
-      <div class="promote__image" role="img" aria-label="Indonesian service provider promoting their business on SmartTasker">
-        <img src="assets/images/promote-image.png" alt="Promote your business on SmartTasker Indonesia" loading="lazy">
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ══════════════════════════════════════════════════════════
-       SECTION 6 — SMART, SECURE, SORTED
+       SECTION 5 — SMART, SECURE, SORTED
        "Staged milestone payments" DELETED per change-requests.md #7.
        Launch features only; "Get verified" added per change-requests.md #9.
        7-item list is an approved deviation from the 3-item spec reference.
@@ -554,8 +516,8 @@
 
       <li class="faq-item" role="listitem">
         <button class="faq-question" aria-expanded="false">
-          <span data-i18n="faq.q1">What's the difference between SmartTasker and other task apps?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
+          <span data-i18n="faq.q1">What's the difference between SmartTasker and other task apps?</span>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner">
@@ -566,8 +528,8 @@
 
       <li class="faq-item" role="listitem">
         <button class="faq-question" aria-expanded="false">
-          <span data-i18n="faq.q2">How are SmartTasker fees lower?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
+          <span data-i18n="faq.q2">How are SmartTasker fees lower?</span>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner">
@@ -578,8 +540,8 @@
 
       <li class="faq-item" role="listitem">
         <button class="faq-question" aria-expanded="false">
-          <span data-i18n="faq.q3">What types of tasks can I post or fulfil?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
+          <span data-i18n="faq.q3">What types of tasks can I post or fulfil?</span>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner">
@@ -590,8 +552,8 @@
 
       <li class="faq-item" role="listitem">
         <button class="faq-question" aria-expanded="false">
-          <span data-i18n="faq.q4">How do I sign up as a Tasker?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
+          <span data-i18n="faq.q4">How do I sign up as a Tasker?</span>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner">
@@ -602,8 +564,8 @@
 
       <li class="faq-item" role="listitem">
         <button class="faq-question" aria-expanded="false">
-          <span data-i18n="faq.q5">How do I get paid on SmartTasker?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
+          <span data-i18n="faq.q5">How do I get paid on SmartTasker?</span>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner">
@@ -624,8 +586,8 @@
 
       <li class="faq-item" role="listitem">
         <button class="faq-question" aria-expanded="false">
-          <span data-i18n="faq.q6">Is it really free to post a task?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
+          <span data-i18n="faq.q6">Is it really free to post a task?</span>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner">
@@ -636,8 +598,8 @@
 
       <li class="faq-item" role="listitem">
         <button class="faq-question" aria-expanded="false">
-          <span data-i18n="faq.q7">How do I pay for my task?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
+          <span data-i18n="faq.q7">How do I pay for my task?</span>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner">
@@ -648,8 +610,8 @@
 
       <li class="faq-item" role="listitem">
         <button class="faq-question" aria-expanded="false">
-          <span data-i18n="faq.q8">What value tasks can I get done on SmartTasker?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
+          <span data-i18n="faq.q8">What value tasks can I get done on SmartTasker?</span>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner">
@@ -660,8 +622,8 @@
 
       <li class="faq-item" role="listitem">
         <button class="faq-question" aria-expanded="false">
-          <span data-i18n="faq.q9">Can I use SmartTasker if I'm not located in Indonesia?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
+          <span data-i18n="faq.q9">Can I use SmartTasker if I'm not located in Indonesia?</span>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner">
@@ -672,8 +634,8 @@
 
       <li class="faq-item" role="listitem">
         <button class="faq-question" aria-expanded="false">
-          <span data-i18n="faq.q10">When will SmartTasker launch in Indonesia?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
+          <span data-i18n="faq.q10">When will SmartTasker launch in Indonesia?</span>
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner">
@@ -687,17 +649,6 @@
 
 
   <!-- ══════════════════════════════════════════════════════════
-       SECTION 8 — FINAL CTA
-       App Store / Google Play links REMOVED per change-requests.md #3/#11
-       ══════════════════════════════════════════════════════════ -->
-  <section class="final-cta" aria-label="Join the SmartTasker waitlist">
-    <h2 data-i18n="finalcta.h2">Ready to get started?</h2>
-    <p data-i18n="finalcta.body">Join the SmartTasker waitlist today and be the first to know when we launch in Indonesia. Or become a Tasker and start earning with low fees!</p>
-    <a href="#waitlist" class="btn btn-accent" data-i18n="finalcta.cta" data-cta="final-cta">JOIN WAITLIST</a>
-  </section>
-
-
-  <!-- ══════════════════════════════════════════════════════════
        FOOTER
        ══════════════════════════════════════════════════════════ -->
   <footer class="site-footer" role="contentinfo">
@@ -706,7 +657,7 @@
       <!-- Column 1: Logo + social icons -->
       <div class="footer-col footer-col--brand">
         <a href="/" class="footer-logo" aria-label="SmartTasker Indonesia — Home">
-          <img src="assets/images/logo-stacked-no-padding.png" alt="SmartTasker Indonesia" width="140" loading="lazy">
+          <img src="assets/images/logo.png" alt="SmartTasker Indonesia" width="140" loading="lazy">
         </a>
 
         <nav class="social-icons" aria-label="SmartTasker social media">

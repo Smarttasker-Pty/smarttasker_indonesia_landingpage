@@ -6,6 +6,7 @@ deploy-stage/
 node_modules/
 .claude/
 .vercel/
+qa/
 
 # Secrets — never commit (Brevo key lives in Vercel env / brevo-key.php outside webroot)
 brevo-key.php

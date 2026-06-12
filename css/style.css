@@ -47,6 +47,7 @@ body {
   background: var(--color-white);
   -webkit-font-smoothing: antialiased;
   transition: opacity 0.16s ease;
+  overflow-x: hidden;
 }
 
 /* Language switch: content fades out, translations swap off-screen,
@@ -135,6 +136,19 @@ ul { list-style: none; }
 }
 .btn-accent:active { transform: translateY(0); }
 
+/* Dark pill button — earn section + header mobile CTA (change 3 & 7) */
+.btn-dark {
+  background: #101828;
+  color: var(--color-white);
+}
+.btn-dark:hover {
+  background: #2a3650;
+  opacity: 1;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+.btn-dark:active { transform: translateY(0); }
+
 
 /* ============================================================
    HEADER
@@ -215,19 +229,38 @@ ul { list-style: none; }
 }
 .lang-btn:hover:not(.active) { background: rgba(16,24,40,0.08); }
 
-/* Header CTA (desktop only) — original uses Elementor size-sm:
-   15px / 12px 24px / 0.2px letter-spacing (vs 18px / 16px 44px body buttons) */
-.header-cta {
+/* Header CTA (desktop only) — dark pill matching AU's "DOWNLOAD NOW" (change 7) */
+.btn.header-cta {
   font-size: 15px;
   padding: 12px 24px;
   letter-spacing: 0.2px;
+  background: #101828;
+  color: var(--color-white);
 }
+.btn.header-cta:hover {
+  background: #2a3650;
+  opacity: 1;
+  transform: translateY(-1px);
+}
+.btn.header-cta:active { transform: translateY(0); }
 
-/* Nav link color rules outspecify .btn-accent — restore white button text
-   (original header button text is #FFFFFF per the AU site's kit) */
+/* Nav link color rules outspecify .btn-accent — restore white button text */
 .desktop-nav a.btn-accent,
 .mobile-nav a.btn-accent {
   color: var(--color-white);
+}
+
+/* Dark CTA variant for header and mobile nav — change 7 */
+.desktop-nav a.header-cta,
+.mobile-nav a.btn-dark {
+  background: #101828;
+  color: var(--color-white);
+}
+.desktop-nav a.header-cta:hover,
+.mobile-nav a.btn-dark:hover {
+  background: #2a3650;
+  opacity: 1;
+  text-decoration: none;
 }
 
 /* Hamburger */
@@ -337,35 +370,47 @@ ul { list-style: none; }
 
 .hero__cta { }
 
-/* Download / Join card — spec §3 Section 1 */
-.download-card {
+/* Hero CTA Band — full-width blue band directly below hero (change 1) */
+.hero-band {
   background: var(--color-accent);
-  border-radius: var(--radius-card);
-  padding: 24px 28px;
-  margin-top: 28px;
-  width: 100%;
-  max-width: 420px;
+  padding: 28px 0;
 }
 
-.download-card h3 {
+.hero-band__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.hero-band__text {
+  flex: 1;
+}
+
+.hero-band__text h3 {
   font-family: var(--font-heading), serif;
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 700;
   color: var(--color-white);
-  line-height: 1.1em;
-  margin-bottom: 10px;
+  line-height: 1.2em;
+  margin-bottom: 6px;
 }
 
-.download-card > p {
+.hero-band__text p {
   font-family: var(--font-body), sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.5em;
   color: var(--color-white);
-  margin-bottom: 20px;
 }
 
-/* White button variant — used on the blue waitlist card
-   (app store badges removed per change-requests.md #2/#3) */
+.hero-band__cta {
+  flex-shrink: 0;
+}
+
+/* White button variant — used on the hero band and elsewhere */
 .btn-light {
   background: var(--color-white);
   color: var(--color-accent);
@@ -392,11 +437,11 @@ ul { list-style: none; }
 
 
 /* ============================================================
-   HONDA VARIO GIVEAWAY (NEW SECTION)
+   HONDA VARIO GIVEAWAY — AU palette restyle (change 2)
    ============================================================ */
 .giveaway {
-  background: var(--color-dark);
-  color: var(--color-white);
+  background: var(--color-primary);
+  color: var(--color-dark);
   padding: 5% 0;
   scroll-margin-top: 72px;
 }
@@ -418,7 +463,7 @@ ul { list-style: none; }
 }
 
 .giveaway__content h2 {
-  color: var(--color-primary);
+  color: var(--color-dark);
   font-size: 52px;
   font-weight: 700;
   line-height: 1em;
@@ -428,7 +473,7 @@ ul { list-style: none; }
   font-family: var(--font-body), sans-serif;
   font-size: 18px;
   line-height: 1.5em;
-  color: var(--color-white);
+  color: var(--color-dark);
 }
 
 .giveaway__cta-group {
@@ -439,13 +484,13 @@ ul { list-style: none; }
 }
 
 .giveaway__terms-link {
-  color: var(--color-primary);
+  color: var(--color-dark);
   font-family: var(--font-body), sans-serif;
   font-size: 15px;
   text-decoration: underline;
   transition: opacity var(--transition-base);
 }
-.giveaway__terms-link:hover { opacity: 0.75; }
+.giveaway__terms-link:hover { opacity: 0.65; }
 
 .giveaway__image {
   flex: 0 0 440px;
@@ -546,10 +591,10 @@ ul { list-style: none; }
 
 
 /* ============================================================
-   START EARNING
+   START EARNING — full-bleed #DDF770 (change 3)
    ============================================================ */
 .earn {
-  background: var(--color-white);
+  background: var(--color-primary);
   padding: 4.5% 0 4.5% 0;
   scroll-margin-top: 72px;
 }
@@ -558,32 +603,34 @@ ul { list-style: none; }
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
-  align-items: stretch;
-  gap: 20px;
+  align-items: center;
+  gap: 48px;
+  padding: 0 24px;
 }
 
-/* Left panel — yellow-green with photo */
+/* Left image area — no card background, just image with rounded corners */
 .earn__image-panel {
-  width: calc(50% + ((100vw - var(--max-width)) / 2));
-  margin-left: calc(-1 * ((100vw - var(--max-width)) / 2));
-  background: var(--color-tasker-panel);
-  border-radius: 0 20px 20px 0;
-  padding: 4% 3% 4% 4%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  margin-left: 0;
 }
 
 .earn__image-panel img {
-  width: 85%;
-  border-radius: 12px;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 20px;
 }
 
 /* Right column */
 .earn__text {
   width: 50%;
-  padding: 0% 12% 0% 7%;
+  padding: 0% 6% 0% 4%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1026,9 +1073,10 @@ ul { list-style: none; }
 }
 .faq-item:last-child { border-bottom: none; }
 
+/* FAQ accordion — icon LEFT, plain black plus (change 4) */
 .faq-question {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   background: none;
@@ -1047,22 +1095,19 @@ ul { list-style: none; }
 
 .faq-question .faq-icon {
   flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: var(--color-dark);
-  color: var(--color-white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: none;
+  color: var(--color-dark);
+  display: inline-block;
   font-size: 18px;
   font-weight: 400;
   line-height: 1;
-  transition: background var(--transition-base), transform var(--transition-base);
+  transition: transform var(--transition-base);
 }
 
 .faq-item.open .faq-question .faq-icon {
-  background: var(--color-accent);
   transform: rotate(45deg);
 }
 
@@ -1108,37 +1153,11 @@ ul { list-style: none; }
 
 
 /* ============================================================
-   FINAL CTA SECTION
-   ============================================================ */
-.final-cta {
-  background: linear-gradient(174deg, var(--color-primary) 0%, var(--color-white) 100%);
-  padding: 6% 12%;
-  text-align: center;
-}
-
-.final-cta h2 {
-  font-size: 44px;
-  margin-bottom: 16px;
-}
-
-.final-cta p {
-  font-family: var(--font-body), sans-serif;
-  font-size: 18px;
-  line-height: 1.6em;
-  color: var(--color-dark);
-  margin-bottom: 32px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/* ============================================================
-   FOOTER
+   FOOTER — light #DDF770 theme (change 6)
    ============================================================ */
 .site-footer {
-  background: var(--color-dark);
-  color: var(--color-white);
+  background: var(--color-primary);
+  color: var(--color-dark);
   padding: 5% 0 0;
 }
 
@@ -1162,7 +1181,8 @@ ul { list-style: none; }
 .footer-logo img {
   width: 140px;
   height: auto;
-  filter: brightness(0) invert(1); /* make logo white on dark bg */
+  /* dark logo on yellow bg — no filter needed */
+  filter: none;
 }
 
 .social-icons {
@@ -1179,7 +1199,7 @@ ul { list-style: none; }
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.1);
+  background: var(--color-dark);
   transition: background var(--transition-base);
   text-decoration: none;
 }
@@ -1188,7 +1208,7 @@ ul { list-style: none; }
 .social-icon svg {
   width: 18px;
   height: 18px;
-  fill: var(--color-white);
+  fill: var(--color-primary);
 }
 
 /* Column 2 — navigation */
@@ -1203,11 +1223,17 @@ ul { list-style: none; }
 .footer-col--nav a {
   font-family: var(--font-ui), sans-serif;
   font-size: 15px;
-  color: rgba(255,255,255,0.75);
+  color: var(--color-dark);
   text-decoration: none;
   transition: color var(--transition-base);
 }
-.footer-col--nav a:hover { color: var(--color-white); }
+.footer-col--nav a:hover { color: var(--color-accent); }
+
+/* Home link coloured blue like AU */
+.footer-col--nav a:first-child {
+  color: var(--color-accent);
+}
+.footer-col--nav a:first-child:hover { opacity: 0.8; }
 
 /* Column 3 — CTA */
 .footer-col--cta {
@@ -1222,7 +1248,7 @@ ul { list-style: none; }
   font-family: var(--font-heading), serif;
   font-size: 32px;
   font-weight: 600;
-  color: var(--color-white);
+  color: var(--color-dark);
   line-height: 1.2em;
 }
 
@@ -1230,21 +1256,21 @@ ul { list-style: none; }
   font-family: var(--font-body), sans-serif;
   font-size: 15px;
   line-height: 1.5em;
-  color: rgba(255,255,255,0.75);
+  color: var(--color-dark);
 }
 
 /* Copyright bar */
 .footer-copyright {
   margin-top: 40px;
   padding: 20px 24px;
-  border-top: 1px solid rgba(255,255,255,0.12);
+  border-top: 1px solid rgba(16,24,40,0.15);
   text-align: center;
 }
 
 .footer-copyright p {
   font-family: var(--font-ui), sans-serif;
   font-size: 14px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(16,24,40,0.6);
 }
 
 
@@ -1298,15 +1324,18 @@ ul { list-style: none; }
   }
   .post-task__image img { display: none; }
 
+  /* Hero band */
+  .hero-band__inner { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .hero-band__text h3 { font-size: 24px; }
+
   /* Earn */
-  .earn-inner { gap: 0; }
+  .earn-inner { flex-direction: column; gap: 24px; padding: 0 8%; }
   .earn__image-panel {
-    width: 50%;
-    margin-left: 0;
-    border-radius: 0 20px 20px 0;
-    padding: 4% 3% 4% 3%;
+    width: 100%;
+    padding: 0;
   }
-  .earn__text { padding: 2% 7% 2% 7%; }
+  .earn__image-panel img { max-width: 400px; }
+  .earn__text { width: 100%; padding: 0; }
 
   /* Promote */
   .promote-inner { flex-direction: column; }
@@ -1334,12 +1363,6 @@ ul { list-style: none; }
   /* Terms */
   .terms-section { padding: 5% 8%; }
 
-  /* Final CTA */
-  .final-cta { padding: 6% 8%; }
-
-  /* Download card */
-  .download-card h3 { font-size: 28px; }
-
   /* Footer */
   .footer-inner { flex-direction: column; gap: 32px; }
   .footer-col--cta { order: -1; } /* CTA first on tablet/mobile */
@@ -1362,8 +1385,12 @@ ul { list-style: none; }
   .hero__text h1 { font-size: 52px; }
   .hero__text { padding: 8% 6% 4%; }
   .hero__image { padding: 0 6%; }
-  .download-card { max-width: 100%; }
-  .download-card h3 { font-size: 26px; }
+
+  /* Hero band — stack on mobile, left-align */
+  .hero-band { padding: 24px 0; }
+  .hero-band__inner { flex-direction: column; align-items: flex-start; gap: 16px; padding: 0 6%; }
+  .hero-band__text h3 { font-size: 22px; }
+  .hero-band__text p { font-size: 14px; }
 
   /* Giveaway */
   .giveaway-inner { padding: 0 6%; gap: 24px; }
@@ -1376,6 +1403,7 @@ ul { list-style: none; }
   .post-task__image {
     background-image: url('../assets/images/post-in-seconds-mobile.png');
     min-height: 220px;
+    background-position: left center;
   }
 
   /* Promote */
@@ -1384,15 +1412,16 @@ ul { list-style: none; }
 
   /* Earn */
   .earn-inner {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    padding: 0 6%;
+    gap: 16px;
   }
   .earn__image-panel {
     width: 100%;
-    border-radius: 20px;
-    margin: 0;
-    padding: 4% 6%;
+    padding: 0;
   }
-  .earn__text { width: 100%; padding: 8% 6%; }
+  .earn__image-panel img { max-width: 100%; border-radius: 16px; }
+  .earn__text { width: 100%; padding: 0; }
 
   /* Secure */
   .secure__text { padding: 8% 6%; }
@@ -1414,10 +1443,6 @@ ul { list-style: none; }
 
   /* Terms */
   .terms-section { padding: 8% 6%; }
-
-  /* Final CTA */
-  .final-cta { padding: 8% 6%; }
-  .final-cta h2 { font-size: 32px; }
 
   /* Footer */
   .footer-inner { padding: 0 20px; }
