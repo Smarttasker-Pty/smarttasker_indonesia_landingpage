@@ -7,7 +7,7 @@
  * Adaptation notes applied throughout:
  *   - Australia/Australian → Indonesia/Indonesian
  *   - smarttasker.au → smarttasker.id
- *   - hello@smarttasker.au → support@smarttasker.id
+ *   - hello@smarttasker.au → supportindonesia@smarttasker.au
  *   - App-store/download references → waitlist references
  *   - Backend form (Elementor POST) → mailto-based contact block (no backend required)
  *
@@ -28,7 +28,7 @@ Object.assign(i18n.en, {
 
   /* ── Email CTA block ────────────────────────────────────────── */
   "contact.email.label": "Email us directly",
-  "contact.email.address": "support@smarttasker.id",
+  "contact.email.address": "supportindonesia@smarttasker.au",
   "contact.email.btn": "SEND US AN EMAIL",
 
   /* ── Enquiry types (descriptive list, no form submission) ───── */
@@ -41,7 +41,7 @@ Object.assign(i18n.en, {
   /* ── Email instructions ─────────────────────────────────────── */
   "contact.instructions.heading": "How to Reach Us",
   "contact.instructions.body": `<ol>
-  <li>Click the <strong>Send Us an Email</strong> button above, or compose a new email to <a href="mailto:support@smarttasker.id">support@smarttasker.id</a>.</li>
+  <li>Click the <strong>Send Us an Email</strong> button above, or compose a new email to <a href="mailto:supportindonesia@smarttasker.au">supportindonesia@smarttasker.au</a>.</li>
   <li>Include your <strong>name</strong>, <strong>enquiry type</strong> (Tasker Support / App Support / General Enquiry) and a clear description of your question or issue.</li>
   <li>Our support team will respond as soon as possible.</li>
 </ol>`,
@@ -69,7 +69,7 @@ Object.assign(i18n.id, {
 
   /* ── Email CTA block ────────────────────────────────────────── */
   "contact.email.label": "Kirim email langsung ke kami",
-  "contact.email.address": "support@smarttasker.id",
+  "contact.email.address": "supportindonesia@smarttasker.au",
   "contact.email.btn": "KIRIM EMAIL",
 
   /* ── Enquiry types ──────────────────────────────────────────── */
@@ -82,7 +82,7 @@ Object.assign(i18n.id, {
   /* ── Email instructions ─────────────────────────────────────── */
   "contact.instructions.heading": "Cara Menghubungi Kami",
   "contact.instructions.body": `<ol>
-  <li>Klik tombol <strong>Kirim Email</strong> di atas, atau buat email baru ke <a href="mailto:support@smarttasker.id">support@smarttasker.id</a>.</li>
+  <li>Klik tombol <strong>Kirim Email</strong> di atas, atau buat email baru ke <a href="mailto:supportindonesia@smarttasker.au">supportindonesia@smarttasker.au</a>.</li>
   <li>Sertakan <strong>nama</strong>, <strong>jenis pertanyaan</strong> (Dukungan Tasker / Dukungan Aplikasi / Pertanyaan Umum) dan deskripsi jelas mengenai pertanyaan atau masalah Anda.</li>
   <li>Tim dukungan kami akan merespons sesegera mungkin.</li>
 </ol>`,

@@ -20,6 +20,14 @@ as reference, do NOT send them).
 | Invite EN | Your friends can win a Honda Vario 160 — share SmartTasker Indonesia with them | SmartTasker is coming to Indonesia — share with friends and family so they can join the waitlist and enter the Honda Vario 160 giveaway too! |
 | Invite ID | Ajak temanmu — mereka bisa menangkan Honda Vario 160 bersama SmartTasker Indonesia | SmartTasker segera hadir di Indonesia — bagikan kepada teman dan keluarga agar mereka bisa daftar waitlist dan ikut giveaway Honda Vario 160 juga! |
 
+## Sender & support addresses (client-confirmed)
+
+- **Sender (From) address for all campaigns/automations:** `helloindonesia@smarttasker.au`
+  — add it in Brevo under **Settings → Senders & Domains → Senders → Add a sender**
+  and complete the verification email before any send.
+- **Support / reply address used inside the emails:** `supportindonesia@smarttasker.au`
+  (already in the templates). Consider setting it as the Reply-To on each campaign.
+
 ## How to load into Brevo
 
 1. **Campaigns → Templates → New template → Import → Paste/upload HTML** (one

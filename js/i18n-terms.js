@@ -8,7 +8,7 @@
  * Adaptation notes applied throughout:
  *   - Australia/Australian → Indonesia/Indonesian
  *   - smarttasker.au → smarttasker.id
- *   - support@smarttasker.id (support email)
+ *   - supportindonesia@smarttasker.au (support email)
  *   - Australian statute references (ACL, Privacy Act 1988, NSW jurisdiction,
  *     ACN 672 687 508) are kept but wrapped in HTML comments:
  *     <!-- LEGAL REVIEW REQUIRED: Australian-law reference — Indonesian counsel to localise -->
@@ -243,7 +243,7 @@ Object.assign(i18n.en, {
 <p>13.3 Smarttasker has the right to hold any Agreed Price that is the subject of a dispute in the Payment Account, until the dispute has been resolved.</p>
 <p>13.4 Smarttasker may provide access to a Third Party Dispute Service. If such a service is provided, either party may request the other party to submit to the Third Party Dispute Service if the parties have failed to resolve the dispute directly. Terms and conditions for the Third-Party Dispute Service will be available on request. The Third-Party Dispute Service is a Third Party Service and Users are responsible for paying any costs associated with the Third Party Dispute Service in accordance with the Third Party Dispute Service terms and conditions.</p>
 <p>13.5 Disputes with any Third Party Service provider must proceed pursuant to any dispute resolution process set out in the terms of service of the Third Party Service provider.</p>
-<p>13.6 If You have a complaint about the Smarttasker Service please <a href="mailto:support@smarttasker.id">contact us</a>.</p>
+<p>13.6 If You have a complaint about the Smarttasker Service please <a href="mailto:supportindonesia@smarttasker.au">contact us</a>.</p>
 <p>13.7 If Smarttasker provides information about other Users to You for the purposes of resolving disputes under this clause, You acknowledge and agree that such information will be used only for the purpose of resolving the dispute (and no other purpose) and that you will be responsible and liable to Smarttasker for any costs, losses or liabilities incurred by Smarttasker in relation to any claims relating to any other use of information not permitted by this Agreement.</p>`,
 
   /* ── Section 14 — Termination ───────────────────────────────── */

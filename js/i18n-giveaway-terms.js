@@ -10,7 +10,7 @@
  *   - All substantive competition terms are PLACEHOLDER — pending client's
  *     final competition terms and Indonesian legal review.
  *   - smarttasker.id used throughout (not smarttasker.au)
- *   - support@smarttasker.id used for contact
+ *   - supportindonesia@smarttasker.au used for contact
  *   - AUD/$ prize value references: kept as-is with [TO BE LOCALISED] marker
  *   - Indonesian law references flagged: LEGAL REVIEW REQUIRED
  *
@@ -33,7 +33,7 @@ Object.assign(i18n.en, {
   /* ── Section 1 — Promoter ───────────────────────────────────── */
   "gterms.s1.heading": "1. Promoter",
   "gterms.s1.body": `<p>The Competition is promoted by SmartTasker (<strong>"Promoter"</strong>), operator of <a href="https://smarttasker.id">www.smarttasker.id</a>.</p>
-<p>The Promoter can be contacted at <a href="mailto:support@smarttasker.id">support@smarttasker.id</a>.</p>`,
+<p>The Promoter can be contacted at <a href="mailto:supportindonesia@smarttasker.au">supportindonesia@smarttasker.au</a>.</p>`,
 
   /* ── Section 2 — Eligibility ────────────────────────────────── */
   "gterms.s2.heading": "2. Eligibility",
@@ -122,7 +122,7 @@ Object.assign(i18n.en, {
   "gterms.s10.body": `<!-- LEGAL REVIEW REQUIRED: Indonesian counsel to confirm compliance with UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi (PDP Law) and applicable data-handling requirements for prize competitions -->
 <p>Personal information collected from entrants during the Competition will be used by the Promoter solely for the purposes of conducting the Competition (including contacting and notifying the winner) and managing the SmartTasker Indonesia waitlist.</p>
 <p>Personal information will be handled in accordance with the SmartTasker Indonesia <a href="privacy.html">Privacy Policy</a>.</p>
-<p>Entrants may contact the Promoter at <a href="mailto:support@smarttasker.id">support@smarttasker.id</a> to access, correct, or request deletion of their personal information.</p>`,
+<p>Entrants may contact the Promoter at <a href="mailto:supportindonesia@smarttasker.au">supportindonesia@smarttasker.au</a> to access, correct, or request deletion of their personal information.</p>`,
 
   /* ── Section 11 — Governing Law ─────────────────────────────── */
   "gterms.s11.heading": "11. Governing Law",
@@ -131,7 +131,7 @@ Object.assign(i18n.en, {
 
   /* ── Section 12 — Contact ───────────────────────────────────── */
   "gterms.s12.heading": "12. Contact",
-  "gterms.s12.body": `<p>For any questions or concerns about the Competition or these Terms, please contact the Promoter at <a href="mailto:support@smarttasker.id">support@smarttasker.id</a>.</p>`,
+  "gterms.s12.body": `<p>For any questions or concerns about the Competition or these Terms, please contact the Promoter at <a href="mailto:supportindonesia@smarttasker.au">supportindonesia@smarttasker.au</a>.</p>`,
 
 });
 
@@ -153,7 +153,7 @@ Object.assign(i18n.id, {
   /* ── Section 1 — Promoter ───────────────────────────────────── */
   "gterms.s1.heading": "1. Penyelenggara",
   "gterms.s1.body": `<p>Kompetisi ini diselenggarakan oleh SmartTasker (<strong>"Penyelenggara"</strong>), operator <a href="https://smarttasker.id">www.smarttasker.id</a>.</p>
-<p>Penyelenggara dapat dihubungi di <a href="mailto:support@smarttasker.id">support@smarttasker.id</a>.</p>`,
+<p>Penyelenggara dapat dihubungi di <a href="mailto:supportindonesia@smarttasker.au">supportindonesia@smarttasker.au</a>.</p>`,
 
   /* ── Section 2 — Eligibility ────────────────────────────────── */
   "gterms.s2.heading": "2. Persyaratan Peserta",
@@ -242,7 +242,7 @@ Object.assign(i18n.id, {
   "gterms.s10.body": `<!-- LEGAL REVIEW REQUIRED: Indonesian counsel to confirm compliance with UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi (PDP Law) and applicable data-handling requirements for prize competitions -->
 <p>Informasi pribadi yang dikumpulkan dari peserta selama Kompetisi akan digunakan oleh Penyelenggara semata-mata untuk keperluan pelaksanaan Kompetisi (termasuk menghubungi dan memberitahu pemenang) dan mengelola waitlist SmartTasker Indonesia.</p>
 <p>Informasi pribadi akan ditangani sesuai dengan <a href="privacy.html">Kebijakan Privasi</a> SmartTasker Indonesia.</p>
-<p>Peserta dapat menghubungi Penyelenggara di <a href="mailto:support@smarttasker.id">support@smarttasker.id</a> untuk mengakses, memperbaiki, atau meminta penghapusan informasi pribadi mereka.</p>`,
+<p>Peserta dapat menghubungi Penyelenggara di <a href="mailto:supportindonesia@smarttasker.au">supportindonesia@smarttasker.au</a> untuk mengakses, memperbaiki, atau meminta penghapusan informasi pribadi mereka.</p>`,
 
   /* ── Section 11 — Governing Law ─────────────────────────────── */
   "gterms.s11.heading": "11. Hukum yang Berlaku",
@@ -251,6 +251,6 @@ Object.assign(i18n.id, {
 
   /* ── Section 12 — Contact ───────────────────────────────────── */
   "gterms.s12.heading": "12. Kontak",
-  "gterms.s12.body": `<p>Untuk pertanyaan atau kekhawatiran mengenai Kompetisi atau Ketentuan ini, silakan hubungi Penyelenggara di <a href="mailto:support@smarttasker.id">support@smarttasker.id</a>.</p>`,
+  "gterms.s12.body": `<p>Untuk pertanyaan atau kekhawatiran mengenai Kompetisi atau Ketentuan ini, silakan hubungi Penyelenggara di <a href="mailto:supportindonesia@smarttasker.au">supportindonesia@smarttasker.au</a>.</p>`,
 
 });

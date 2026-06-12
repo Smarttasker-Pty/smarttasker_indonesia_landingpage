@@ -7,7 +7,7 @@
  * Adaptation notes applied throughout:
  *   - Australia/Australian → Indonesia/Indonesian
  *   - smarttasker.au → smarttasker.id
- *   - hello@smarttasker.au → support@smarttasker.id
+ *   - hello@smarttasker.au → supportindonesia@smarttasker.au
  *   - Australian-law references are flagged with HTML comments: LEGAL REVIEW REQUIRED
  *   - AUD/$ amounts: kept as-is with [TO BE LOCALISED] marker
  *   - App-store/download references → waitlist references

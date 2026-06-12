@@ -7,7 +7,7 @@
  * Adaptation notes applied throughout:
  *   - Australia/Australian → Indonesia/Indonesian
  *   - smarttasker.au → smarttasker.id
- *   - hello@smarttasker.au → support@smarttasker.id
+ *   - hello@smarttasker.au → supportindonesia@smarttasker.au
  *   - Australian-law references are flagged with HTML comments: LEGAL REVIEW REQUIRED
  *   - AUD/$ amounts: kept as-is with [TO BE LOCALISED] marker
  *   - App-store/download references → waitlist references
@@ -25,7 +25,7 @@ Object.assign(i18n.en, {
 
   /* ── Intro block ────────────────────────────────────────────── */
   "privacy.intro": `<p>SmartTasker Pty Ltd (<strong>SmartTasker</strong>) is the operator of <a href="https://smarttasker.id">www.smarttasker.id</a> and its Mobile Applications (together, the 'Services').</p>
-<p>SmartTasker Pty Ltd can be contacted at <a href="mailto:support@smarttasker.id">support@smarttasker.id</a> or via the <a href="contact.html">Online Contact Us form</a>.</p>
+<p>SmartTasker Pty Ltd can be contacted at <a href="mailto:supportindonesia@smarttasker.au">supportindonesia@smarttasker.au</a> or via the <a href="contact.html">Online Contact Us form</a>.</p>
 <p>This Privacy Policy describes how SmartTasker collects and uses your personal data. It describes who has access to the data collected. It sets out the rights of users of our Services, as well as SmartTasker's obligations to them. It also describes SmartTasker's cookie policy.</p>
 <p>This Privacy Policy may be amended from time to time to maintain compliance with the law and to reflect any changes to our data collection process. When we amend this Privacy Policy, we will update the "Effective Date" at the top of this Privacy Policy. We recommend that our users periodically review our Privacy Policy to ensure that they are notified of any updates. If necessary, we may notify users by email of changes to this Privacy Policy.</p>
 <p>This Privacy Policy applies in addition to the Terms and Conditions of our Services.</p>`,
@@ -77,7 +77,7 @@ Object.assign(i18n.en, {
   "privacy.s6.heading": "6. How We Protect Your Personal Data",
   "privacy.s6.body": `<p>We protect your information using technical and administrative security measures. Our safeguards include firewalls and data encryption, physical access controls to data centres and information access authorisation controls.</p>
 <p>While we take all reasonable precautions to ensure that user data is secure and that users are protected, there always remains the risk of harm. The Internet can be insecure at times and therefore, we are unable to guarantee the security of user data beyond what is reasonably practical.</p>
-<p>If you believe your account has been abused, please contact us at <a href="mailto:support@smarttasker.id">support@smarttasker.id</a> or via our <a href="contact.html">Online Contact Us form</a>.</p>`,
+<p>If you believe your account has been abused, please contact us at <a href="mailto:supportindonesia@smarttasker.au">supportindonesia@smarttasker.au</a> or via our <a href="contact.html">Online Contact Us form</a>.</p>`,
 
   /* ── Section 7 — Children's Privacy ────────────────────────── */
   "privacy.s7.heading": "7. Children's Privacy",
@@ -86,7 +86,7 @@ Object.assign(i18n.en, {
 
   /* ── Section 8 — Access, Modify, Delete or Challenge ────────── */
   "privacy.s8.heading": "8. How to Access, Modify, Delete or Challenge the Data Collected",
-  "privacy.s8.body": `<p>If you would like to know if we have collected your personal data, how we have used your personal data, if we have disclosed your personal data and to who we disclosed your personal data, or if you would like your data to be deleted or modified in any way, please contact our privacy officer at <a href="mailto:support@smarttasker.id">support@smarttasker.id</a> or via our <a href="contact.html">Online Contact Us form</a>.</p>`,
+  "privacy.s8.body": `<p>If you would like to know if we have collected your personal data, how we have used your personal data, if we have disclosed your personal data and to who we disclosed your personal data, or if you would like your data to be deleted or modified in any way, please contact our privacy officer at <a href="mailto:supportindonesia@smarttasker.au">supportindonesia@smarttasker.au</a> or via our <a href="contact.html">Online Contact Us form</a>.</p>`,
 
   /* ── Section 9 — How to Opt-Out ─────────────────────────────── */
   "privacy.s9.heading": "9. How to Opt-Out of Data Collection, Use or Disclosure",
@@ -122,7 +122,7 @@ Object.assign(i18n.en, {
 
   /* ── Section 12 — Queries or complaints ─────────────────────── */
   "privacy.s12.heading": "12. Queries or Complaints",
-  "privacy.s12.body": `<p>If you have any questions, concerns or complaints, you can contact our privacy officer at <a href="mailto:support@smarttasker.id">support@smarttasker.id</a> or via our <a href="contact.html">Online Contact Us form</a>.</p>`,
+  "privacy.s12.body": `<p>If you have any questions, concerns or complaints, you can contact our privacy officer at <a href="mailto:supportindonesia@smarttasker.au">supportindonesia@smarttasker.au</a> or via our <a href="contact.html">Online Contact Us form</a>.</p>`,
 
 });
 
@@ -138,7 +138,7 @@ Object.assign(i18n.id, {
 
   /* ── Intro block ────────────────────────────────────────────── */
   "privacy.intro": `<p>SmartTasker Pty Ltd (<strong>SmartTasker</strong>) adalah operator <a href="https://smarttasker.id">www.smarttasker.id</a> dan Aplikasi Selulernya (secara bersama disebut 'Layanan').</p>
-<p>SmartTasker Pty Ltd dapat dihubungi di <a href="mailto:support@smarttasker.id">support@smarttasker.id</a> atau melalui <a href="contact.html">Formulir Hubungi Kami</a>.</p>
+<p>SmartTasker Pty Ltd dapat dihubungi di <a href="mailto:supportindonesia@smarttasker.au">supportindonesia@smarttasker.au</a> atau melalui <a href="contact.html">Formulir Hubungi Kami</a>.</p>
 <p>Kebijakan Privasi ini menjelaskan bagaimana SmartTasker mengumpulkan dan menggunakan data pribadi Anda. Kebijakan ini menjelaskan siapa yang memiliki akses ke data yang dikumpulkan, menetapkan hak-hak pengguna Layanan kami, serta kewajiban SmartTasker kepada mereka. Kebijakan ini juga menjelaskan kebijakan cookie SmartTasker.</p>
 <p>Kebijakan Privasi ini dapat diubah dari waktu ke waktu untuk menjaga kepatuhan terhadap hukum dan mencerminkan perubahan dalam proses pengumpulan data kami. Ketika kami mengubah Kebijakan Privasi ini, kami akan memperbarui "Tanggal Berlaku" di bagian atas dokumen ini. Kami menyarankan pengguna untuk meninjau Kebijakan Privasi kami secara berkala agar mengetahui pembaruan apa pun. Jika diperlukan, kami dapat memberitahu pengguna melalui email mengenai perubahan Kebijakan Privasi ini.</p>
 <p>Kebijakan Privasi ini berlaku sebagai tambahan dari Syarat dan Ketentuan Layanan kami.</p>`,
@@ -190,7 +190,7 @@ Object.assign(i18n.id, {
   "privacy.s6.heading": "6. Cara Kami Melindungi Data Pribadi Anda",
   "privacy.s6.body": `<p>Kami melindungi informasi Anda menggunakan langkah-langkah keamanan teknis dan administratif. Perlindungan kami mencakup firewall dan enkripsi data, kontrol akses fisik ke pusat data, serta kontrol otorisasi akses informasi.</p>
 <p>Meskipun kami mengambil semua tindakan pencegahan yang wajar untuk memastikan keamanan data pengguna dan perlindungan pengguna, selalu ada risiko bahaya yang tersisa. Internet terkadang tidak aman, sehingga kami tidak dapat menjamin keamanan data pengguna melampaui apa yang secara wajar dapat dilakukan.</p>
-<p>Jika Anda yakin akun Anda telah disalahgunakan, silakan hubungi kami di <a href="mailto:support@smarttasker.id">support@smarttasker.id</a> atau melalui <a href="contact.html">Formulir Hubungi Kami</a>.</p>`,
+<p>Jika Anda yakin akun Anda telah disalahgunakan, silakan hubungi kami di <a href="mailto:supportindonesia@smarttasker.au">supportindonesia@smarttasker.au</a> atau melalui <a href="contact.html">Formulir Hubungi Kami</a>.</p>`,
 
   /* ── Section 7 — Children's Privacy ────────────────────────── */
   "privacy.s7.heading": "7. Privasi Anak-Anak",
@@ -199,7 +199,7 @@ Object.assign(i18n.id, {
 
   /* ── Section 8 — Access, Modify, Delete or Challenge ────────── */
   "privacy.s8.heading": "8. Cara Mengakses, Mengubah, Menghapus, atau Menentang Data yang Dikumpulkan",
-  "privacy.s8.body": `<p>Jika Anda ingin mengetahui apakah kami telah mengumpulkan data pribadi Anda, bagaimana kami menggunakannya, apakah kami telah mengungkapkannya dan kepada siapa, atau jika Anda ingin data Anda dihapus atau diubah dengan cara apa pun, silakan hubungi petugas privasi kami di <a href="mailto:support@smarttasker.id">support@smarttasker.id</a> atau melalui <a href="contact.html">Formulir Hubungi Kami</a>.</p>`,
+  "privacy.s8.body": `<p>Jika Anda ingin mengetahui apakah kami telah mengumpulkan data pribadi Anda, bagaimana kami menggunakannya, apakah kami telah mengungkapkannya dan kepada siapa, atau jika Anda ingin data Anda dihapus atau diubah dengan cara apa pun, silakan hubungi petugas privasi kami di <a href="mailto:supportindonesia@smarttasker.au">supportindonesia@smarttasker.au</a> atau melalui <a href="contact.html">Formulir Hubungi Kami</a>.</p>`,
 
   /* ── Section 9 — How to Opt-Out ─────────────────────────────── */
   "privacy.s9.heading": "9. Cara Menolak Pengumpulan, Penggunaan, atau Pengungkapan Data",
@@ -235,6 +235,6 @@ Object.assign(i18n.id, {
 
   /* ── Section 12 — Queries or complaints ─────────────────────── */
   "privacy.s12.heading": "12. Pertanyaan atau Keluhan",
-  "privacy.s12.body": `<p>Jika Anda memiliki pertanyaan, kekhawatiran, atau keluhan, Anda dapat menghubungi petugas privasi kami di <a href="mailto:support@smarttasker.id">support@smarttasker.id</a> atau melalui <a href="contact.html">Formulir Hubungi Kami</a>.</p>`,
+  "privacy.s12.body": `<p>Jika Anda memiliki pertanyaan, kekhawatiran, atau keluhan, Anda dapat menghubungi petugas privasi kami di <a href="mailto:supportindonesia@smarttasker.au">supportindonesia@smarttasker.au</a> atau melalui <a href="contact.html">Formulir Hubungi Kami</a>.</p>`,
 
 });

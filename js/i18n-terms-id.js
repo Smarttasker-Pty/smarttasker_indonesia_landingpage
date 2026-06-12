@@ -235,7 +235,7 @@ Object.assign(i18n.id, {
 <p>13.3 Smarttasker berhak menahan Harga yang Disepakati yang menjadi subjek sengketa di Akun Pembayaran, sampai sengketa diselesaikan.</p>
 <p>13.4 Smarttasker dapat memberikan akses ke Layanan Sengketa Pihak Ketiga. Jika layanan tersebut disediakan, salah satu pihak dapat meminta pihak lain untuk menyerahkan ke Layanan Sengketa Pihak Ketiga jika para pihak gagal menyelesaikan sengketa secara langsung.</p>
 <p>13.5 Sengketa dengan penyedia Layanan Pihak Ketiga mana pun harus dilanjutkan sesuai dengan proses penyelesaian sengketa yang ditetapkan dalam ketentuan layanan penyedia Layanan Pihak Ketiga.</p>
-<p>13.6 Jika Anda memiliki keluhan tentang Layanan Smarttasker, silakan <a href="mailto:support@smarttasker.id">hubungi kami</a>.</p>
+<p>13.6 Jika Anda memiliki keluhan tentang Layanan Smarttasker, silakan <a href="mailto:supportindonesia@smarttasker.au">hubungi kami</a>.</p>
 <p>13.7 Jika Smarttasker memberikan informasi tentang Pengguna lain kepada Anda untuk tujuan menyelesaikan sengketa berdasarkan klausul ini, Anda mengakui dan menyetujui bahwa informasi tersebut akan digunakan hanya untuk tujuan menyelesaikan sengketa dan Anda akan bertanggung jawab kepada Smarttasker atas biaya, kerugian, atau kewajiban yang diakibatkan Smarttasker sehubungan dengan klaim apa pun yang terkait dengan penggunaan informasi lain yang tidak diizinkan.</p>`,
 
   /* ── Section 14 ─────────────────────────────────────────────── */
