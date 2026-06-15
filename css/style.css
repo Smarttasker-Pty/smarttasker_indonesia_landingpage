@@ -1603,13 +1603,16 @@ section h2:first-child { margin-top: 0; }
   margin-bottom: 0;
 }
 
-/* Links within legal content */
-.legal-content a {
+/* Links within legal content — but NOT button-styled anchors (e.g. the Contact
+   page CTAs), which must keep their own .btn colours. Without :not(.btn) this rule
+   wins on specificity and paints button text in --color-accent on an accent
+   background = invisible text. */
+.legal-content a:not(.btn) {
   color: var(--color-accent);
   text-decoration: underline;
 }
 
-.legal-content a:hover {
+.legal-content a:not(.btn):hover {
   opacity: 0.8;
 }
 
