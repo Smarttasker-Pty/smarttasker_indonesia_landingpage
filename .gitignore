@@ -1,16 +1,4 @@
-# Build artifact — regenerated on demand for shared-hosting deploys
-deploy.zip
-deploy-stage/
-
-# Dev tooling
+.DS_Store
 node_modules/
-.claude/
-.vercel/
-qa/
-
-# Derived text conversions of the client source docs (regenerated on demand)
-docs/_txt/
-
-# Secrets — never commit (Brevo key lives in Vercel env / brevo-key.php outside webroot)
-brevo-key.php
-.env
+*.log
+.vercel

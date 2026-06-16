@@ -18,13 +18,13 @@ Object.assign(i18n.id, {
   "terms.hero.title": "Syarat & Ketentuan",
 
   /* ── Last updated ───────────────────────────────────────────── */
-  "terms.effective": "Terakhir diperbarui: 13 Juni 2026",
+  "terms.effective": "Terakhir diperbarui: 18 Juni 2026",
 
   /* ── Intro block ────────────────────────────────────────────── */
   "terms.intro": `<p>Syarat &amp; Ketentuan SmartTasker menguraikan SmartTasker dan kewajiban serta tanggung jawab Anda di Platform SmartTasker.</p>
 <p>Syarat dan ketentuan memperjelas proses yang diperlukan untuk memformalkan penyelesaian tugas.</p>
 <p>SmartTasker mengoperasikan platform online yang memungkinkan Pengguna untuk terhubung melalui Platform SmartTasker dengan Pengguna lain yang menyediakan Layanan.</p>
-<p>Harap baca ketentuan ini dan semua Kebijakan termasuk <a href="community-guidelines.html">Pedoman SmartTasker</a> dan <a href="privacy.html">Kebijakan Privasi</a> dengan seksama sebelum menggunakan Platform SmartTasker.</p>
+<p>Harap baca ketentuan ini dan semua Kebijakan termasuk <a href="/community-guidelines/">Pedoman SmartTasker</a> dan <a href="/privacy-policy/">Kebijakan Privasi</a> dengan seksama sebelum menggunakan Platform SmartTasker.</p>
 <p>Kebijakan ini dimasukkan ke dalam Perjanjian ini dengan referensi.</p>`,
 
   /* ── Section 1 ──────────────────────────────────────────────── */

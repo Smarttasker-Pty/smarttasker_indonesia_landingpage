@@ -423,6 +423,22 @@ function initSmoothScroll() {
 
 
 /* ============================================================
+   FOOTER NAV — collapsible on mobile (matches AU)
+   ============================================================ */
+
+function initFooterNav() {
+  const toggle = document.querySelector('.footer-nav-toggle');
+  const nav = document.querySelector('.footer-col--nav');
+  if (!toggle || !nav) return;
+
+  toggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+}
+
+
+/* ============================================================
    INIT
    ============================================================ */
 
@@ -433,4 +449,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initWaitlistForm();
   initCTATracking();
   initSmoothScroll();
+  initFooterNav();
 });

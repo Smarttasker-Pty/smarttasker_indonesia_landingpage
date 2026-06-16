@@ -93,3 +93,25 @@ Object.assign(i18n.id, {
   "contact.waitlist.btn": "DAFTAR WAITLIST",
 
 });
+
+/* Contact enquiry form (AU two-column layout restored) — EN + Bahasa */
+Object.assign(i18n.en, {
+  'contact.cf.title':'Contact Us',
+  'contact.cf.intro1':'Do you have an enquiry or need support with the SmartTasker app? We’d love to help!',
+  'contact.cf.intro2':'Simply fill in the contact form or email us at <a href="mailto:supportindonesia@smarttasker.au" style="color:#5066E2;text-decoration:underline">supportindonesia@smarttasker.au</a> and our team will get back to you as soon as possible.',
+  'contact.cf.name':'Your Name','contact.cf.email':'Your Email','contact.cf.enquiry':'Your Enquiry Type','contact.cf.message':'Your Message',
+  'contact.cf.ph.name':'Enter your name','contact.cf.ph.email':'Enter your email','contact.cf.ph.msg':'Start typing...',
+  'contact.cf.opt.default':'What type of enquiry do you have?','contact.cf.opt.tasker':'Tasker Support','contact.cf.opt.app':'App Support','contact.cf.opt.general':'General Enquiry',
+  'contact.cf.submit':'SUBMIT ENQUIRY',
+  'contact.cf.org':'<strong>PT Smart Technologies Indonesia</strong><br>Perumahan Panji Pesona No. A8, Jl Panji Tilaar Negara, Tanjung Karang, Sekarbela, Kota Mataram, Nusa Tenggara Barat<br><a href="mailto:supportindonesia@smarttasker.au" style="color:#5066E2;text-decoration:underline">supportindonesia@smarttasker.au</a>'
+});
+Object.assign(i18n.id, {
+  'contact.cf.title':'Hubungi Kami',
+  'contact.cf.intro1':'Punya pertanyaan atau butuh bantuan dengan aplikasi SmartTasker? Dengan senang hati kami membantu!',
+  'contact.cf.intro2':'Cukup isi formulir kontak atau email kami di <a href="mailto:supportindonesia@smarttasker.au" style="color:#5066E2;text-decoration:underline">supportindonesia@smarttasker.au</a> dan tim kami akan segera menghubungi Anda.',
+  'contact.cf.name':'Nama Anda','contact.cf.email':'Email Anda','contact.cf.enquiry':'Jenis Pertanyaan','contact.cf.message':'Pesan Anda',
+  'contact.cf.ph.name':'Masukkan nama Anda','contact.cf.ph.email':'Masukkan email Anda','contact.cf.ph.msg':'Mulai mengetik...',
+  'contact.cf.opt.default':'Apa jenis pertanyaan Anda?','contact.cf.opt.tasker':'Dukungan Tasker','contact.cf.opt.app':'Dukungan Aplikasi','contact.cf.opt.general':'Pertanyaan Umum',
+  'contact.cf.submit':'KIRIM PERTANYAAN',
+  'contact.cf.org':'<strong>PT Smart Technologies Indonesia</strong><br>Perumahan Panji Pesona No. A8, Jl Panji Tilaar Negara, Tanjung Karang, Sekarbela, Kota Mataram, Nusa Tenggara Barat<br><a href="mailto:supportindonesia@smarttasker.au" style="color:#5066E2;text-decoration:underline">supportindonesia@smarttasker.au</a>'
+});

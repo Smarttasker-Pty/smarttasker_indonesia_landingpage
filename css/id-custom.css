@@ -1,0 +1,545 @@
+/* ============================================================
+   SmartTasker Indonesia — custom layer on top of the AU Elementor
+   clone. ONLY styles the Indonesian additions (language toggle +
+   the 3 new sections + Join-Waitlist button). Deliberately scoped
+   with .id-* / component class names so it never touches Elementor's
+   own reset / base element styling (which carries the AU layout).
+   ============================================================ */
+
+:root {
+  --id-primary:  #DDF770;   /* yellow-green brand */
+  --id-dark:     #101828;   /* near-black */
+  --id-accent:   #5066E2;   /* blue CTA */
+  --id-white:    #FFFFFF;
+  --id-faq-bg:   #F7FFD4;
+  --id-radius-pill: 100px;
+  --id-radius-card: 16px;
+}
+
+/* ── Language toggle (header) ─────────────────────────────── */
+.id-lang-toggle {
+  display: inline-flex;
+  align-items: stretch;
+  align-self: center;          /* don't stretch to the tall header row */
+  height: 34px;                /* compact, constant height at every breakpoint */
+  flex: 0 0 auto;
+  background: rgba(16,24,40,0.10);
+  border: 1px solid rgba(16,24,40,0.20);
+  border-radius: var(--id-radius-pill);
+  overflow: hidden;
+  vertical-align: middle;
+}
+.id-lang-toggle .lang-btn {
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border: none;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  cursor: pointer;
+  padding: 0 13px !important;
+  color: var(--id-dark);
+  transition: background .2s, color .2s;
+}
+.id-lang-toggle .lang-btn.active {
+  background: var(--id-dark);
+  color: var(--id-primary);
+  border-radius: var(--id-radius-pill);
+}
+.id-lang-toggle .lang-btn:hover:not(.active) { background: rgba(16,24,40,0.08); }
+
+/* Language switch fade */
+body.id-lang-switching { opacity: 0; pointer-events: none; }
+body { transition: opacity .16s ease; }
+
+/* ── Join-Waitlist button (matches AU blue pill) ──────────── */
+.id-btn {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  border: none;
+  border-radius: var(--id-radius-pill);
+  padding: 16px 44px;
+  cursor: pointer;
+  transition: opacity .2s, transform .2s;
+}
+.id-btn-accent { background: var(--id-accent); color: var(--id-white); }
+.id-btn-accent:hover { opacity: .88; transform: translateY(-1px); color: var(--id-white); }
+.id-btn-light { background: var(--id-white); color: var(--id-accent); }
+.id-btn-light:hover { opacity: .9; transform: translateY(-1px); }
+.id-btn-dark { background: var(--id-dark); color: var(--id-white); }
+.id-btn-dark:hover { background: #2a3650; transform: translateY(-1px); color: var(--id-white); }
+
+/* ── Hero CTA band ────────────────────────────────────────── */
+.id-hero-band { background: var(--id-accent); padding: 28px 0; }
+.id-hero-band__inner {
+  max-width: 1140px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between; gap: 32px;
+}
+.id-hero-band__text { flex: 1; }
+.id-hero-band__text h3 {
+  font-family: 'Roboto Slab', serif; font-size: 36px; font-weight: 600;
+  color: var(--id-white); line-height: 1.2; margin: 0 0 6px;
+}
+.id-hero-band__text p {
+  font-family: 'Roboto', sans-serif; font-size: 17px; line-height: 1.5;
+  color: var(--id-white); margin: 0;
+}
+.id-hero-band__cta { flex-shrink: 0; }
+
+/* ── Honda Vario giveaway section ─────────────────────────── */
+.id-giveaway { background: var(--id-primary); color: var(--id-dark); padding: 56px 0; }
+.id-giveaway__inner {
+  max-width: 1140px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; gap: 48px;
+}
+.id-giveaway__content { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+.id-giveaway__content h2 {
+  font-family: 'Roboto Slab', serif; font-size: 44px; font-weight: 600;
+  color: var(--id-dark); line-height: 1.1; margin: 0;
+}
+.id-giveaway__content p {
+  font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 1.5;
+  color: var(--id-dark); margin: 0;
+}
+.id-giveaway__cta-group { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.id-giveaway__terms-link {
+  color: var(--id-dark); font-family: 'Roboto', sans-serif; font-size: 15px;
+  text-decoration: underline;
+}
+.id-giveaway__terms-link:hover { opacity: .65; }
+.id-giveaway__image { flex: 0 0 440px; display: flex; align-items: center; justify-content: center; }
+.id-giveaway__image img { width: 100%; max-width: 440px; border-radius: 12px; display: block; }
+
+/* ── Waitlist registration section ────────────────────────── */
+.id-waitlist { background: var(--id-primary); padding: 86px 0; }
+.id-waitlist__inner { max-width: 700px; margin: 0 auto; padding: 0 24px; }
+.id-waitlist__inner h2 {
+  font-family: 'Roboto Slab', serif; font-size: 44px; font-weight: 600;
+  color: var(--id-dark); text-align: center; margin: 0 0 12px; line-height: 1.1;
+}
+.id-waitlist__sub {
+  font-family: 'Roboto', sans-serif; font-size: 17px; line-height: 1.5;
+  color: var(--id-dark); text-align: center; margin: 0 0 36px;
+}
+.id-waitlist__card {
+  background: var(--id-white); border-radius: 20px; padding: 40px 44px;
+  box-shadow: 0 8px 32px rgba(16,24,40,0.12);
+}
+.id-form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 20px; }
+.id-form-group label {
+  font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 600; color: var(--id-dark);
+}
+.id-form-group input[type=text],
+.id-form-group input[type=email],
+.id-form-group input[type=tel],
+.id-form-group select {
+  width: 100%; font-family: 'Roboto', sans-serif; font-size: 16px; color: var(--id-dark);
+  background: var(--id-white); border: 1.5px solid rgba(16,24,40,0.2); border-radius: 10px;
+  padding: 12px 16px; outline: none; -webkit-appearance: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+.id-form-group input:focus, .id-form-group select:focus {
+  border-color: var(--id-accent); box-shadow: 0 0 0 3px rgba(80,102,226,0.15);
+}
+.id-role-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+.id-role-option { flex: 1; min-width: 90px; }
+.id-role-option input[type=radio] { position: absolute; opacity: 0; width: 0; height: 0; }
+.id-role-option label {
+  display: flex; align-items: center; justify-content: center; padding: 10px 16px;
+  border: 2px solid rgba(16,24,40,0.2); border-radius: 10px; cursor: pointer;
+  font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 600; color: var(--id-dark);
+  background: var(--id-white); transition: all .2s; text-align: center;
+}
+.id-role-option input:checked + label { background: var(--id-accent); border-color: var(--id-accent); color: var(--id-white); }
+.id-role-option label:hover { border-color: var(--id-accent); }
+.id-checkbox-group { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 24px; }
+.id-checkbox-group input[type=checkbox] {
+  width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0; accent-color: var(--id-accent); cursor: pointer;
+}
+.id-checkbox-group label {
+  font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; color: var(--id-dark);
+  cursor: pointer; line-height: 1.4;
+}
+.id-form-submit { width: 100%; padding: 18px 44px; font-size: 18px; white-space: normal; }
+.id-form-error {
+  background: #fee2e2; border: 1px solid #fca5a5; border-radius: 8px; padding: 12px 16px;
+  font-family: 'Roboto', sans-serif; font-size: 15px; color: #b91c1c; margin-bottom: 16px;
+}
+.id-form-success {
+  background: #dcfce7; border: 1px solid #86efac; border-radius: 12px; padding: 32px 24px;
+  font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; color: #166534;
+  text-align: center; line-height: 1.5; margin-top: 20px;
+}
+.id-hidden { display: none !important; }
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 1023px) {
+  .id-giveaway__inner { flex-direction: column; align-items: center; gap: 32px; padding: 0 8%; }
+  .id-giveaway__content h2 { font-size: 40px; }
+  .id-giveaway__image { flex: none; width: 100%; max-width: 480px; }
+  .id-hero-band__inner { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .id-hero-band__text h3 { font-size: 26px; }
+}
+@media (max-width: 767px) {
+  .id-hero-band { padding: 24px 0; }
+  .id-hero-band__inner { padding: 0 6%; }
+  .id-giveaway__inner { padding: 0 6%; gap: 24px; }
+  .id-giveaway__content h2 { font-size: 32px; }
+  .id-giveaway__cta-group { flex-direction: column; align-items: center; }
+  .id-waitlist { padding: 56px 0; }
+  .id-waitlist__inner h2 { font-size: 28px; }
+  .id-waitlist__card { padding: 28px 20px; }
+  .id-role-group { flex-direction: column; }
+}
+
+
+/* ===== Legal subpage styles (ported from hand-built ID build) ===== */
+
+/* base palette + fonts so the ported legal-page rules resolve on the clone */
+:root{
+  --color-primary:#DDF770; --color-dark:#101828; --color-accent:#5066E2;
+  --color-white:#FFFFFF; --color-faq-bg:#F7FFD4;
+  --font-heading:'Roboto Slab',serif; --font-body:'Roboto',sans-serif; --font-ui:'Roboto',sans-serif;
+}
+/* ============================================================
+   LEGAL SUBPAGES — shared by privacy.html, terms.html,
+   community-guidelines.html, giveaway-terms.html
+   ============================================================ */
+
+/* ── Page-hero band (legal subpages — NOT the 96px landing hero) ── */
+/* AU legal pages have NO dark band — the dark heading sits on plain white,
+   left-aligned, aligned to the same gutter as the body column. */
+.page-hero {
+  background: var(--color-white);
+  padding: 56px 0 0;
+  text-align: left;
+}
+
+.page-hero__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.page-hero h1 {
+  font-family: var(--font-heading), serif;
+  font-size: 40px;            /* AU legal H1: Roboto Slab 40px/800 */
+  font-weight: 800;
+  color: var(--color-dark);
+  line-height: 1.1;          /* AU legal H1 is ~1.0; kept marginally looser so the longer
+                                bilingual titles (e.g. giveaway-terms) don't collide when wrapping */
+  letter-spacing: -1.66px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .page-hero { padding: 40px 0 0; }
+  .page-hero__inner { padding: 0 20px; }
+  .page-hero h1 { font-size: 40px; }   /* AU keeps the legal H1 at 40px on mobile */
+}
+
+@media (max-width: 480px) {
+  .page-hero h1 { font-size: 40px; }   /* AU keeps legal H1 at 40px on all sizes */
+}
+
+
+/* ── Legal content area ─────────────────────────────────────── */
+.legal-content {
+  max-width: var(--max-width);   /* AU legal column is ~1094px wide, was 800px */
+  margin: 0 auto;
+  padding: 45px 24px 80px;
+}
+
+/* Tablet band (769–1023px): AU insets the legal column with ~10% gutters
+   (heading/text at x≈83 on an 834px viewport) rather than the 24px edge gutter. */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .legal-content { padding-left: 10%; padding-right: 10%; }
+  .page-hero__inner { padding-left: 10%; padding-right: 10%; }
+}
+
+/* Draft notice — subtle brand-consistent banner */
+.legal-draft-notice {
+  background: #fffbe6;
+  border-left: 4px solid var(--color-primary);
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-bottom: 32px;
+  font-size: 14px;
+  color: #7a6500;
+  line-height: 1.5;
+}
+
+/* Effective date line */
+.legal-effective {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 28px;
+  font-style: italic;
+}
+
+/* Intro paragraphs block */
+.legal-intro {
+  margin-bottom: 40px;
+}
+
+.legal-intro p {
+  font-size: 17px;
+  line-height: 1.5;   /* AU legal body line-height is 1.5 (was 1.7) */
+  color: var(--color-dark);
+  margin-bottom: 16px;
+}
+
+/* Individual policy sections — AU uses NO dividers; rhythm comes from the
+   heading's top spacing (45px) between sections. */
+.legal-section {
+  margin-top: 45px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.legal-section:first-of-type {
+  margin-top: 0;
+}
+
+/* Section headings — AU legal sub-headings: Roboto (sans) 22px/500, tight tracking */
+.legal-section h2 {
+  font-family: var(--font-ui), sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-dark);
+  margin-bottom: 16px;
+  line-height: 1.3;
+  letter-spacing: -0.9px;
+}
+
+/* Body text inside sections */
+.legal-section p,
+.legal-section div > p {
+  font-size: 17px;
+  line-height: 1.5;   /* AU legal body line-height is 1.5 (was 1.7) */
+  color: var(--color-dark);
+  margin-bottom: 14px;
+}
+
+.legal-section p:last-child,
+.legal-section div > p:last-child {
+  margin-bottom: 0;
+}
+
+/* Lists inside legal sections */
+.legal-section ul {
+  list-style: disc;
+  padding-left: 24px;
+  margin: 14px 0;
+}
+
+.legal-section ul li {
+  font-size: 17px;
+  line-height: 1.5;   /* AU legal body line-height is 1.5 (was 1.7) */
+  color: var(--color-dark);
+  margin-bottom: 10px;
+  padding-left: 4px;
+}
+
+.legal-section ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Links within legal content — but NOT button-styled anchors (e.g. the Contact
+   page CTAs), which must keep their own .btn colours. Without :not(.btn) this rule
+   wins on specificity and paints button text in --color-accent on an accent
+   background = invisible text. */
+.legal-content a:not(.btn) {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.legal-content a:not(.btn):hover {
+  opacity: 0.8;
+}
+
+/* Responsive padding + AU body-text downscale (17px desktop → 15px ≤1023) */
+@media (max-width: 1023px) {
+  .legal-intro p,
+  .legal-section p,
+  .legal-section div > p,
+  .legal-section ul li {
+    font-size: 15px;   /* AU scales legal body text to 15px at tablet & mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .legal-content {
+    padding: 40px 20px 60px;
+  }
+  .legal-section h2 {
+    font-size: 22px;   /* AU keeps legal section headings at 22px on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .legal-content {
+    padding: 28px 16px 48px;
+  }
+  .legal-section h2 {
+    font-size: 22px;   /* match AU (was 20px) */
+  }
+}
+
+/* utility used by the ported waitlist form JS (category reveal, success/error toggles) */
+.hidden { display: none !important; }
+
+/* clip the inherited AU Elementor mobile horizontal overflow (matches hand-built build) */
+html, body { overflow-x: hidden; max-width: 100%; }
+
+/* ── Fix injected feature/benefit icons that lost their Elementor per-id sizing ──
+   The home-page feature rows added for secure.f4-f7 and earn.bullet5 have no
+   Elementor data-id, so their lock/tick SVGs rendered at full natural size
+   (101x161 / 35x32) and broke the row layout. Constrain by image source. */
+/* Padlock matches the AU master, which scales the lock with viewport width
+   (≈25px @1680, ≈29px @1920). Floor at 22px so it's never smaller than before. */
+img[src*="Lock_big.svg"]  { width: clamp(22px, 1.5vw, 30px) !important; height: auto !important; }
+img[src*="Tick-icon.svg"] { width: 28px !important;  height: 26px !important; }
+
+
+
+
+/* Clean replacement rows for the injected secure (f4-f7) + earn (b5) features */
+.id-feat {
+  display: flex; align-items: flex-start; gap: 14px;
+  margin: 0 0 12px; padding: 7px 0; text-align: left;
+}
+.id-feat-ic { flex: 0 0 auto; margin-top: 1px; }   /* lock size comes from the Lock_big rule above (fluid) */
+.id-feat-ic--tick { width: 28px; height: 26px; flex: 0 0 28px; }
+.id-feat p {
+  margin: 0; font-family: 'Roboto', sans-serif; font-size: 17px;
+  line-height: 1.5; color: var(--id-dark);
+}
+.id-feat--hl { background: var(--id-faq-bg); border-radius: 8px; padding: 12px; margin-top: 4px; }
+
+/* ── Drop-in-safe swappable section images ─────────────────────────────
+   Pin each image to a fixed-aspect box and crop-fill it (object-fit:cover),
+   so a replacement image of ANY dimensions fills the same box with no
+   distortion and no height shift. (Keep the subject centred for a clean crop.)
+   The hero app-screenshot is intentionally NOT included — it stays as-is. */
+.id-swap-img { width: 100% !important; height: auto !important; object-fit: cover !important; display: block; }
+.id-swap--post   { aspect-ratio: 708 / 592 !important; }   /* ≈ 6:5  worker photo */
+.id-swap--secure { aspect-ratio: 720 / 601 !important; }   /* ≈ 6:5  gardener photo */
+.id-swap--earn   { aspect-ratio: 58 / 61 !important; max-width: 580px !important; margin: 0 auto; }  /* tasker mockup: keep original 580px width, centred */
+.id-giveaway__image img { aspect-ratio: 16 / 9; object-fit: cover; height: auto; }  /* Honda 16:9 */
+
+/* ── Fix #1: Join-Waitlist button text was invisible (theme a:link/:visited color
+   beat .id-btn-accent). Force the intended text colours. ── */
+.id-btn-accent, .id-btn-accent:link, .id-btn-accent:visited,
+.id-giveaway .id-btn-accent { color: var(--id-white) !important; }
+.id-btn-dark,   .id-btn-dark:link,   .id-btn-dark:visited   { color: var(--id-white) !important; }
+.id-btn-light,  .id-btn-light:link,  .id-btn-light:visited  { color: var(--id-accent) !important; }
+
+
+/* ── Language toggle placement across breakpoints ──────────────────────────
+   The AU Elementor header wasn't built for an extra toggle: on small widths the
+   right-hand group wrapped (toggle on its own row above the logo/burger) and the
+   burger's ~65px left-margin detached it from the toggle. Force the header row to
+   stay single-line and group the toggle directly beside the burger. */
+@media (max-width: 1024px) {
+  .elementor-element-0d882bb,
+  .elementor-element-aee23a9 {
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    min-height: 0 !important;
+  }
+  .id-lang-toggle {
+    flex: 0 0 auto !important;
+    flex-shrink: 0 !important;
+  }
+  .elementor-menu-toggle {
+    margin-left: 14px !important;
+    flex-shrink: 0 !important;
+  }
+  .elementor-nav-menu--layout-horizontal { flex-wrap: nowrap !important; }
+}
+
+/* Desktop, just ABOVE the 1024 burger breakpoint: the narrow-desktop band
+   (≈1025–1120px) has to fit logo + toggle + JOIN WAITLIST + the Home/Contact nav
+   on one row. Without this, flexbox wraps the button text to two lines and stacks
+   the nav vertically. Force the whole right-hand group to stay single-line. */
+@media (min-width: 1025px) {
+  .elementor-element-aee23a9 {
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+  .elementor-element-aee23a9 .elementor-nav-menu { flex-wrap: nowrap !important; }
+  .elementor-element-aee23a9 .elementor-item { white-space: nowrap !important; }
+  .elementor-element-aee23a9 .elementor-button,
+  .elementor-element-aee23a9 .elementor-button-text { white-space: nowrap !important; }
+}
+
+/* ════════════ UI bug-fix pass ════════════ */
+
+/* Post-any-task icon-list rows (Elementor widgets): tighten the icon/text gap on
+   mobile so ALL FOUR steps share one alignment. Step 4 (ffdfe8d/d756dfc/2b8095c)
+   was previously omitted, so its text sat ~3px further right than steps 1–3. */
+@media (max-width: 767px) {
+  .elementor-element-1b054f6,
+  .elementor-element-381e28b,
+  .elementor-element-b5e5ab5,
+  .elementor-element-ffdfe8d {
+    gap: 0 10px !important;
+    align-items: flex-start !important;
+  }
+  .elementor-element-cd18458,
+  .elementor-element-b8afdb3,
+  .elementor-element-f75b1f3,
+  .elementor-element-d756dfc {
+    --width: 28px !important;
+    width: 28px !important;
+    flex: 0 0 28px !important;
+    margin-top: 2px;
+  }
+  .elementor-element-ad85a74,
+  .elementor-element-fc30b6e,
+  .elementor-element-4ea9c22,
+  .elementor-element-2b8095c {
+    --width: calc(100% - 42px) !important;
+    flex: 1 1 0 !important;
+  }
+  .elementor-element-cd18458 img,
+  .elementor-element-b8afdb3 img,
+  .elementor-element-f75b1f3 img,
+  .elementor-element-d756dfc img { width: 28px !important; height: auto !important; }
+}
+
+/* Issue 3 — Giveaway content + CTA centred on tablet & mobile (mirror the hero). */
+@media (max-width: 1023px) {
+  .id-giveaway__cta-group { flex-direction: column; align-items: center; text-align: center; }
+  .id-giveaway__content { align-items: center; text-align: center; }
+  .id-giveaway__content h2,
+  .id-giveaway__content p { text-align: center; }
+}
+
+/* Issue 4 — Footer nav. The footer is 3-column down to 768px (nav stays LEFT-
+   aligned there, like AU) and STACKS at <=767px, where the nav collapses behind a
+   burger. Only when stacked: centre the burger AND the expanded menu items so they
+   match the centred logo / social / CTA. */
+@media (max-width: 767px) {
+  .elementor-location-footer .elementor-widget-nav-menu > .elementor-widget-container {
+    display: flex !important; flex-direction: column !important; align-items: center !important;
+  }
+  .elementor-location-footer .elementor-menu-toggle { margin-left: auto !important; margin-right: auto !important; }
+  .elementor-location-footer .elementor-nav-menu,
+  .elementor-location-footer .elementor-nav-menu li,
+  .elementor-location-footer .elementor-nav-menu li a,
+  .elementor-location-footer .sm-vertical li { text-align: center !important; justify-content: center !important; }
+  .elementor-location-footer .sm-vertical li a.elementor-item { text-align: center !important; justify-content: center !important; display: flex !important; }
+  .elementor-location-footer .elementor-nav-menu--main { text-align: center !important; }
+}

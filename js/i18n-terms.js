@@ -18,13 +18,13 @@ Object.assign(i18n.en, {
   "terms.hero.title": "Terms & Conditions",
 
   /* ── Last updated ───────────────────────────────────────────── */
-  "terms.effective": "Last updated: 13 June 2026",
+  "terms.effective": "Last updated: 18 June 2026",
 
   /* ── Intro block ────────────────────────────────────────────── */
   "terms.intro": `<p>The SmartTasker Terms &amp; Conditions outline SmartTasker and Your obligations and responsibilities on the SmartTasker Platform.</p>
 <p>The terms and conditions clarify the process required to formalise the completion of tasks.</p>
 <p>SmartTasker operates an online platform allowing Users to connect through the SmartTasker Platform with other Users who provide Services.</p>
-<p>Please read these terms and all Policies including the <a href="community-guidelines.html">SmartTasker Guidelines</a> and <a href="privacy.html">Privacy Policy</a> carefully before using the SmartTasker Platform.</p>
+<p>Please read these terms and all Policies including the <a href="/community-guidelines/">SmartTasker Guidelines</a> and <a href="/privacy-policy/">Privacy Policy</a> carefully before using the SmartTasker Platform.</p>
 <p>These Policies are incorporated into this Agreement by reference.</p>`,
 
   /* ── Section 1 — Scope of SmartTasker Services ─────────────── */

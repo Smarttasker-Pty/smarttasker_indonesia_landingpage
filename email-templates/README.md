@@ -15,10 +15,10 @@ as reference, do NOT send them).
 
 | Template | Subject | Preview text |
 |---|---|---|
-| Welcome EN | You're on the SmartTasker Indonesia waitlist — and entered to win a Honda Vario 160 CBS! | Your spot on the SmartTasker Indonesia waitlist is confirmed — plus you're entered in the Honda Vario 160 CBS giveaway! |
-| Welcome ID | Selamat! Anda sudah masuk waitlist SmartTasker Indonesia dan ikut undian Honda Vario 160 CBS! | Tempat Anda di waitlist SmartTasker Indonesia sudah terdaftar — plus Anda otomatis ikut undian Honda Vario 160 CBS! |
-| Invite EN | Your friends can win a Honda Vario 160 CBS — share SmartTasker Indonesia with them | SmartTasker is coming to Indonesia — share with friends and family so they can join the waitlist and enter the Honda Vario 160 CBS giveaway too! |
-| Invite ID | Ajak temanmu — mereka bisa menangkan Honda Vario 160 CBS bersama SmartTasker Indonesia | SmartTasker segera hadir di Indonesia — bagikan kepada teman dan keluarga agar mereka bisa daftar waitlist dan ikut giveaway Honda Vario 160 CBS juga! |
+| Welcome EN | You're on the SmartTasker Indonesia waitlist — and entered to win a Honda Vario 160! | Your spot on the SmartTasker Indonesia waitlist is confirmed — plus you're entered in the Honda Vario 160 giveaway! |
+| Welcome ID | Selamat! Anda sudah masuk waitlist SmartTasker Indonesia dan ikut undian Honda Vario 160! | Tempat Anda di waitlist SmartTasker Indonesia sudah terdaftar — plus Anda otomatis ikut undian Honda Vario 160! |
+| Invite EN | Your friends can win a Honda Vario 160 — share SmartTasker Indonesia with them | SmartTasker is coming to Indonesia — share with friends and family so they can join the waitlist and enter the Honda Vario 160 giveaway too! |
+| Invite ID | Ajak temanmu — mereka bisa menangkan Honda Vario 160 bersama SmartTasker Indonesia | SmartTasker segera hadir di Indonesia — bagikan kepada teman dan keluarga agar mereka bisa daftar waitlist dan ikut giveaway Honda Vario 160 juga! |
 
 ## Sender & support addresses (client-confirmed)
 
@@ -49,7 +49,7 @@ as reference, do NOT send them).
   and `.../honda-giveaway.jpg`. These resolve once the site is live at
   smarttasker.id. Until then (or for tracking-friendly hosting), upload both
   images in Brevo's template editor and swap the two `src` values.
-- The Honda Vario 160 CBS sharing pitch deliberately promises NO extra entries for
+- The Honda Vario 160 sharing pitch deliberately promises NO extra entries for
   referrals (no referral mechanic exists in the competition terms) — friends
   get *their own* entry by joining.
 - Social icon rows (Facebook, Instagram, YouTube, TikTok, website) are copied
