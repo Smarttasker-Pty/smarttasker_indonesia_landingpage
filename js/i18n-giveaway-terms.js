@@ -14,7 +14,7 @@
  * → "SmartTasker"; stray editing brackets removed). Substance unchanged.
  *
  * Bahasa Indonesia translations mirror the client-delivered Indonesian version
- * of the same document — PENDING PROFESSIONAL/HUMAN LEGAL REVIEW.
+ * of the same document.
  */
 
 /* global i18n */
@@ -123,7 +123,6 @@ Perumahan Panji Pesona No. A8, Jl Panji Tilaar Negara, Tanjung Karang, Sekarbela
 
 /* ── Bahasa Indonesia translations ──────────────────────────────
    Mirrors the client-delivered Indonesian version of the same document.
-   PENDING PROFESSIONAL/HUMAN LEGAL REVIEW.
    ─────────────────────────────────────────────────────────────── */
 Object.assign(i18n.id, {
 

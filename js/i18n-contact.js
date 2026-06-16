@@ -10,8 +10,6 @@
  *   - hello@smarttasker.au → supportindonesia@smarttasker.au
  *   - App-store/download references → waitlist references
  *   - Backend form (Elementor POST) → mailto-based contact block (no backend required)
- *
- * Bahasa Indonesia translations: machine-assisted — PENDING PROFESSIONAL LEGAL REVIEW
  */
 
 /* global i18n */
@@ -54,7 +52,6 @@ Object.assign(i18n.en, {
 });
 
 /* ── Bahasa Indonesia translations ──────────────────────────────
-   Machine-assisted translation — PENDING PROFESSIONAL LEGAL REVIEW
    ─────────────────────────────────────────────────────────────── */
 Object.assign(i18n.id, {
 
