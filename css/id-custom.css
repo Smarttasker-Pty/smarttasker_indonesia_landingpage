@@ -160,13 +160,41 @@ body { transition: opacity .16s ease; }
 }
 .id-role-option input:checked + label { background: var(--id-accent); border-color: var(--id-accent); color: var(--id-white); }
 .id-role-option label:hover { border-color: var(--id-accent); }
-.id-checkbox-group { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 24px; }
+/* Giveaway opt-in row: just the checkbox + label, no wrapper. */
+.id-checkbox-group {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 24px;
+}
+/* Custom checkbox — native accent-color renders inconsistently across browsers
+   (especially in its default-checked state), so draw our own clean box + tick. */
 .id-checkbox-group input[type=checkbox] {
-  width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0; accent-color: var(--id-accent); cursor: pointer;
+  appearance: none; -webkit-appearance: none; -moz-appearance: none;
+  width: 20px; height: 20px; min-width: 20px; flex-shrink: 0; margin: 0; top: 0;
+  border: 1.5px solid rgba(16,24,40,0.25); border-radius: 5px;
+  background: var(--id-white); cursor: pointer; position: relative;
+  transition: background .15s ease, border-color .15s ease;
+}
+/* Kill the Twenty Twenty theme's black SVG checkmark (input[type=checkbox]:checked::before)
+   so only our clean white tick shows — otherwise the dark one reads as a shadow. */
+.id-checkbox-group input[type=checkbox]::before,
+.id-checkbox-group input[type=checkbox]:checked::before {
+  content: none !important; display: none !important;
+}
+.id-checkbox-group input[type=checkbox]:hover { border-color: var(--id-accent); }
+.id-checkbox-group input[type=checkbox]:checked {
+  background: var(--id-accent); border-color: var(--id-accent);
+}
+.id-checkbox-group input[type=checkbox]:checked::after {
+  content: ""; position: absolute; left: 6.5px; top: 3px;
+  width: 4px; height: 9px;
+  border: solid var(--id-white); border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.id-checkbox-group input[type=checkbox]:focus-visible {
+  outline: none; box-shadow: 0 0 0 3px rgba(80,102,226,0.25);
 }
 .id-checkbox-group label {
   font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; color: var(--id-dark);
-  cursor: pointer; line-height: 1.4;
+  cursor: pointer; line-height: 1.4; margin: 0;
 }
 .id-form-submit { width: 100%; padding: 18px 44px; font-size: 18px; white-space: normal; }
 .id-form-error {
@@ -208,6 +236,8 @@ body { transition: opacity .16s ease; }
   --color-primary:#DDF770; --color-dark:#101828; --color-accent:#5066E2;
   --color-white:#FFFFFF; --color-faq-bg:#F7FFD4;
   --font-heading:'Roboto Slab',serif; --font-body:'Roboto',sans-serif; --font-ui:'Roboto',sans-serif;
+  --max-width:1094px;   /* AU legal/centred column width — was referenced but never defined,
+                           so .page-hero__inner / .legal-content had no cap and ran full-width */
 }
 /* ============================================================
    LEGAL SUBPAGES — shared by privacy.html, terms.html,
@@ -410,6 +440,13 @@ html, body { overflow-x: hidden; max-width: 100%; }
 img[src*="Lock_big.svg"]  { width: clamp(22px, 1.5vw, 30px) !important; height: auto !important; }
 img[src*="Tick-icon.svg"] { width: 28px !important;  height: 26px !important; }
 
+/* Earn bullet 5 ("Free Verification…") was rebuilt as an Elementor row (f5b0a01)
+   to match bullets 1–4. Supply the per-id width/gap vars the Simply-Static export
+   gives the other rows so it shares the 10%/90% icon-gutter and baseline. */
+.elementor-element-f5b0a01{--display:flex;--flex-direction:row;--align-items:center;--gap:0px 10px;--width:100%;}
+.elementor-element-f5b0a02{--width:10%;}
+.elementor-element-f5b0a04{--width:90%;--flex-direction:column;--justify-content:center;--align-items:flex-start;}
+
 
 
 
@@ -424,7 +461,9 @@ img[src*="Tick-icon.svg"] { width: 28px !important;  height: 26px !important; }
   margin: 0; font-family: 'Roboto', sans-serif; font-size: 17px;
   line-height: 1.5; color: var(--id-dark);
 }
-.id-feat--hl { background: var(--id-faq-bg); border-radius: 8px; padding: 12px; margin-top: 4px; }
+/* Highlighted (7th) feature row: keep the tint/radius but DON'T indent the lock
+   icon — left-pad 0 so all 7 lock icons share the same left edge as .id-feat (padding:7px 0). */
+.id-feat--hl { background: var(--id-faq-bg); border-radius: 8px; padding: 12px 12px 12px 0; margin-top: 4px; }
 
 /* ── Drop-in-safe swappable section images ─────────────────────────────
    Pin each image to a fixed-aspect box and crop-fill it (object-fit:cover),
@@ -543,3 +582,13 @@ img[src*="Tick-icon.svg"] { width: 28px !important;  height: 26px !important; }
   .elementor-location-footer .sm-vertical li a.elementor-item { text-align: center !important; justify-content: center !important; display: flex !important; }
   .elementor-location-footer .elementor-nav-menu--main { text-align: center !important; }
 }
+
+/* ── Contact form: hide Elementor's built-in submission message ──────────────
+   On submit, Elementor injects its own ".elementor-message" ("Your submission
+   was successful.") whose leading icon uses the eicons font — which isn't
+   bundled in this static export, so it renders as an empty tofu box. We show our
+   own success/error box (.id-form-success / .id-form-error) from the inline
+   handler, so suppress Elementor's redundant, broken-icon message everywhere. */
+.elementor-form .elementor-message,
+.elementor-message.elementor-message-success,
+.elementor-message.elementor-message-danger { display: none !important; }

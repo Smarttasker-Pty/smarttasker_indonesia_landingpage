@@ -165,7 +165,7 @@ const i18n = {
 
     /* ── FOOTER ── */
     "footer.nav.home": "Home",
-    "footer.nav.contact": "Contact Us",
+    "footer.nav.contact": "Contact",
     "footer.nav.privacy": "Privacy Policy",
     "footer.nav.terms": "Terms & Conditions",
     "footer.nav.giveaway": "Honda Vario Giveaway Terms",
@@ -339,7 +339,7 @@ const i18n = {
 
     /* ── FOOTER ── */
     "footer.nav.home": "Beranda",
-    "footer.nav.contact": "Hubungi Kami",
+    "footer.nav.contact": "Kontak",
     "footer.nav.privacy": "Kebijakan Privasi",
     "footer.nav.terms": "Syarat & Ketentuan",
     "footer.nav.giveaway": "Syarat Giveaway Honda Vario",
