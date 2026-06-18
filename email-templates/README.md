@@ -45,15 +45,14 @@ as reference, do NOT send them).
 
 ## Notes
 
-- **Images**: the templates reference `https://smarttasker.id/assets/images/logo.png`
-  and `.../honda-giveaway.jpg`. These resolve once the site is live at
-  smarttasker.id. Until then (or for tracking-friendly hosting), upload both
-  images in Brevo's template editor and swap the two `src` values.
+- **Images**: the live templates reference `https://smarttasker.id/assets/images/logo-stacked-yellow2.png`
+  and `.../honda-giveaway.jpg`, which are served from `/assets/images/` on the
+  deployed site (now live at smarttasker.id). For tracking-friendly hosting you
+  can instead upload both images in Brevo's template editor and swap the `src` values.
 - The Honda Vario 160 sharing pitch deliberately promises NO extra entries for
   referrals (no referral mechanic exists in the competition terms) — friends
   get *their own* entry by joining.
 - Social icon rows (Facebook, Instagram, YouTube, TikTok, website) are copied
   from the AU sources and point at the client-confirmed Indonesian accounts;
-  the website icon targets the Vercel staging URL until smarttasker.id is live.
-  The Mailchimp tracking script was removed; everything else keeps the AU
-  template structure.
+  the website icon targets https://smarttasker.id. The Mailchimp tracking script
+  was removed; everything else keeps the AU template structure.
