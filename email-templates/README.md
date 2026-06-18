@@ -1,8 +1,6 @@
 # SmartTasker Indonesia — Email Templates
 
-Four Brevo-ready templates adapted from the Australian Mailchimp exports
-(`PreLaunch_Welcome Email.html`, `Invite Your Friends email.html` — kept here
-as reference, do NOT send them).
+Four Brevo-ready templates adapted from the Australian Mailchimp exports.
 
 | File | Language | Purpose |
 |---|---|---|
