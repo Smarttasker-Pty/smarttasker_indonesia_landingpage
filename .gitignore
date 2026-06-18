@@ -2,3 +2,7 @@
 node_modules/
 *.log
 .vercel
+.env
+.env.local
+brevo-key.php
+au-homepage-images.zip
