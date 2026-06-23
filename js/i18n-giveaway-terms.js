@@ -1,123 +1,189 @@
 /**
- * SmartTasker Indonesia — Honda Vario Giveaway Terms i18n Dictionary
+ * SmartTasker Indonesia — Launch Champion Competition Terms i18n Dictionary
  * Page: giveaway-terms.html
  *
  * Usage: loaded BEFORE js/main.js so Object.assign merges into the global i18n object.
  *
- * Source: client-delivered "Terms and Conditions for Honda Vario Giveaway"
- *         (15-section Undian Gratis Berhadiah / UGB structure, Permensos No. 3
- *         Tahun 2024), appended to the SmartTasker Indonesia Terms & Conditions.
- *         Organiser: PT Smart Technologies Indonesia. Giveaway contact:
- *         ahmad@smarttasker.au.
+ * Source: client-delivered "SmartTasker Launch Champion Competition — Terms and
+ *         Conditions" (English + Indonesian, "Honda Terms New Updated 2206",
+ *         19-section performance/points-based COMPETITION structure — NOT a
+ *         chance-based prize draw). Replaces the earlier Undian Gratis Berhadiah
+ *         (UGB) giveaway terms. Organiser: PT Smart Technologies Indonesia.
+ *         Competition contact: ahmad@smarttasker.au.
  *
- * Obvious source-document typos corrected when transcribing (e.g. "SamarTasker"
- * → "SmartTasker"; stray editing brackets removed). Substance unchanged.
- *
- * Bahasa Indonesia translations mirror the client-delivered Indonesian version
- * of the same document.
+ * Obvious source-document typos corrected when transcribing (e.g. "SmartTacker"
+ * / "SmartTaker" → "SmartTasker"; "KITA" → "KITAS"; missing colons/line breaks
+ * restored). Substance unchanged.
  */
 
 /* global i18n */
 Object.assign(i18n.en, {
 
   /* ── Page hero ─────────────────────────────────────────────── */
-  "gterms.hero.title": "Terms and Conditions for Honda Vario Giveaway",
+  "gterms.hero.title": "SmartTasker Launch Champion Competition — Terms and Conditions",
 
   /* ── Preamble ───────────────────────────────────────────────── */
   "gterms.preamble.heading": "Important Notice",
-  "gterms.preamble.body": `<p>These Terms and Conditions (hereinafter referred to as <strong>"T&amp;C"</strong>) govern participation in the Honda Vario Giveaway (hereinafter referred to as the <strong>"Giveaway"</strong>) organised by PT Smart Technologies Indonesia (<strong>"SmartTasker"</strong>, hereinafter referred to as the <strong>"Organiser"</strong>). By participating in this Giveaway, participants agree to be bound by these T&amp;C.</p>`,
+  "gterms.preamble.body": `<p>These Terms and Conditions govern participation in the SmartTasker Launch Champion Competition (the <strong>"Competition"</strong>) organised by PT Smart Technologies Indonesia (<strong>"SmartTasker"</strong>, the <strong>"Organizer"</strong>). By participating in this Competition, participants agree to be bound by these Terms and Conditions.</p>`,
 
-  /* ── Section 1 — Definition of UGB ──────────────────────────── */
-  "gterms.s1.heading": "1. Definition of Undian Gratis Berhadiah (UGB)",
-  "gterms.s1.body": `<p>This Giveaway is categorised as an "Undian Gratis Berhadiah" (UGB) as defined by the Minister of Social Affairs Regulation No. 3 of 2024 concerning the Implementation of Free Prize Draws (Permensos No. 3 Tahun 2024). UGB refers to any opportunity to obtain prizes organised free of charge and combined or linked with other actions, where the determination of winners is carried out by drawing or other methods.</p>`,
+  /* ── Section 1 — Organiser ──────────────────────────────────── */
+  "gterms.s1.heading": "1. Organiser",
+  "gterms.s1.body": `<p>The SmartTasker Launch Champion Competition ("Competition") is organised by PT Smart Technologies Indonesia ("Organizer").</p>
+<p><strong>PT Smart Technologies Indonesia</strong><br>
+Perumahan Panji Pesona No. A8<br>
+Jl Panji Tilaar Negara<br>
+Tanjung Karang, Sekarbela<br>
+Kota Mataram, Nusa Tenggara Barat<br>
+Email: <a href="mailto:ahmad@smarttasker.au">ahmad@smarttasker.au</a></p>`,
 
-  /* ── Section 2 — Organiser ──────────────────────────────────── */
-  "gterms.s2.heading": "2. Organiser",
-  "gterms.s2.body": `<p><strong>PT Smart Technologies Indonesia</strong><br>
-Perumahan Panji Pesona No. A8, Jl Panji Tilaar Negara, Tanjung Karang, Sekarbela, Kota Mataram, Nusa Tenggara Barat<br>
-<a href="mailto:ahmad@smarttasker.au">ahmad@smarttasker.au</a></p>`,
+  /* ── Section 2 — Competition Purpose ────────────────────────── */
+  "gterms.s2.heading": "2. Competition Purpose",
+  "gterms.s2.body": `<p>The Competition is a promotional campaign designed to encourage genuine participation in the SmartTasker platform during its launch period.</p>
+<p>The Competition is based on participant performance and activity within the SmartTasker platform. The winner will not be determined by lottery, raffle, random draw, chance or any other method of random selection.</p>`,
 
-  /* ── Section 3 — Giveaway Period ────────────────────────────── */
-  "gterms.s3.heading": "3. Giveaway Period",
-  "gterms.s3.body": `<p>The Giveaway will commence on 01 July 2026 at 09.00 WIB and conclude on 31 December 2026 at 15.00 WIB. Any entries received outside this period will not be considered.</p>`,
+  /* ── Section 3 — Competition Period ─────────────────────────── */
+  "gterms.s3.heading": "3. Competition Period",
+  "gterms.s3.body": `<p>The Competition commences on 1 July 2026 at 09:00 WIB and concludes on 31 December 2026 at 15:00 WIB.</p>
+<p>No points will be awarded after the Competition Period.</p>`,
 
   /* ── Section 4 — Eligibility ────────────────────────────────── */
   "gterms.s4.heading": "4. Eligibility",
-  "gterms.s4.body": `<p>4.1. Participants must be residing in Indonesia.</p>
-<p>4.2. Participants must be at least 18 years old at the time of entry and possess a valid Indonesian ID card (KTP) or Kitas.</p>
-<p>4.3. Employees of the Organiser, its affiliates, advertising agencies, and their immediate family members are not eligible to participate.</p>
-<p>4.4. Participation in this Giveaway is free of charge and does not require any purchase.</p>`,
+  "gterms.s4.body": `<p>Participants must:</p>
+<p>4.1 Reside in Indonesia.</p>
+<p>4.2 Be at least 18 years of age.</p>
+<p>4.3 Hold a valid Indonesian KTP or KITAS.</p>
+<p>4.4 Maintain a valid SmartTasker account throughout the Competition Period.</p>
+<p>4.5 Comply with all SmartTasker Terms of Use and Community Guidelines.</p>
+<p>4.6 Not be employees, directors, contractors, agents or immediate family members of the Organizer.</p>`,
 
-  /* ── Section 5 — How to Participate ─────────────────────────── */
-  "gterms.s5.heading": "5. How to Participate",
-  "gterms.s5.body": `<p>5.1. To participate in the Giveaway, participants must download and install the SmartTasker application from the Apple App Store or Google Play Store and register an account.</p>
-<p>5.2. Participants will receive ONE entry upon successful download and registration to the SmartTasker application.</p>
-<p>5.3. Additional entries may be earned by:</p>
+  /* ── Section 5 — Competition Scoring ────────────────────────── */
+  "gterms.s5.heading": "5. Competition Scoring",
+  "gterms.s5.body": `<p>Participants may earn Competition Points as follows:</p>
 <ul>
-  <li>Taskers earn FIVE entries for becoming a verified Tasker.</li>
-  <li>Customers earn FIVE entries by booking and completing a task.</li>
-  <li>Taskers earn FIVE entries by completing a task.</li>
-  <li>Users earn ONE entry for each referral who registers an account.</li>
+  <li>Verified Customer Account with a verified Bali residential address: 1 Point</li>
+  <li>Verified Tasker Account with a verified Bali residential address: 5 Points</li>
+  <li>Customer successfully books and completes a task through SmartTasker: 5 Points</li>
+  <li>Tasker successfully completes a task through SmartTasker: 5 Points</li>
+  <li>Verified referral: 1 Point</li>
+</ul>`,
+
+  /* ── Section 6 — Definitions ────────────────────────────────── */
+  "gterms.s6.heading": "6. Definitions",
+  "gterms.s6.body": `<p><strong>Verified Referral</strong> means a referral where the referred person:</p>
+<ul>
+  <li>(a) is a genuine individual;</li>
+  <li>(b) registers a SmartTasker account;</li>
+  <li>(c) successfully completes identity verification;</li>
+  <li>(d) complies with SmartTasker Terms of Use; and</li>
+  <li>(e) is not associated with duplicate, fraudulent or manipulated accounts.</li>
 </ul>
-<p>5.4. The Organiser reserves the right to verify the validity of entries and to disqualify any participant who tampers with the entry process.</p>`,
+<p><strong>Completed Task</strong> means a task that:</p>
+<ul>
+  <li>(a) was booked through the SmartTasker platform;</li>
+  <li>(b) has been completed and recorded within the platform;</li>
+  <li>(c) has been paid for in accordance with SmartTasker requirements; and</li>
+  <li>(d) is not subject to an active dispute, chargeback, fraud investigation or cancellation.</li>
+</ul>`,
 
-  /* ── Section 5A — Digital Platform Compliance ───────────────── */
-  "gterms.s5a.heading": "5A. Digital Platform Compliance",
-  "gterms.s5a.body": `<p>5A.1. This Giveaway is independently organised by PT Smart Technologies Indonesia and is not sponsored, endorsed, or administered by Apple Inc. or Google LLC.</p>
-<p>5A.2. Participants acknowledge that Apple Inc. and Google LLC are not responsible for any aspect of this Giveaway.</p>
-<p>5A.3. The SmartTasker application and this Giveaway comply with all applicable Apple App Store Review Guidelines and Google Play Developer Program Policies regarding contests and sweepstakes.</p>
-<p>5A.4. All official rules for this Giveaway are presented within this document and will be accessible within the SmartTasker application or at www.smarttasker.id.</p>`,
+  /* ── Section 7 — Winner Determination ───────────────────────── */
+  "gterms.s7.heading": "7. Winner Determination",
+  "gterms.s7.body": `<p>The Competition winner will be the eligible participant who accumulates the highest verified Competition Score during the Competition Period.</p>
+<p>The Organizer may audit all scores prior to declaring a winner.</p>`,
 
-  /* ── Section 6 — Prize ──────────────────────────────────────── */
-  "gterms.s6.heading": "6. Prize",
-  "gterms.s6.body": `<p>A new Honda Vario 160 CBS.</p>`,
+  /* ── Section 8 — Tie Break Procedure ────────────────────────── */
+  "gterms.s8.heading": "8. Tie Break Procedure",
+  "gterms.s8.body": `<p>If two or more participants achieve the same Competition Score, the winner will be determined by:</p>
+<ul>
+  <li>(a) the highest number of verified completed tasks;</li>
+  <li>(b) if still tied, the highest number of verified referrals;</li>
+  <li>(c) if still tied, the participant who first achieved the tied score.</li>
+</ul>`,
 
-  /* ── Section 7 — Winner Selection ───────────────────────────── */
-  "gterms.s7.heading": "7. Winner Selection",
-  "gterms.s7.body": `<p>7.1. The winner will be selected through a random drawing process from all eligible entries.</p>
-<p>7.2. The drawing will be conducted on 4 January 2027 at 11.00 WIB at the Organiser's office and will be live streamed on TikTok.</p>
-<p>7.3. The drawing process will be supervised by authorised representatives from the Ministry of Social Affairs (Kementerian Sosial) or relevant local social services (Dinas Sosial), in accordance with Permensos No. 3 Tahun 2024.</p>`,
+  /* ── Section 9 — Fraud Prevention ───────────────────────────── */
+  "gterms.s9.heading": "9. Fraud Prevention",
+  "gterms.s9.body": `<p>The Organizer may remove points, suspend accounts or disqualify participants where it reasonably believes there has been:</p>
+<ul>
+  <li>(a) creation of multiple accounts;</li>
+  <li>(b) self-referrals;</li>
+  <li>(c) fake bookings;</li>
+  <li>(d) manipulated transactions;</li>
+  <li>(e) artificial reviews;</li>
+  <li>(f) automated activity;</li>
+  <li>(g) false information; or</li>
+  <li>(h) any conduct intended to improperly increase Competition Scores.</li>
+</ul>
+<p>The Organizer's determination regarding score validity and participant eligibility shall be final.</p>`,
 
-  /* ── Section 8 — Winner Notification ────────────────────────── */
-  "gterms.s8.heading": "8. Winner Notification",
-  "gterms.s8.body": `<p>8.1. The winner will be notified via direct message on social media, phone call, and email within 2 business days after the drawing date.</p>
-<p>8.2. The winner's name may be announced on the Organiser's official social media channels or website.</p>
-<p>8.3. If the selected winner cannot be contacted or does not respond within 14 days of the initial notification, the prize may be forfeited, and an alternate winner may be selected.</p>`,
+  /* ── Section 10 — Prize ─────────────────────────────────────── */
+  "gterms.s10.heading": "10. Prize",
+  "gterms.s10.body": `<p>One (1) Honda Vario 160 CBS motorcycle.</p>
+<p>The prize is not transferable and cannot be exchanged for cash.</p>`,
 
-  /* ── Section 9 — Prize Claim ────────────────────────────────── */
-  "gterms.s9.heading": "9. Prize Claim",
-  "gterms.s9.body": `<p>9.1. The winner must claim the prize within 14 days from the date of notification.</p>
-<p>9.2. To claim the prize, the winner must present a valid KTP or Kitas and other required documents as requested by the Organiser.</p>
-<p>9.3. The prize must be collected at the Organiser's office or delivered to the winner's address as agreed upon with the Organiser.</p>
-<p>9.4. The prize is non-transferable and cannot be exchanged for cash or other items.</p>`,
+  /* ── Section 11 — Winner Verification ───────────────────────── */
+  "gterms.s11.heading": "11. Winner Verification",
+  "gterms.s11.body": `<p>Before awarding the prize, the Organizer may:</p>
+<ul>
+  <li>(a) verify participant identity;</li>
+  <li>(b) verify address details;</li>
+  <li>(c) audit Competition Scores;</li>
+  <li>(d) review account activity; and</li>
+  <li>(e) request supporting documentation.</li>
+</ul>`,
 
-  /* ── Section 10 — Tax and Fees ──────────────────────────────── */
-  "gterms.s10.heading": "10. Tax and Fees",
-  "gterms.s10.body": `<p>10.1. The prize is subject to a 25% Income Tax (PPh Pasal 4 ayat (2)) on prizes from lotteries, which is final and will be borne by the winner.</p>
-<p>10.2. The Organiser will facilitate the payment of this tax on behalf of the winner, and the winner must provide all necessary information and documents for tax processing.</p>
-<p>10.3. All other costs associated with the prize, including but not limited to vehicle registration fees (BPKB, STNK), transfer of ownership fees, and any other applicable taxes or duties, will be the responsibility of the winner.</p>`,
+  /* ── Section 12 — Winner Notification ───────────────────────── */
+  "gterms.s12.heading": "12. Winner Notification",
+  "gterms.s12.body": `<p>The winner will be notified within fourteen (14) days after completion of the Competition audit process.</p>
+<p>The winner may be contacted by telephone, email, in-app notification or social media.</p>`,
 
-  /* ── Section 11 — Data Privacy ──────────────────────────────── */
-  "gterms.s11.heading": "11. Data Privacy",
-  "gterms.s11.body": `<p>11.1. By participating, participants agree that the Organiser may collect and use their personal data for the purpose of administering the Giveaway, including winner notification and prize delivery.</p>
-<p>11.2. The Organiser commits to protecting the confidentiality of participants' data in accordance with applicable data protection laws in Indonesia.</p>`,
+  /* ── Section 13 — Publicity and Leaderboard ─────────────────── */
+  "gterms.s13.heading": "13. Publicity and Leaderboard",
+  "gterms.s13.body": `<p>13.1. Participants acknowledge and agree that the Organizer may publish and display Competition rankings through the SmartTasker website, mobile application, social media channels or other promotional materials during the Competition Period.</p>
+<p>13.2. The Competition leaderboard may display:</p>
+<ul>
+  <li>(a) participant first name;</li>
+  <li>(b) participant surname initial;</li>
+  <li>(c) suburb, city or region of residence;</li>
+  <li>(d) Competition Score;</li>
+  <li>(e) Competition ranking.</li>
+</ul>
+<p>13.3. Participants consent to the publication of the information described in Clause 13.2 for the purposes of administering, promoting and demonstrating the transparency of the Competition.</p>
+<p>13.4. The Organizer may update leaderboard rankings periodically throughout the Competition Period.</p>
+<p>13.5. The winner agrees that the Organizer may publish the winner's first name, surname initial, city or province of residence, photograph, likeness and statements relating to the Competition for promotional purposes without additional compensation, except where prohibited by law.</p>
+<p>13.6. The Organizer may remove, anonymise or limit participant information displayed on the leaderboard where required by applicable law, privacy requirements or operational considerations.</p>`,
 
-  /* ── Section 12 — Disqualification ──────────────────────────── */
-  "gterms.s12.heading": "12. Disqualification",
-  "gterms.s12.body": `<p>12.1. The Organiser reserves the right to disqualify any participant who violates these T&amp;C, provides false information, or engages in fraudulent activity.</p>
-<p>12.2. Any attempt to tamper with the entry process or the operation of the Giveaway will result in disqualification.</p>`,
+  /* ── Section 14 — Taxes and Fees ────────────────────────────── */
+  "gterms.s14.heading": "14. Taxes and Fees",
+  "gterms.s14.body": `<p>Any taxes, registration fees, transfer fees, insurance costs, licensing costs or other expenses associated with ownership of the Honda Vario shall be the responsibility of the winner unless otherwise specified by the Organizer.</p>`,
 
-  /* ── Section 13 — Governing Law ─────────────────────────────── */
-  "gterms.s13.heading": "13. Governing Law",
-  "gterms.s13.body": `<p>These T&amp;C shall be governed by and construed in accordance with the laws of the Republic of Indonesia.</p>`,
+  /* ── Section 15 — Data Privacy ──────────────────────────────── */
+  "gterms.s15.heading": "15. Data Privacy",
+  "gterms.s15.body": `<p>The Organizer may collect, use and process participant personal information for the purposes of administering the Competition and operating the SmartTasker platform.</p>
+<p>The Organizer will handle personal information in accordance with applicable Indonesian laws and the SmartTasker Privacy Policy.</p>`,
 
-  /* ── Section 14 — Amendments ────────────────────────────────── */
-  "gterms.s14.heading": "14. Amendments",
-  "gterms.s14.body": `<p>The Organiser reserves the right to amend these T&amp;C at any time without prior notice. Any changes will be published on www.smarttasker.id.</p>`,
+  /* ── Section 16 — Disqualification ──────────────────────────── */
+  "gterms.s16.heading": "16. Disqualification",
+  "gterms.s16.body": `<p>The Organizer may disqualify any participant who:</p>
+<ul>
+  <li>(a) breaches these Terms and Conditions;</li>
+  <li>(b) provides false or misleading information;</li>
+  <li>(c) engages in fraudulent conduct; or</li>
+  <li>(d) attempts to manipulate Competition results.</li>
+</ul>`,
 
-  /* ── Section 15 — Contact Information ───────────────────────── */
-  "gterms.s15.heading": "15. Contact Information",
-  "gterms.s15.body": `<p>For any inquiries regarding this Giveaway, please contact <a href="mailto:ahmad@smarttasker.au">ahmad@smarttasker.au</a>.</p>`,
+  /* ── Section 17 — Amendments ────────────────────────────────── */
+  "gterms.s17.heading": "17. Amendments",
+  "gterms.s17.body": `<p>The Organizer may amend these Terms and Conditions where reasonably necessary to comply with law, regulatory requirements or operational needs.</p>
+<p>Any material changes will be published through SmartTasker communication channels.</p>`,
+
+  /* ── Section 18 — Governing Law ─────────────────────────────── */
+  "gterms.s18.heading": "18. Governing Law",
+  "gterms.s18.body": `<p>These Terms and Conditions are governed by the laws of the Republic of Indonesia.</p>`,
+
+  /* ── Section 19 — Contact ───────────────────────────────────── */
+  "gterms.s19.heading": "19. Contact",
+  "gterms.s19.body": `<p>For enquiries regarding the Competition:</p>
+<p><a href="mailto:ahmad@smarttasker.au">ahmad@smarttasker.au</a><br>
+<a href="https://www.smarttasker.id">www.smarttasker.id</a></p>`,
 
 });
 
@@ -127,102 +193,169 @@ Perumahan Panji Pesona No. A8, Jl Panji Tilaar Negara, Tanjung Karang, Sekarbela
 Object.assign(i18n.id, {
 
   /* ── Page hero ─────────────────────────────────────────────── */
-  "gterms.hero.title": "Syarat dan Ketentuan Honda Vario Giveaway",
+  "gterms.hero.title": "Kompetisi Peluncuran SmartTasker Champion — Syarat dan Ketentuan",
 
   /* ── Preamble ───────────────────────────────────────────────── */
   "gterms.preamble.heading": "Pemberitahuan Penting",
-  "gterms.preamble.body": `<p>Syarat dan Ketentuan ini (selanjutnya disebut sebagai <strong>"S&amp;K"</strong>) mengatur partisipasi dalam Honda Vario Giveaway (selanjutnya disebut sebagai <strong>"Giveaway"</strong>) yang diselenggarakan oleh PT Smart Technologies Indonesia (<strong>"SmartTasker"</strong>, selanjutnya disebut sebagai <strong>"Penyelenggara"</strong>). Dengan berpartisipasi dalam Giveaway ini, peserta setuju untuk terikat oleh S&amp;K ini.</p>`,
+  "gterms.preamble.body": `<p>Syarat dan Ketentuan ini mengatur partisipasi dalam Kompetisi Peluncuran SmartTasker Champion (<strong>"Kompetisi"</strong>) yang diselenggarakan oleh PT Smart Technologies Indonesia (<strong>"SmartTasker"</strong>, <strong>"Penyelenggara"</strong>). Dengan berpartisipasi dalam Kompetisi ini, peserta setuju untuk terikat oleh Syarat dan Ketentuan ini.</p>`,
 
-  /* ── Section 1 — Pengertian UGB ─────────────────────────────── */
-  "gterms.s1.heading": "1. Pengertian Undian Gratis Berhadiah (UGB)",
-  "gterms.s1.body": `<p>Giveaway ini dikategorikan sebagai "Undian Gratis Berhadiah" (UGB) sebagaimana didefinisikan dalam Peraturan Menteri Sosial No. 3 Tahun 2024 tentang Penyelenggaraan Undian Hadiah Gratis (Permensos No. 3 Tahun 2024). UGB mengacu pada setiap kesempatan untuk mendapatkan hadiah yang diselenggarakan secara gratis dan digabungkan atau dikaitkan dengan tindakan lain, di mana penentuan pemenang dilakukan dengan cara undian atau metode lainnya.</p>`,
+  /* ── Section 1 — Penyelenggara ──────────────────────────────── */
+  "gterms.s1.heading": "1. Penyelenggara",
+  "gterms.s1.body": `<p>Kompetisi SmartTasker Launch Champion ("Kompetisi") diselenggarakan oleh PT Smart Technologies Indonesia ("Penyelenggara").</p>
+<p><strong>PT Smart Technologies Indonesia</strong><br>
+Perumahan Panji Pesona No. A8<br>
+Jl Panji Tilaar Negara<br>
+Tanjung Karang, Sekarbela<br>
+Kota Mataram, Nusa Tenggara Barat<br>
+Email: <a href="mailto:ahmad@smarttasker.au">ahmad@smarttasker.au</a></p>`,
 
-  /* ── Section 2 — Penyelenggara ──────────────────────────────── */
-  "gterms.s2.heading": "2. Penyelenggara",
-  "gterms.s2.body": `<p><strong>PT Smart Technologies Indonesia</strong><br>
-Perumahan Panji Pesona No. A8, Jl Panji Tilaar Negara, Tanjung Karang, Sekarbela, Kota Mataram, Nusa Tenggara Barat<br>
-<a href="mailto:ahmad@smarttasker.au">ahmad@smarttasker.au</a></p>`,
+  /* ── Section 2 — Tujuan Kompetisi ───────────────────────────── */
+  "gterms.s2.heading": "2. Tujuan Kompetisi",
+  "gterms.s2.body": `<p>Kompetisi ini adalah kampanye promosi yang dirancang untuk mendorong partisipasi tulus dalam platform SmartTasker selama periode peluncurannya.</p>
+<p>Kompetisi ini didasarkan pada kinerja dan aktivitas peserta dalam platform SmartTasker. Pemenang tidak akan ditentukan oleh lotere, undian, undian acak, peluang atau metode pilihan acak lainnya.</p>`,
 
-  /* ── Section 3 — Periode Giveaway ───────────────────────────── */
-  "gterms.s3.heading": "3. Periode Giveaway",
-  "gterms.s3.body": `<p>Giveaway akan dimulai pada 01 Juli 2026 pukul 09.00 WIB dan berakhir pada 31 Desember 2026 pukul 15.00 WIB. Setiap entri yang diterima di luar periode ini tidak akan dipertimbangkan.</p>`,
+  /* ── Section 3 — Periode Kompetisi ──────────────────────────── */
+  "gterms.s3.heading": "3. Periode Kompetisi",
+  "gterms.s3.body": `<p>Kompetisi dimulai pada 1 Juli 2026 pukul 09.00 WIB dan berakhir pada 31 Desember 2026 pukul 15.00 WIB.</p>
+<p>Tidak ada poin yang akan diberikan setelah Periode Kompetisi.</p>`,
 
   /* ── Section 4 — Kelayakan ──────────────────────────────────── */
   "gterms.s4.heading": "4. Kelayakan",
-  "gterms.s4.body": `<p>4.1. Peserta harus berdomisili di Indonesia.</p>
-<p>4.2. Peserta harus berusia minimal 18 tahun pada saat pendaftaran dan memiliki Kartu Tanda Penduduk Indonesia (KTP) atau Kitas yang masih berlaku.</p>
-<p>4.3. Karyawan Penyelenggara, afiliasinya, biro iklan, dan anggota keluarga dekat mereka tidak memenuhi syarat untuk berpartisipasi.</p>
-<p>4.4. Partisipasi dalam Giveaway ini tidak dikenakan biaya dan tidak memerlukan pembelian apa pun.</p>`,
+  "gterms.s4.body": `<p>Peserta harus:</p>
+<p>4.1 Bertempat tinggal di Indonesia.</p>
+<p>4.2 Berusia minimal 18 tahun.</p>
+<p>4.3 Memiliki KTP atau KITAS Indonesia yang masih berlaku.</p>
+<p>4.4 Mempertahankan akun SmartTasker yang valid selama Periode Kompetisi.</p>
+<p>4.5 Mematuhi semua Ketentuan Penggunaan SmartTasker dan Pedoman Komunitas.</p>
+<p>4.6 Bukan karyawan, direktur, kontraktor, agen, atau anggota keluarga dekat Penyelenggara.</p>`,
 
-  /* ── Section 5 — Cara Berpartisipasi ────────────────────────── */
-  "gterms.s5.heading": "5. Cara Berpartisipasi",
-  "gterms.s5.body": `<p>5.1. Untuk berpartisipasi dalam Giveaway, peserta harus mengunduh dan menginstal aplikasi SmartTasker dari Apple App Store atau Google Play Store dan mendaftarkan akun.</p>
-<p>5.2. Peserta akan menerima SATU entri setelah berhasil mengunduh dan mendaftar ke aplikasi SmartTasker.</p>
-<p>5.3. Entri tambahan dapat diperoleh dengan:</p>
+  /* ── Section 5 — Skor Kompetisi ─────────────────────────────── */
+  "gterms.s5.heading": "5. Skor Kompetisi",
+  "gterms.s5.body": `<p>Peserta dapat memperoleh Poin Kompetisi sebagai berikut:</p>
 <ul>
-  <li>Tasker mendapatkan LIMA entri untuk menjadi Tasker terverifikasi.</li>
-  <li>Pelanggan mendapatkan LIMA entri dengan memesan dan menyelesaikan tugas.</li>
-  <li>Tasker mendapatkan LIMA entri dengan menyelesaikan tugas.</li>
-  <li>Pengguna mendapatkan SATU entri untuk setiap referensi yang mendaftarkan akun.</li>
+  <li>Akun Pelanggan Terverifikasi dengan alamat tempat tinggal Bali terverifikasi: 1 Poin</li>
+  <li>Akun Tasker Terverifikasi dengan alamat tempat tinggal Bali terverifikasi: 5 Poin</li>
+  <li>Pelanggan berhasil memesan dan menyelesaikan tugas melalui SmartTasker: 5 Poin</li>
+  <li>Tasker berhasil menyelesaikan tugas melalui SmartTasker: 5 Poin</li>
+  <li>Rujukan terverifikasi: 1 Poin</li>
+</ul>`,
+
+  /* ── Section 6 — Definisi ───────────────────────────────────── */
+  "gterms.s6.heading": "6. Definisi",
+  "gterms.s6.body": `<p><strong>Rujukan Terverifikasi</strong> berarti rujukan di mana orang yang dirujuk:</p>
+<ul>
+  <li>(a) adalah individu yang asli;</li>
+  <li>(b) mendaftarkan akun SmartTasker;</li>
+  <li>(c) berhasil menyelesaikan verifikasi identitas;</li>
+  <li>(d) mematuhi Ketentuan Penggunaan SmartTasker; dan</li>
+  <li>(e) tidak terkait dengan akun duplikat, penipuan, atau manipulasi.</li>
 </ul>
-<p>5.4. Penyelenggara berhak untuk memverifikasi validitas entri dan mendiskualifikasi setiap peserta yang merusak proses entri.</p>`,
+<p><strong>Tugas Selesai</strong> berarti tugas yang:</p>
+<ul>
+  <li>(a) dipesan melalui platform SmartTasker;</li>
+  <li>(b) telah diselesaikan dan direkam dalam platform;</li>
+  <li>(c) telah dibayar sesuai dengan persyaratan SmartTasker; dan</li>
+  <li>(d) tidak tunduk pada sengketa aktif, tolak bayar, investigasi penipuan, atau pembatalan.</li>
+</ul>`,
 
-  /* ── Section 5A — Kepatuhan Platform Digital ────────────────── */
-  "gterms.s5a.heading": "5A. Kepatuhan Platform Digital",
-  "gterms.s5a.body": `<p>5A.1. Giveaway ini diselenggarakan secara independen oleh PT Smart Technologies Indonesia dan tidak disponsori, didukung, atau dikelola oleh Apple Inc. atau Google LLC.</p>
-<p>5A.2. Peserta mengakui bahwa Apple Inc. dan Google LLC tidak bertanggung jawab atas aspek apa pun dari Giveaway ini.</p>
-<p>5A.3. Aplikasi SmartTasker dan Giveaway ini mematuhi semua Pedoman Tinjauan Apple App Store dan Kebijakan Program Pengembang Google Play yang berlaku terkait kontes dan undian.</p>
-<p>5A.4. Semua aturan resmi untuk Giveaway ini disajikan dalam dokumen ini dan akan dapat diakses dalam aplikasi SmartTasker atau di www.smarttasker.id.</p>`,
+  /* ── Section 7 — Penentuan Pemenang ─────────────────────────── */
+  "gterms.s7.heading": "7. Penentuan Pemenang",
+  "gterms.s7.body": `<p>Pemenang Kompetisi akan menjadi peserta yang memenuhi syarat yang mengumpulkan Skor Kompetisi terverifikasi tertinggi selama Periode Kompetisi.</p>
+<p>Penyelenggara dapat mengaudit semua skor sebelum menyatakan pemenang.</p>`,
 
-  /* ── Section 6 — Hadiah ─────────────────────────────────────── */
-  "gterms.s6.heading": "6. Hadiah",
-  "gterms.s6.body": `<p>Satu unit Honda Vario 160 CBS baru.</p>`,
+  /* ── Section 8 — Prosedur Tie Break ─────────────────────────── */
+  "gterms.s8.heading": "8. Prosedur Tie Break",
+  "gterms.s8.body": `<p>Jika dua atau lebih peserta mencapai Skor Kompetisi yang sama, pemenang akan ditentukan oleh:</p>
+<ul>
+  <li>(a) jumlah tugas terverifikasi tertinggi;</li>
+  <li>(b) jika masih seri, jumlah rujukan terverifikasi tertinggi;</li>
+  <li>(c) jika masih seri, peserta yang pertama kali mencapai skor seri.</li>
+</ul>`,
 
-  /* ── Section 7 — Pemilihan Pemenang ─────────────────────────── */
-  "gterms.s7.heading": "7. Pemilihan Pemenang",
-  "gterms.s7.body": `<p>7.1. Pemenang akan dipilih melalui proses pengundian acak dari semua entri yang memenuhi syarat.</p>
-<p>7.2. Pengundian akan dilakukan pada tanggal 4 Januari 2027 pukul 11.00 WIB di kantor Penyelenggara dan akan disiarkan langsung di TikTok.</p>
-<p>7.3. Proses pengundian akan diawasi oleh perwakilan yang berwenang dari Kementerian Sosial atau dinas sosial setempat terkait, sesuai dengan Permensos No. 3 Tahun 2024.</p>`,
+  /* ── Section 9 — Pencegahan Penipuan ────────────────────────── */
+  "gterms.s9.heading": "9. Pencegahan Penipuan",
+  "gterms.s9.body": `<p>Penyelenggara dapat menghapus poin, menangguhkan akun, atau mendiskualifikasi peserta jika secara wajar meyakini telah terjadi:</p>
+<ul>
+  <li>(a) pembuatan beberapa akun;</li>
+  <li>(b) rujukan sendiri;</li>
+  <li>(c) pemesanan palsu;</li>
+  <li>(d) transaksi yang dimanipulasi;</li>
+  <li>(e) ulasan buatan;</li>
+  <li>(f) aktivitas otomatis;</li>
+  <li>(g) informasi palsu; atau</li>
+  <li>(h) perilaku apa pun yang dimaksudkan untuk meningkatkan Skor Kompetisi secara tidak semestinya.</li>
+</ul>
+<p>Penentuan Penyelenggara mengenai validitas skor dan kelayakan peserta bersifat final.</p>`,
 
-  /* ── Section 8 — Pemberitahuan Pemenang ─────────────────────── */
-  "gterms.s8.heading": "8. Pemberitahuan Pemenang",
-  "gterms.s8.body": `<p>8.1. Pemenang akan diberitahu melalui pesan langsung di media sosial, panggilan telepon, dan email dalam waktu 2 hari kerja setelah tanggal pengundian.</p>
-<p>8.2. Nama pemenang dapat diumumkan di saluran media sosial resmi atau situs web Penyelenggara.</p>
-<p>8.3. Jika pemenang yang dipilih tidak dapat dihubungi atau tidak menanggapi dalam waktu 14 hari sejak pemberitahuan awal, hadiah dapat hangus, dan pemenang alternatif dapat dipilih.</p>`,
+  /* ── Section 10 — Hadiah ────────────────────────────────────── */
+  "gterms.s10.heading": "10. Hadiah",
+  "gterms.s10.body": `<p>Satu (1) sepeda motor Honda Vario 160 CBS.</p>
+<p>Hadiah tidak dapat dipindahtangankan dan tidak dapat ditukar dengan uang tunai.</p>`,
 
-  /* ── Section 9 — Klaim Hadiah ───────────────────────────────── */
-  "gterms.s9.heading": "9. Klaim Hadiah",
-  "gterms.s9.body": `<p>9.1. Pemenang harus mengklaim hadiah dalam waktu 14 hari sejak tanggal pemberitahuan.</p>
-<p>9.2. Untuk mengklaim hadiah, pemenang harus menunjukkan KTP atau Kitas yang masih berlaku dan dokumen lain yang diperlukan sesuai permintaan Penyelenggara.</p>
-<p>9.3. Hadiah harus diambil di kantor Penyelenggara atau dikirimkan ke alamat pemenang sebagaimana disepakati dengan Penyelenggara.</p>
-<p>9.4. Hadiah tidak dapat dipindahtangankan dan tidak dapat ditukar dengan uang tunai atau barang lainnya.</p>`,
+  /* ── Section 11 — Verifikasi Pemenang ───────────────────────── */
+  "gterms.s11.heading": "11. Verifikasi Pemenang",
+  "gterms.s11.body": `<p>Sebelum memberikan hadiah, Penyelenggara dapat:</p>
+<ul>
+  <li>(a) memverifikasi identitas peserta;</li>
+  <li>(b) memverifikasi detail alamat;</li>
+  <li>(c) mengaudit Skor Kompetisi;</li>
+  <li>(d) meninjau aktivitas akun; dan</li>
+  <li>(e) meminta dokumentasi pendukung.</li>
+</ul>`,
 
-  /* ── Section 10 — Pajak dan Biaya ───────────────────────────── */
-  "gterms.s10.heading": "10. Pajak dan Biaya",
-  "gterms.s10.body": `<p>10.1. Hadiah dikenakan PPh Pasal 4 ayat (2) sebesar 25% atas hadiah dari lotere, yang bersifat final dan akan ditanggung oleh pemenang.</p>
-<p>10.2. Penyelenggara akan memfasilitasi pembayaran pajak ini atas nama pemenang, dan pemenang harus memberikan semua informasi dan dokumen yang diperlukan untuk pemrosesan pajak.</p>
-<p>10.3. Semua biaya lain yang terkait dengan hadiah, termasuk namun tidak terbatas pada biaya registrasi kendaraan (BPKB, STNK), biaya pengalihan kepemilikan, dan pajak atau bea lainnya yang berlaku, akan menjadi tanggung jawab pemenang.</p>`,
+  /* ── Section 12 — Pemberitahuan Pemenang ────────────────────── */
+  "gterms.s12.heading": "12. Pemberitahuan Pemenang",
+  "gterms.s12.body": `<p>Pemenang akan diberitahukan dalam waktu empat belas (14) hari setelah selesainya proses audit Kompetisi.</p>
+<p>Pemenang dapat dihubungi melalui telepon, email, pemberitahuan dalam aplikasi, atau media sosial.</p>`,
 
-  /* ── Section 11 — Privasi Data ──────────────────────────────── */
-  "gterms.s11.heading": "11. Privasi Data",
-  "gterms.s11.body": `<p>11.1. Dengan berpartisipasi, peserta setuju bahwa Penyelenggara dapat mengumpulkan dan menggunakan data pribadi mereka untuk tujuan mengelola Giveaway, termasuk pemberitahuan pemenang dan pengiriman hadiah.</p>
-<p>11.2. Penyelenggara berkomitmen untuk melindungi kerahasiaan data peserta sesuai dengan undang-undang perlindungan data yang berlaku di Indonesia.</p>`,
+  /* ── Section 13 — Publisitas dan Papan Peringkat ────────────── */
+  "gterms.s13.heading": "13. Publisitas dan Papan Peringkat",
+  "gterms.s13.body": `<p>13.1. Peserta mengakui dan menyetujui bahwa Penyelenggara dapat mempublikasikan dan menampilkan peringkat Kompetisi melalui situs web SmartTasker, aplikasi seluler, saluran media sosial, atau materi promosi lainnya selama Periode Kompetisi.</p>
+<p>13.2. Papan peringkat Kompetisi dapat menampilkan:</p>
+<ul>
+  <li>(a) nama depan peserta;</li>
+  <li>(b) inisial nama keluarga peserta;</li>
+  <li>(c) pinggiran kota, kota atau wilayah tempat tinggal;</li>
+  <li>(d) Skor Kompetisi;</li>
+  <li>(e) Peringkat Kompetisi.</li>
+</ul>
+<p>13.3. Peserta menyetujui publikasi informasi yang dijelaskan dalam Klausul 13.2 untuk tujuan mengelola, mempromosikan, dan menunjukkan transparansi Kompetisi.</p>
+<p>13.4. Penyelenggara dapat memperbarui peringkat papan peringkat secara berkala selama Periode Kompetisi.</p>
+<p>13.5. Pemenang setuju bahwa Penyelenggara dapat mempublikasikan nama depan, inisial nama keluarga, kota atau provinsi tempat tinggal, foto, kemiripan, dan pernyataan pemenang yang berkaitan dengan Kompetisi untuk tujuan promosi tanpa kompensasi tambahan, kecuali jika dilarang oleh hukum.</p>
+<p>13.6. Penyelenggara dapat menghapus, menganonimkan, atau membatasi informasi peserta yang ditampilkan di papan peringkat jika diwajibkan oleh hukum yang berlaku, persyaratan privasi, atau pertimbangan operasional.</p>`,
 
-  /* ── Section 12 — Diskualifikasi ────────────────────────────── */
-  "gterms.s12.heading": "12. Diskualifikasi",
-  "gterms.s12.body": `<p>12.1. Penyelenggara berhak untuk mendiskualifikasi setiap peserta yang melanggar S&amp;K ini, memberikan informasi palsu, atau terlibat dalam aktivitas penipuan.</p>
-<p>12.2. Setiap upaya untuk merusak proses entri atau pengoperasian Giveaway akan mengakibatkan diskualifikasi.</p>`,
+  /* ── Section 14 — Pajak dan Biaya ───────────────────────────── */
+  "gterms.s14.heading": "14. Pajak dan Biaya",
+  "gterms.s14.body": `<p>Setiap pajak, biaya pendaftaran, biaya transfer, biaya asuransi, biaya lisensi atau biaya lain yang terkait dengan kepemilikan Honda Vario akan menjadi tanggung jawab pemenang kecuali ditentukan lain oleh Penyelenggara.</p>`,
 
-  /* ── Section 13 — Hukum yang Mengatur ───────────────────────── */
-  "gterms.s13.heading": "13. Hukum yang Mengatur",
-  "gterms.s13.body": `<p>S&amp;K ini diatur oleh dan ditafsirkan sesuai dengan hukum Republik Indonesia.</p>`,
+  /* ── Section 15 — Privasi Data ──────────────────────────────── */
+  "gterms.s15.heading": "15. Privasi Data",
+  "gterms.s15.body": `<p>Penyelenggara dapat mengumpulkan, menggunakan, dan memproses informasi pribadi peserta untuk tujuan mengelola Kompetisi dan mengoperasikan platform SmartTasker.</p>
+<p>Penyelenggara akan menangani informasi pribadi sesuai dengan hukum Indonesia yang berlaku dan Kebijakan Privasi SmartTasker.</p>`,
 
-  /* ── Section 14 — Amandemen ─────────────────────────────────── */
-  "gterms.s14.heading": "14. Amandemen",
-  "gterms.s14.body": `<p>Penyelenggara berhak untuk mengubah S&amp;K ini kapan saja tanpa pemberitahuan sebelumnya. Setiap perubahan akan dipublikasikan pada www.smarttasker.id.</p>`,
+  /* ── Section 16 — Diskualifikasi ────────────────────────────── */
+  "gterms.s16.heading": "16. Diskualifikasi",
+  "gterms.s16.body": `<p>Penyelenggara dapat mendiskualifikasi setiap peserta yang:</p>
+<ul>
+  <li>(a) melanggar Syarat dan Ketentuan ini;</li>
+  <li>(b) memberikan informasi palsu atau menyesatkan;</li>
+  <li>(c) terlibat dalam perilaku penipuan; atau</li>
+  <li>(d) berupaya memanipulasi hasil Kompetisi.</li>
+</ul>`,
 
-  /* ── Section 15 — Informasi Kontak ──────────────────────────── */
-  "gterms.s15.heading": "15. Informasi Kontak",
-  "gterms.s15.body": `<p>Untuk pertanyaan apa pun mengenai Giveaway ini, silakan hubungi <a href="mailto:ahmad@smarttasker.au">ahmad@smarttasker.au</a>.</p>`,
+  /* ── Section 17 — Amandemen ─────────────────────────────────── */
+  "gterms.s17.heading": "17. Amandemen",
+  "gterms.s17.body": `<p>Penyelenggara dapat mengubah Syarat dan Ketentuan ini jika diperlukan secara wajar untuk mematuhi hukum, persyaratan peraturan, atau kebutuhan operasional.</p>
+<p>Setiap perubahan materi akan dipublikasikan melalui saluran komunikasi SmartTasker.</p>`,
+
+  /* ── Section 18 — Hukum yang Mengatur ───────────────────────── */
+  "gterms.s18.heading": "18. Hukum yang Mengatur",
+  "gterms.s18.body": `<p>Syarat dan Ketentuan ini diatur oleh hukum Republik Indonesia.</p>`,
+
+  /* ── Section 19 — Kontak ────────────────────────────────────── */
+  "gterms.s19.heading": "19. Kontak",
+  "gterms.s19.body": `<p>Untuk pertanyaan mengenai Kompetisi:</p>
+<p><a href="mailto:ahmad@smarttasker.au">ahmad@smarttasker.au</a><br>
+<a href="https://www.smarttasker.id">www.smarttasker.id</a></p>`,
 
 });

@@ -26,7 +26,7 @@ const i18n = {
 
     /* ── HONDA VARIO GIVEAWAY ── */
     "giveaway.headline": "WIN A HONDA VARIO 160 CBS",
-    "giveaway.sub": "Join SmartTasker before launch for your chance to win. Register as a customer or tasker.",
+    "giveaway.sub": "Join SmartTasker and register as a customer or tasker to enter the competition to win.",
     "giveaway.cta": "JOIN WAITLIST",
     "giveaway.terms.link": "Competition Terms & Conditions",
     "giveaway.img.label": "Honda Vario 160 CBS image — to be supplied",
@@ -98,7 +98,7 @@ const i18n = {
 
     /* ── WAITLIST FORM ── */
     "waitlist.h2": "Join the waitlist and invite your friends to WIN a Honda Vario 160 CBS",
-    "waitlist.sub": "Be the first to know when SmartTasker launches in Indonesia. Register now and enter the Honda Vario 160 CBS giveaway.",
+    "waitlist.sub": "Be the first to know when SmartTasker launches in Indonesia. Register now and enter the Honda Vario 160 CBS competition.",
     "waitlist.field.name": "Full Name",
     "waitlist.field.email": "Email Address",
     "waitlist.field.phone": "WhatsApp Number",
@@ -116,7 +116,7 @@ const i18n = {
     "waitlist.cat.painting": "Painting",
     "waitlist.cat.moving": "Moving",
     "waitlist.cat.other": "Other",
-    "waitlist.giveaway.check": "Enter me in the Honda Vario 160 CBS giveaway",
+    "waitlist.giveaway.check": "Enter me in the Honda Vario 160 CBS competition",
     "waitlist.submit": "Join now and WIN a Honda Vario",
     "waitlist.success": "You're on the list! We'll be in touch when SmartTasker launches in Indonesia.",
     "waitlist.error.required": "Please fill in all required fields.",
@@ -156,7 +156,7 @@ const i18n = {
     "faq.a9": "SmartTasker Indonesia is currently only available for customers and Taskers based in Indonesia.",
     "faq.q10": "When will SmartTasker launch in Indonesia?",
     // NOTE: Answer pending client's updated copy
-    "faq.a10": "We are getting ready to launch soon! Join our waitlist to be the first to know about our launch date and to enter the Honda Vario 160 CBS giveaway.",
+    "faq.a10": "We are getting ready to launch soon! Join our waitlist to be the first to know about our launch date and to enter the Honda Vario 160 CBS competition.",
 
     /* ── FINAL CTA ── */
     "finalcta.h2": "Ready to get started?",
@@ -168,7 +168,7 @@ const i18n = {
     "footer.nav.contact": "Contact",
     "footer.nav.privacy": "Privacy Policy",
     "footer.nav.terms": "Terms & Conditions",
-    "footer.nav.giveaway": "Honda Vario Giveaway Terms",
+    "footer.nav.giveaway": "Honda Vario Competition Terms",
     "footer.nav.community": "Community Guidelines",
     "footer.cta.h2": "JOIN THE WAITLIST!",
     "footer.cta.body": "Join SmartTasker Indonesia today and be the first to get your to-do list checked off. Or become a Tasker and start earning with low fees!",
@@ -176,8 +176,8 @@ const i18n = {
     "footer.copyright": "© 2026 SmartTasker Indonesia — smarttasker.id",
 
     /* ── TERMS PLACEHOLDER ── */
-    "terms.h2": "Honda Vario 160 CBS Giveaway — Terms & Conditions",
-    "terms.body": "The giveaway is open to Indonesian residents who register on the SmartTasker waitlist before the launch date. One winner will be selected at random. The prize is one (1) Honda Vario 160 CBS. The promoter is SmartTasker Indonesia (smarttasker.id). No purchase necessary.",
+    "terms.h2": "Honda Vario 160 CBS Competition — Terms & Conditions",
+    "terms.body": "The SmartTasker Launch Champion Competition is open to eligible Indonesian residents aged 18 and over who participate on the SmartTasker platform during the competition period. The winner is the eligible participant who earns the highest verified Competition Score — the winner is not determined by random draw. The prize is one (1) Honda Vario 160 CBS. The organiser is PT Smart Technologies Indonesia (smarttasker.id). No purchase necessary.",
   },
 
   id: {
@@ -200,7 +200,7 @@ const i18n = {
 
     /* ── HONDA VARIO GIVEAWAY ── */
     "giveaway.headline": "MENANGKAN HONDA VARIO 160 CBS",
-    "giveaway.sub": "Daftar ke SmartTasker sebelum peluncuran dan menangkan Honda Vario 160 CBS. Daftar sebagai pelanggan atau tasker.",
+    "giveaway.sub": "Bergabunglah dengan SmartTasker dan daftar sebagai pelanggan atau tasker untuk mengikuti kompetisi dan menang.",
     "giveaway.cta": "DAFTAR SEKARANG",
     "giveaway.terms.link": "Syarat & Ketentuan Kompetisi",
     "giveaway.img.label": "Gambar Honda Vario 160 CBS — akan segera tersedia",
@@ -272,7 +272,7 @@ const i18n = {
 
     /* ── WAITLIST FORM ── */
     "waitlist.h2": "Daftar waitlist dan ajak temanmu untuk MENANGKAN Honda Vario 160 CBS",
-    "waitlist.sub": "Jadilah yang pertama tahu saat SmartTasker diluncurkan di Indonesia. Daftar sekarang dan ikuti giveaway Honda Vario 160 CBS.",
+    "waitlist.sub": "Jadilah yang pertama tahu saat SmartTasker diluncurkan di Indonesia. Daftar sekarang dan ikuti kompetisi Honda Vario 160 CBS.",
     "waitlist.field.name": "Nama Lengkap",
     "waitlist.field.email": "Alamat Email",
     "waitlist.field.phone": "Nomor WhatsApp",
@@ -290,7 +290,7 @@ const i18n = {
     "waitlist.cat.painting": "Pengecatan",
     "waitlist.cat.moving": "Jasa Pindahan",
     "waitlist.cat.other": "Lainnya",
-    "waitlist.giveaway.check": "Ikutkan saya dalam undian Honda Vario 160 CBS",
+    "waitlist.giveaway.check": "Ikutkan saya dalam kompetisi Honda Vario 160 CBS",
     "waitlist.submit": "Daftar sekarang dan MENANGKAN Honda Vario",
     "waitlist.success": "Anda sudah terdaftar! Kami akan menghubungi Anda saat SmartTasker diluncurkan di Indonesia.",
     "waitlist.error.required": "Mohon lengkapi semua kolom yang wajib diisi.",
@@ -342,7 +342,7 @@ const i18n = {
     "footer.nav.contact": "Kontak",
     "footer.nav.privacy": "Kebijakan Privasi",
     "footer.nav.terms": "Syarat & Ketentuan",
-    "footer.nav.giveaway": "Syarat Giveaway Honda Vario",
+    "footer.nav.giveaway": "Syarat Kompetisi Honda Vario",
     "footer.nav.community": "Panduan Komunitas",
     "footer.cta.h2": "DAFTAR WAITLIST SEKARANG!",
     "footer.cta.body": "Bergabunglah dengan SmartTasker Indonesia hari ini dan jadilah yang pertama menyelesaikan daftar tugas Anda. Atau jadilah Tasker dan mulai berpenghasilan dengan biaya rendah!",
@@ -350,8 +350,8 @@ const i18n = {
     "footer.copyright": "© 2026 SmartTasker Indonesia — smarttasker.id",
 
     /* ── TERMS PLACEHOLDER ── */
-    "terms.h2": "Giveaway Honda Vario 160 CBS — Syarat & Ketentuan",
-    "terms.body": "Giveaway terbuka untuk penduduk Indonesia yang mendaftar di waitlist SmartTasker sebelum tanggal peluncuran. Satu pemenang akan dipilih secara acak. Hadiahnya adalah satu (1) unit Honda Vario 160 CBS. Penyelenggara adalah SmartTasker Indonesia (smarttasker.id). Tidak diperlukan pembelian.",
+    "terms.h2": "Kompetisi Honda Vario 160 CBS — Syarat & Ketentuan",
+    "terms.body": "Kompetisi Peluncuran SmartTasker Champion terbuka untuk penduduk Indonesia yang memenuhi syarat berusia 18 tahun ke atas yang berpartisipasi di platform SmartTasker selama periode kompetisi. Pemenang adalah peserta yang memenuhi syarat dengan Skor Kompetisi terverifikasi tertinggi — pemenang tidak ditentukan secara acak. Hadiahnya adalah satu (1) unit Honda Vario 160 CBS. Penyelenggara adalah PT Smart Technologies Indonesia (smarttasker.id). Tidak diperlukan pembelian.",
   }
 };
 
