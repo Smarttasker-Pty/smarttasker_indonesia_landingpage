@@ -332,7 +332,7 @@ body { transition: opacity .16s ease; }
 .legal-section {
   margin-top: 45px;
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding: 0;                 /* override Twenty Twenty's section{ padding:5rem 0 } — the ONLY spacing fix (internal spacing unchanged) */
   border-bottom: none;
 }
 
@@ -355,7 +355,7 @@ body { transition: opacity .16s ease; }
 .legal-section p,
 .legal-section div > p {
   font-size: 17px;
-  line-height: 1.5;   /* AU legal body line-height is 1.5 (was 1.7) */
+  line-height: 1.5;
   color: var(--color-dark);
   margin-bottom: 14px;
 }
@@ -374,7 +374,7 @@ body { transition: opacity .16s ease; }
 
 .legal-section ul li {
   font-size: 17px;
-  line-height: 1.5;   /* AU legal body line-height is 1.5 (was 1.7) */
+  line-height: 1.5;
   color: var(--color-dark);
   margin-bottom: 10px;
   padding-left: 4px;
