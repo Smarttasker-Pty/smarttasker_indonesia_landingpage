@@ -28,6 +28,42 @@ function trackEvent(name, data) {
   console.log('[Analytics]', name, data);
 }
 
+/**
+ * trackWaitlistConversion — fires the TikTok "CompleteRegistration" standard
+ * conversion event after a CONFIRMED waitlist signup (i.e. once the Brevo
+ * submit succeeds), so TikTok can optimise ads toward real signups, not clicks.
+ *
+ * Email + phone are passed to ttq.identify first so TikTok can perform the
+ * email / phone postback advertised in the pixel setup. The TikTok SDK hashes
+ * these client-side (SHA-256) before sending — we only normalise them here
+ * (lowercase email, strip non-digits from phone → E.164-ish).
+ */
+function trackWaitlistConversion(payload) {
+  payload = payload || {};
+
+  if (typeof ttq !== 'undefined') {
+    if (typeof ttq.identify === 'function') {
+      ttq.identify({
+        email: (payload.email || '').trim().toLowerCase(),
+        phone_number: (payload.phone || '').replace(/[^\d+]/g, '')
+      });
+    }
+    if (typeof ttq.track === 'function') {
+      ttq.track('CompleteRegistration', {
+        content_type: 'lead',
+        content_name: 'Join Waitlist',
+        contents: [{ content_id: 'waitlist', content_name: 'Join Waitlist' }]
+      });
+    }
+  }
+
+  // Mirror to GA4 + Meta as a distinct success event (no PII in the params).
+  trackEvent('waitlist_signup_complete', {
+    role: payload.role,
+    language: payload.language
+  });
+}
+
 
 /* ============================================================
    LANGUAGE / i18n
@@ -370,6 +406,9 @@ function initWaitlistForm() {
 
     try {
       await submitToBrevo(payload);
+      // Conversion: fire the TikTok CompleteRegistration event only after a
+      // confirmed signup (GA4 + Meta success event mirrored inside).
+      trackWaitlistConversion(payload);
       // Success
       form.classList.add('hidden');
       if (successMsg) {
