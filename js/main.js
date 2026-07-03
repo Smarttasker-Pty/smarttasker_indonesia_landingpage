@@ -21,9 +21,12 @@ function trackEvent(name, data) {
     fbq('trackCustom', name, data || {});
   }
   // -- TikTok Pixel --
-  if (typeof ttq !== 'undefined' && typeof ttq.track === 'function') {
-    ttq.track(name, data || {});
-  }
+  // Deliberately NOT forwarded to TikTok. TikTok Ads Manager can only optimise
+  // toward its STANDARD events, so the pixel is kept clean: it receives only
+  // `Pageview` (base code) + the standard `CompleteRegistration` event, which is
+  // fired explicitly in trackWaitlistConversion(). Sending generic custom events
+  // (waitlist_form_submit, waitlist_cta_click, …) here only clutters Events
+  // Manager and makes it unclear which event to optimise on.
   // Debug log (remove in production)
   console.log('[Analytics]', name, data);
 }
