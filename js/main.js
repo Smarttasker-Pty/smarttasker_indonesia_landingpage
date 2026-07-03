@@ -52,11 +52,12 @@ function trackWaitlistConversion(payload) {
       });
     }
     if (typeof ttq.track === 'function') {
-      ttq.track('CompleteRegistration', {
-        content_type: 'lead',
-        content_name: 'Join Waitlist',
-        contents: [{ content_id: 'waitlist', content_name: 'Join Waitlist' }]
-      });
+      // Keep parameters minimal + valid. TikTok validates STANDARD-event params
+      // and silently drops the event if they're wrong — an earlier version sent
+      // content_type:'lead' (invalid; TikTok only allows 'product'/'product_group')
+      // plus a product-style contents[] array, and TikTok rejected the whole event
+      // so it never appeared in Events Manager. content_name is a safe, valid field.
+      ttq.track('CompleteRegistration', { content_name: 'Join Waitlist' });
     }
   }
 
