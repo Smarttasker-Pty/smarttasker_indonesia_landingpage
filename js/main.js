@@ -41,7 +41,7 @@ function trackEvent(name, data) {
  * these client-side (SHA-256) before sending — we only normalise them here
  * (lowercase email, strip non-digits from phone → E.164-ish).
  */
-function trackWaitlistConversion(payload) {
+function trackWaitlistConversion(payload, eventId) {
   payload = payload || {};
 
   if (typeof ttq !== 'undefined') {
@@ -57,7 +57,10 @@ function trackWaitlistConversion(payload) {
       // content_type:'lead' (invalid; TikTok only allows 'product'/'product_group')
       // plus a product-style contents[] array, and TikTok rejected the whole event
       // so it never appeared in Events Manager. content_name is a safe, valid field.
-      ttq.track('CompleteRegistration', { content_name: 'Join Waitlist' });
+      // event_id links this browser event to the server-side Events API event so
+      // TikTok DEDUPLICATES them into one conversion with combined signal.
+      ttq.track('CompleteRegistration', { content_name: 'Join Waitlist' },
+        eventId ? { event_id: eventId } : undefined);
     }
   }
 
@@ -66,6 +69,32 @@ function trackWaitlistConversion(payload) {
     role: payload.role,
     language: payload.language
   });
+}
+
+/**
+ * Helpers for TikTok Events API (server-side) deduplication + attribution.
+ * genEventId() → the shared id used by BOTH the browser pixel event and the
+ * server event so TikTok counts a SINGLE conversion. getTtclid()/getCookie()
+ * pass TikTok's click id + pixel cookie to the server for better ad matching.
+ */
+function genEventId() {
+  try { if (window.crypto && crypto.randomUUID) return 'wl_' + crypto.randomUUID(); } catch (e) {}
+  return 'wl_' + Date.now() + '_' + Math.floor(Math.random() * 1e9);
+}
+function getCookie(name) {
+  const esc = name.replace(/([.$?*|{}()[\]\\/+^])/g, '\\$1');
+  const m = document.cookie.match(new RegExp('(?:^|; )' + esc + '=([^;]*)'));
+  return m ? decodeURIComponent(m[1]) : '';
+}
+// TikTok appends ?ttclid= to ad-click landing URLs. Persist it so it survives
+// navigation between landing and the moment the visitor submits the form.
+function getTtclid() {
+  try {
+    const fromUrl = new URLSearchParams(location.search).get('ttclid');
+    if (fromUrl) { try { localStorage.setItem('st_ttclid', fromUrl); } catch (e) {} return fromUrl; }
+    try { return localStorage.getItem('st_ttclid') || ''; } catch (e) {}
+  } catch (e) {}
+  return '';
 }
 
 
@@ -277,6 +306,9 @@ async function submitToBrevo(data) {
 
   // Mode 1 — production proxy
   if (cfg.PROXY_URL) {
+    // Attach TikTok Events API data for the server to forward server-side.
+    // Brevo ignores it; only our /api/brevo proxy reads `tiktok`.
+    if (data.tiktok) payload.tiktok = data.tiktok;
     const response = await fetch(cfg.PROXY_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -403,7 +435,11 @@ function initWaitlistForm() {
     submitBtn.disabled = true;
     submitBtn.textContent = '…';
 
-    const payload = { name, email, phone, location, role, category, giveaway, language: lang };
+    // Shared TikTok event id: the SAME id rides on the browser pixel event and
+    // the server-side Events API event so TikTok dedupes them into one conversion.
+    const ttEventId = genEventId();
+    const payload = { name, email, phone, location, role, category, giveaway, language: lang,
+      tiktok: { event_id: ttEventId, ttclid: getTtclid(), ttp: getCookie('_ttp'), url: location.href } };
 
     // Analytics: waitlist CTA click (form submission counts as the CTA conversion)
     trackEvent('waitlist_form_submit', payload);
@@ -412,7 +448,7 @@ function initWaitlistForm() {
       await submitToBrevo(payload);
       // Conversion: fire the TikTok CompleteRegistration event only after a
       // confirmed signup (GA4 + Meta success event mirrored inside).
-      trackWaitlistConversion(payload);
+      trackWaitlistConversion(payload, ttEventId);
       // Success
       form.classList.add('hidden');
       if (successMsg) {

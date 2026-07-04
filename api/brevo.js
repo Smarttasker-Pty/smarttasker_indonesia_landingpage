@@ -9,7 +9,15 @@
  *      add BREVO_API_KEY = <the Brevo API key>   (all environments)
  *   2. In js/brevo-config.js set:  PROXY_URL: '/api/brevo'
  *      (same-origin — no CORS configuration needed)
+ *
+ *   Optional — TikTok Events API (server-side conversions):
+ *   3. Add env var TIKTOK_ACCESS_TOKEN = <token from TikTok Events Manager>.
+ *      When set, a confirmed signup also fires a server-side CompleteRegistration
+ *      to TikTok, deduplicated with the browser pixel via a shared event_id.
+ *      When unset, it is skipped (the browser pixel keeps working on its own).
  */
+
+import crypto from 'node:crypto';
 
 // NB: 'WHATSAPP' is a Brevo RESERVED IDENTIFIER (like SMS/EMAIL/EXT_ID); sending it as an
 // attribute makes Brevo do a WhatsApp-identifier merge lookup that fails with
@@ -44,6 +52,57 @@ function sanitizeAttributes(attrs) {
     }
   }
   return out;
+}
+
+// ---- TikTok Events API (server-side) ----
+// Pixel ID is public (it's in the page source); only the access token is secret.
+const TIKTOK_PIXEL_ID = 'D94G8HRC77U9GV0AJ3C0';
+const TIKTOK_EVENTS_API = 'https://business-api.tiktok.com/open_api/v1.3/event/track/';
+
+function sha256Hex(v) {
+  return crypto.createHash('sha256').update(String(v)).digest('hex');
+}
+
+// Best-effort server-side CompleteRegistration. Never throws into the caller and
+// never blocks the signup response; skips silently if the token isn't configured.
+async function sendTikTokCompleteRegistration(req, payload) {
+  const token = process.env.TIKTOK_ACCESS_TOKEN;
+  if (!token) return;
+
+  const tk = (payload && payload.tiktok) || {};
+  const email = (payload.email || '').trim().toLowerCase();
+  let phone = ((payload.attributes && payload.attributes.WHATSAPP_NUMBER) || '').replace(/[^\d+]/g, '');
+  if (phone && phone[0] !== '+') phone = '+' + phone; // best-effort E.164
+
+  const ip = (req.headers['x-forwarded-for'] || '').split(',')[0].trim();
+  const ua = req.headers['user-agent'] || '';
+
+  // Identifiers must be SHA-256 hashed (email lowercased, phone in E.164).
+  const user = {};
+  if (email) { user.email = sha256Hex(email); user.external_id = sha256Hex(email); }
+  if (phone) user.phone = sha256Hex(phone);
+  if (ip) user.ip = ip;
+  if (ua) user.user_agent = ua;
+  if (tk.ttclid) user.ttclid = tk.ttclid;
+  if (tk.ttp) user.ttp = tk.ttp;
+
+  const event = {
+    event: 'CompleteRegistration',
+    event_time: Math.floor(Date.now() / 1000),
+    user,
+    page: { url: tk.url || req.headers.referer || 'https://www.smarttasker.id/' },
+    properties: { content_name: 'Join Waitlist' },
+  };
+  if (tk.event_id) event.event_id = tk.event_id; // dedup with the browser pixel event
+
+  const body = { event_source: 'web', event_source_id: TIKTOK_PIXEL_ID, data: [event] };
+  const r = await fetch(TIKTOK_EVENTS_API, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Access-Token': token },
+    body: JSON.stringify(body),
+  });
+  const j = await r.json().catch(() => ({}));
+  if (j.code !== 0) console.error('TikTok Events API rejected event:', j.code, j.message);
 }
 
 export default async function handler(req, res) {
@@ -93,10 +152,12 @@ export default async function handler(req, res) {
   });
 
   if (brevoRes.ok) {
+    await sendTikTokCompleteRegistration(req, payload).catch(e => console.error('TikTok event error', e));
     return res.status(200).json({ success: true });
   }
   const err = await brevoRes.json().catch(() => ({}));
   if (err.code === 'duplicate_parameter') {
+    await sendTikTokCompleteRegistration(req, payload).catch(e => console.error('TikTok event error', e));
     return res.status(200).json({ success: true, duplicate: true });
   }
   console.error('Brevo error', brevoRes.status, err);
