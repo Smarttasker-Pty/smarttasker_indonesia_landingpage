@@ -97,6 +97,18 @@ function getTtclid() {
   return '';
 }
 
+/**
+ * trackTikTokStandard — fire a TikTok STANDARD funnel event (ViewContent,
+ * ClickButton, CompleteRegistration, …). Kept separate from trackEvent so only
+ * clean, TikTok-recognised standard events reach the pixel. Params are minimal +
+ * valid (content_name only) so TikTok never drops the event for bad parameters.
+ */
+function trackTikTokStandard(event, contentName) {
+  if (typeof ttq !== 'undefined' && typeof ttq.track === 'function') {
+    ttq.track(event, contentName ? { content_name: contentName } : {});
+  }
+}
+
 
 /* ============================================================
    LANGUAGE / i18n
@@ -476,6 +488,8 @@ function initCTATracking() {
   document.querySelectorAll('[data-cta]').forEach(btn => {
     btn.addEventListener('click', () => {
       trackEvent('waitlist_cta_click', { cta: btn.getAttribute('data-cta') });
+      // TikTok funnel (middle): a CTA click is engagement toward the conversion.
+      trackTikTokStandard('ClickButton', 'Join Waitlist CTA');
     });
   });
 }
@@ -529,4 +543,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initCTATracking();
   initSmoothScroll();
   initFooterNav();
+  // TikTok funnel (top): landing-page content view. Completes the standard
+  // funnel — ViewContent → ClickButton → CompleteRegistration — that TikTok's
+  // Diagnostics flags as "critical funnel events" for a lead/registration site.
+  trackTikTokStandard('ViewContent', 'Waitlist Landing');
 });
