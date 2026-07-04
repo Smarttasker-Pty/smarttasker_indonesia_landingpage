@@ -65,9 +65,9 @@ function sha256Hex(v) {
 
 // Best-effort server-side CompleteRegistration. Never throws into the caller and
 // never blocks the signup response; skips silently if the token isn't configured.
-async function sendTikTokCompleteRegistration(req, payload) {
+async function sendTikTokCompleteRegistration(req, payload, returnResult) {
   const token = process.env.TIKTOK_ACCESS_TOKEN;
-  if (!token) return;
+  if (!token) return returnResult ? { skipped: 'no token configured' } : undefined;
 
   const tk = (payload && payload.tiktok) || {};
   const email = (payload.email || '').trim().toLowerCase();
@@ -103,6 +103,7 @@ async function sendTikTokCompleteRegistration(req, payload) {
   });
   const j = await r.json().catch(() => ({}));
   if (j.code !== 0) console.error('TikTok Events API rejected event:', j.code, j.message);
+  if (returnResult) return { code: j.code, message: j.message };
 }
 
 export default async function handler(req, res) {
@@ -126,6 +127,14 @@ export default async function handler(req, res) {
   }
 
   const payload = req.body || {};
+
+  // TEMP diagnostic: verify the server-side TikTok Events API call in isolation.
+  // Fires ONLY the TikTok event (no Brevo write) and returns TikTok's code/message.
+  // Never returns the token. Remove after verifying the integration works.
+  if (payload.tiktok_test === true) {
+    const result = await sendTikTokCompleteRegistration(req, payload, true).catch(e => ({ error: String(e) }));
+    return res.status(200).json({ tiktok_test: true, tokenConfigured: !!process.env.TIKTOK_ACCESS_TOKEN, result });
+  }
 
   // Honeypot tripped (bots posting the form's hidden field) — fake success, store nothing
   if (typeof payload.website === 'string' && payload.website.length > 0) {
