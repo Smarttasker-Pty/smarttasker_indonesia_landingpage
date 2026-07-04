@@ -103,9 +103,17 @@ function getTtclid() {
  * clean, TikTok-recognised standard events reach the pixel. Params are minimal +
  * valid (content_name only) so TikTok never drops the event for bad parameters.
  */
-function trackTikTokStandard(event, contentName) {
+function trackTikTokStandard(event, contentName, contentId) {
   if (typeof ttq !== 'undefined' && typeof ttq.track === 'function') {
-    ttq.track(event, contentName ? { content_name: contentName } : {});
+    // content_id is REQUIRED by TikTok for content events (ViewContent, etc.) —
+    // missing it triggers the "more than 10% missing content_id" Diagnostics
+    // warning. content_type must be 'product'/'product_group' (NOT 'lead' — that
+    // value gets the whole event dropped).
+    ttq.track(event, {
+      content_type: 'product',
+      content_id: contentId || 'smarttasker_waitlist',
+      content_name: contentName || 'SmartTasker Waitlist'
+    });
   }
 }
 
