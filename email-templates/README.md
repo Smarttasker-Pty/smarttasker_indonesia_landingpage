@@ -2,9 +2,8 @@
 
 Brevo-ready templates adapted from the Australian Mailchimp exports. Two groups:
 
-- **Pre-launch / waitlist** (Honda Vario 160 giveaway promo)
-- **Live-app lifecycle** (post-launch onboarding, Tasker activation, retention) —
-  these deliberately drop the giveaway and focus on app usage.
+- **Pre-launch / waitlist** (waitlist confirmation + a referral "invite friends" campaign)
+- **Live-app lifecycle** (post-launch onboarding, Tasker activation, retention).
 
 ### Pre-launch / waitlist
 
@@ -33,10 +32,10 @@ Brevo-ready templates adapted from the Australian Mailchimp exports. Two groups:
 
 | Template | Subject | Preview text |
 |---|---|---|
-| Welcome EN | You're on the SmartTasker Indonesia waitlist — and entered to win a Honda Vario 160! | Your spot on the SmartTasker Indonesia waitlist is confirmed — plus you're entered in the Honda Vario 160 giveaway! |
-| Welcome ID | Selamat! Anda sudah masuk waitlist SmartTasker Indonesia dan ikut undian Honda Vario 160! | Tempat Anda di waitlist SmartTasker Indonesia sudah terdaftar — plus Anda otomatis ikut undian Honda Vario 160! |
-| Invite EN | Your friends can win a Honda Vario 160 — share SmartTasker Indonesia with them | SmartTasker is coming to Indonesia — share with friends and family so they can join the waitlist and enter the Honda Vario 160 giveaway too! |
-| Invite ID | Ajak temanmu — mereka bisa menangkan Honda Vario 160 bersama SmartTasker Indonesia | SmartTasker segera hadir di Indonesia — bagikan kepada teman dan keluarga agar mereka bisa daftar waitlist dan ikut giveaway Honda Vario 160 juga! |
+| Welcome EN | You're on the SmartTasker Indonesia waitlist! | Your spot on the SmartTasker Indonesia waitlist is confirmed. |
+| Welcome ID | Anda sudah masuk waitlist SmartTasker Indonesia! | Tempat Anda di waitlist SmartTasker Indonesia sudah terdaftar. |
+| Invite EN | Invite your friends to SmartTasker Indonesia | Invite your friends and family to join the SmartTasker Indonesia waitlist! |
+| Invite ID | Ajak temanmu ke SmartTasker Indonesia | Ajak teman dan keluarga Anda bergabung dengan waitlist SmartTasker Indonesia! |
 
 ### Live-app lifecycle
 
@@ -83,15 +82,12 @@ Brevo-ready templates adapted from the Australian Mailchimp exports. Two groups:
 ## Notes
 
 - **Images**: the live templates reference `https://smarttasker.id/assets/images/logo-stacked-yellow2.png`
-  and `.../honda-giveaway.jpg`, which are served from `/assets/images/` on the
+  and `.../id-post.png`, which are served from `/assets/images/` on the
   deployed site (now live at smarttasker.id). For tracking-friendly hosting you
   can instead upload both images in Brevo's template editor and swap the `src` values.
-- The Honda Vario 160 sharing pitch deliberately promises NO extra entries for
-  referrals (no referral mechanic exists in the competition terms) — friends
-  get *their own* entry by joining.
-- **Live-app lifecycle templates** assume the app is live in Indonesia. They omit
-  the Honda giveaway entirely (that promo is pre-launch only) and use the same
-  shell, logo, footer and social block as the waitlist templates. Currency was
+- The invite/referral emails simply ask members to share `smarttasker.id` so more
+  people join the waitlist ahead of launch — there is no prize or giveaway mechanic.
+- **Live-app lifecycle templates** assume the app is live in Indonesia. They use the same
   localised AU→ID (e.g. "$10,000 AUD" → "Rp100 juta / Rp100 million"); AU sender
   names (e.g. "Brianna") were dropped in favour of "The SmartTasker Indonesia
   Team" / "Tim SmartTasker Indonesia".

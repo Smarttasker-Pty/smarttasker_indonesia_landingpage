@@ -275,7 +275,7 @@ function initFAQAccordion() {
  *
  *   Required from client:
  *   - Brevo API key
- *   - Brevo list IDs (Customers, Taskers, Giveaway entrants)
+ *   - Brevo list IDs (Customers, Taskers)
  *   - Preferred integration method (form embed vs API call)
  */
 /**
@@ -294,7 +294,6 @@ function buildBrevoPayload(data) {
   if (langList) listIds.push(langList);
   if ((data.role === 'customer' || data.role === 'both') && cfg.LIST_IDS.customer) listIds.push(cfg.LIST_IDS.customer);
   if ((data.role === 'tasker' || data.role === 'both') && cfg.LIST_IDS.tasker) listIds.push(cfg.LIST_IDS.tasker);
-  if (data.giveaway && cfg.LIST_IDS.giveaway) listIds.push(cfg.LIST_IDS.giveaway);
 
   return {
     email: data.email,
@@ -309,7 +308,6 @@ function buildBrevoPayload(data) {
       ROLE: data.role,                 // customer | tasker | both
       TRADE_CATEGORY: data.category || '',
       LANGUAGE: data.language,         // en | id
-      GIVEAWAY_ENTRY: data.giveaway ? 'Yes' : 'No',
     },
   };
 }
@@ -401,14 +399,6 @@ function initWaitlistForm() {
     }, { once: false });
   });
 
-  // Honda Vario checkbox analytics
-  const giveawayCheck = document.getElementById('giveaway-check');
-  if (giveawayCheck) {
-    giveawayCheck.addEventListener('change', () => {
-      trackEvent('giveaway_checkbox', { checked: giveawayCheck.checked });
-    });
-  }
-
   // Form submission
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -433,7 +423,6 @@ function initWaitlistForm() {
     const roleEl   = form.querySelector('input[name="role"]:checked');
     const role     = roleEl ? roleEl.value : '';
     const category = form.querySelector('#field-category') ? form.querySelector('#field-category').value : '';
-    const giveaway = giveawayCheck ? giveawayCheck.checked : false;
 
     // Validation
     if (!name || !email || !phone || !location || !role) {
@@ -458,7 +447,7 @@ function initWaitlistForm() {
     // Shared TikTok event id: the SAME id rides on the browser pixel event and
     // the server-side Events API event so TikTok dedupes them into one conversion.
     const ttEventId = genEventId();
-    const payload = { name, email, phone, location, role, category, giveaway, language: lang,
+    const payload = { name, email, phone, location, role, category, language: lang,
       tiktok: { event_id: ttEventId, ttclid: getTtclid(), ttp: getCookie('_ttp'), url: location.href } };
 
     // Analytics: waitlist CTA click (form submission counts as the CTA conversion)

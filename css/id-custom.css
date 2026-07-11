@@ -94,30 +94,6 @@ body { transition: opacity .16s ease; }
 }
 .id-hero-band__cta { flex-shrink: 0; }
 
-/* ── Honda Vario giveaway section ─────────────────────────── */
-.id-giveaway { background: var(--id-primary); color: var(--id-dark); padding: 80px 0; }
-.id-giveaway__inner {
-  max-width: 1200px; margin: 0 auto; padding: 0 24px;
-  display: flex; align-items: center; gap: 48px;
-}
-.id-giveaway__content { flex: 1 1 42%; display: flex; flex-direction: column; gap: 20px; }
-.id-giveaway__content h2 {
-  font-family: 'Roboto Slab', serif; font-size: 44px; font-weight: 600;
-  color: var(--id-dark); line-height: 1.1; margin: 0;
-}
-.id-giveaway__content p {
-  font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 1.5;
-  color: var(--id-dark); margin: 0;
-}
-.id-giveaway__cta-group { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
-.id-giveaway__terms-link {
-  color: var(--id-dark); font-family: 'Roboto', sans-serif; font-size: 15px;
-  text-decoration: underline;
-}
-.id-giveaway__terms-link:hover { opacity: .65; }
-.id-giveaway__image { flex: 1 1 52%; max-width: 600px; display: flex; align-items: center; justify-content: center; }
-.id-giveaway__image img { width: 100%; max-width: 600px; border-radius: 12px; display: block; }
-
 /* ── Waitlist registration section ────────────────────────── */
 .id-waitlist { background: var(--id-primary); padding: 86px 0; }
 .id-waitlist__inner { max-width: 700px; margin: 0 auto; padding: 0 24px; }
@@ -160,42 +136,6 @@ body { transition: opacity .16s ease; }
 }
 .id-role-option input:checked + label { background: var(--id-accent); border-color: var(--id-accent); color: var(--id-white); }
 .id-role-option label:hover { border-color: var(--id-accent); }
-/* Giveaway opt-in row: just the checkbox + label, no wrapper. */
-.id-checkbox-group {
-  display: flex; align-items: center; gap: 10px; margin-bottom: 24px;
-}
-/* Custom checkbox — native accent-color renders inconsistently across browsers
-   (especially in its default-checked state), so draw our own clean box + tick. */
-.id-checkbox-group input[type=checkbox] {
-  appearance: none; -webkit-appearance: none; -moz-appearance: none;
-  width: 20px; height: 20px; min-width: 20px; flex-shrink: 0; margin: 0; top: 0;
-  border: 1.5px solid rgba(16,24,40,0.25); border-radius: 5px;
-  background: var(--id-white); cursor: pointer; position: relative;
-  transition: background .15s ease, border-color .15s ease;
-}
-/* Kill the Twenty Twenty theme's black SVG checkmark (input[type=checkbox]:checked::before)
-   so only our clean white tick shows — otherwise the dark one reads as a shadow. */
-.id-checkbox-group input[type=checkbox]::before,
-.id-checkbox-group input[type=checkbox]:checked::before {
-  content: none !important; display: none !important;
-}
-.id-checkbox-group input[type=checkbox]:hover { border-color: var(--id-accent); }
-.id-checkbox-group input[type=checkbox]:checked {
-  background: var(--id-accent); border-color: var(--id-accent);
-}
-.id-checkbox-group input[type=checkbox]:checked::after {
-  content: ""; position: absolute; left: 6.5px; top: 3px;
-  width: 4px; height: 9px;
-  border: solid var(--id-white); border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-}
-.id-checkbox-group input[type=checkbox]:focus-visible {
-  outline: none; box-shadow: 0 0 0 3px rgba(80,102,226,0.25);
-}
-.id-checkbox-group label {
-  font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 500; color: var(--id-dark);
-  cursor: pointer; line-height: 1.4; margin: 0;
-}
 .id-form-submit { width: 100%; padding: 18px 44px; font-size: 18px; white-space: normal; }
 .id-form-error {
   background: #fee2e2; border: 1px solid #fca5a5; border-radius: 8px; padding: 12px 16px;
@@ -210,18 +150,12 @@ body { transition: opacity .16s ease; }
 
 /* ── Responsive ───────────────────────────────────────────── */
 @media (max-width: 1023px) {
-  .id-giveaway__inner { flex-direction: column; align-items: center; gap: 32px; padding: 0 8%; }
-  .id-giveaway__content h2 { font-size: 40px; }
-  .id-giveaway__image { flex: none; width: 100%; max-width: 480px; }
   .id-hero-band__inner { flex-direction: column; align-items: flex-start; gap: 20px; }
   .id-hero-band__text h3 { font-size: 26px; }
 }
 @media (max-width: 767px) {
   .id-hero-band { padding: 24px 0; }
   .id-hero-band__inner { padding: 0 6%; }
-  .id-giveaway__inner { padding: 0 6%; gap: 24px; }
-  .id-giveaway__content h2 { font-size: 32px; }
-  .id-giveaway__cta-group { flex-direction: column; align-items: center; }
   .id-waitlist { padding: 56px 0; }
   .id-waitlist__inner h2 { font-size: 28px; }
   .id-waitlist__card { padding: 28px 20px; }
@@ -241,7 +175,7 @@ body { transition: opacity .16s ease; }
 }
 /* ============================================================
    LEGAL SUBPAGES — shared by privacy.html, terms.html,
-   community-guidelines.html, giveaway-terms.html
+   community-guidelines.html
    ============================================================ */
 
 /* ── Page-hero band (legal subpages — NOT the 96px landing hero) ── */
@@ -265,7 +199,7 @@ body { transition: opacity .16s ease; }
   font-weight: 800;
   color: var(--color-dark);
   line-height: 1.1;          /* AU legal H1 is ~1.0; kept marginally looser so the longer
-                                bilingual titles (e.g. giveaway-terms) don't collide when wrapping */
+                                bilingual titles don't collide when wrapping */
   letter-spacing: -1.66px;
   margin: 0;
 }
@@ -474,12 +408,10 @@ img[src*="Tick-icon.svg"] { width: 28px !important;  height: 26px !important; }
 .id-swap--post   { aspect-ratio: 708 / 592 !important; }   /* ≈ 6:5  worker photo */
 .id-swap--secure { aspect-ratio: 720 / 601 !important; }   /* ≈ 6:5  gardener photo */
 .id-swap--earn   { aspect-ratio: 58 / 61 !important; max-width: 580px !important; margin: 0 auto; }  /* tasker mockup: keep original 580px width, centred */
-.id-giveaway__image img { aspect-ratio: 16 / 9; object-fit: cover; height: auto; }  /* Honda 16:9 */
 
 /* ── Fix #1: Join-Waitlist button text was invisible (theme a:link/:visited color
    beat .id-btn-accent). Force the intended text colours. ── */
-.id-btn-accent, .id-btn-accent:link, .id-btn-accent:visited,
-.id-giveaway .id-btn-accent { color: var(--id-white) !important; }
+.id-btn-accent, .id-btn-accent:link, .id-btn-accent:visited { color: var(--id-white) !important; }
 .id-btn-dark,   .id-btn-dark:link,   .id-btn-dark:visited   { color: var(--id-white) !important; }
 .id-btn-light,  .id-btn-light:link,  .id-btn-light:visited  { color: var(--id-accent) !important; }
 
@@ -556,14 +488,6 @@ img[src*="Tick-icon.svg"] { width: 28px !important;  height: 26px !important; }
   .elementor-element-b8afdb3 img,
   .elementor-element-f75b1f3 img,
   .elementor-element-d756dfc img { width: 28px !important; height: auto !important; }
-}
-
-/* Issue 3 — Giveaway content + CTA centred on tablet & mobile (mirror the hero). */
-@media (max-width: 1023px) {
-  .id-giveaway__cta-group { flex-direction: column; align-items: center; text-align: center; }
-  .id-giveaway__content { align-items: center; text-align: center; }
-  .id-giveaway__content h2,
-  .id-giveaway__content p { text-align: center; }
 }
 
 /* Issue 4 — Footer nav. The footer is 3-column down to 768px (nav stays LEFT-

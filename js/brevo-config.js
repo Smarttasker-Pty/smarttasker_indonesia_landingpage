@@ -35,6 +35,5 @@ const BREVO_CONFIG = {
     prelaunch_id: 7, // "PreLaunch_SmartTasker_Lead_Signup_Id" — signed up in Bahasa Indonesia (Indonesian email automations)
     customer: 0,     // optional future list — segment via the ROLE attribute for now
     tasker: 0,       // optional future list — segment via the ROLE attribute for now
-    giveaway: 0,     // optional future list — segment via GIVEAWAY_ENTRY attribute for now
   },
 };
