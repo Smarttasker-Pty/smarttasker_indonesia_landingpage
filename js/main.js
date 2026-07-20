@@ -452,6 +452,9 @@ function initWaitlistForm() {
 
     // Analytics: waitlist CTA click (form submission counts as the CTA conversion)
     trackEvent('waitlist_form_submit', payload);
+    // TikTok funnel: mark form submission itself (distinct from CompleteRegistration,
+    // which only fires once Brevo confirms the signup).
+    trackTikTokStandard('SubmitForm', 'Join Waitlist');
 
     try {
       await submitToBrevo(payload);
