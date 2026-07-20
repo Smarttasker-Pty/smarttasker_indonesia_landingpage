@@ -56,7 +56,7 @@ function sanitizeAttributes(attrs) {
 
 // ---- TikTok Events API (server-side) ----
 // Pixel ID is public (it's in the page source); only the access token is secret.
-const TIKTOK_PIXEL_ID = 'D9BNN83C77U79CKF1B70';
+const TIKTOK_PIXEL_ID = 'D9F0V7BC77UBS5FSI7BG';
 const TIKTOK_EVENTS_API = 'https://business-api.tiktok.com/open_api/v1.3/event/track/';
 
 function sha256Hex(v) {
