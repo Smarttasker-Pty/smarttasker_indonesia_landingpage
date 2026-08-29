@@ -171,21 +171,20 @@
             margin-bottom: 20px;
             display: none;
             font-size: 13px;
-            border-top: 3px solid transparent;
         }
 
         .message.success {
+            display: block;
             background: #E8F9F2;
             color: #0B6E4F;
             border-top: 3px solid #58BC82;
-            display: block;
         }
 
         .message.error {
+            display: block;
             background: #FCECEC;
             color: #8B1A1A;
             border-top: 3px solid #CC2936;
-            display: block;
         }
 
         .back-link {
@@ -215,8 +214,8 @@
             <h1>Delete Account</h1>
             <p class="subtitle">Your account and personal data will be permanently removed.</p>
 
-            <div class="message success" id="successMsg"></div>
-            <div class="message error" id="errorMsg"></div>
+            <div class="message" id="successMsg"></div>
+            <div class="message" id="errorMsg"></div>
 
             <form id="deleteForm">
                 <!-- Step 1 -->
@@ -273,13 +272,21 @@
         function showError(msg) {
             const el = document.getElementById('errorMsg');
             el.textContent = msg;
-            setTimeout(() => el.style.display = 'none', 5000);
+            el.classList.add('error');
+            setTimeout(() => {
+                el.classList.remove('error');
+                el.textContent = '';
+            }, 5000);
         }
 
         function showSuccess(msg) {
             const el = document.getElementById('successMsg');
             el.textContent = msg;
-            setTimeout(() => el.style.display = 'none', 5000);
+            el.classList.add('success');
+            setTimeout(() => {
+                el.classList.remove('success');
+                el.textContent = '';
+            }, 5000);
         }
 
         async function sendCode() {
