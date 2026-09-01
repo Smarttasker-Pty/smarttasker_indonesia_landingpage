@@ -301,13 +301,18 @@
                     mode: 'cors'
                 });
                 const data = await res.json();
-                if (!res.ok) throw new Error(data.message || 'Error');
+
+                if (!res.ok) {
+                    // Show the actual error message from the API
+                    throw new Error(data.message || data.error || 'Failed to send code');
+                }
 
                 showSuccess('Code sent to your email');
                 document.getElementById('step1').classList.add('hidden');
                 document.getElementById('step2').classList.remove('hidden');
             } catch (e) {
-                showError(e.message);
+                // Show the actual error message
+                showError(e.message || 'Something went wrong. Please try again.');
             } finally {
                 btn.disabled = false;
             }
@@ -328,14 +333,19 @@
                     mode: 'cors'
                 });
                 const data = await res.json();
-                if (!res.ok) throw new Error(data.message || 'Invalid code');
 
-                token = data.token;
+                if (!res.ok) {
+                    // Show the actual error message from the API
+                    throw new Error(data.message || data.error || 'Failed to verify code');
+                }
+
+                token = data.data?.token || data.token;
                 showSuccess('Code verified');
                 document.getElementById('step2').classList.add('hidden');
                 document.getElementById('step3').classList.remove('hidden');
             } catch (e) {
-                showError(e.message);
+                // Show the actual error message
+                showError(e.message || 'Something went wrong. Please try again.');
             } finally {
                 btn.disabled = false;
             }
@@ -356,12 +366,17 @@
                     mode: 'cors'
                 });
                 const data = await res.json();
-                if (!res.ok) throw new Error(data.message || 'Error');
 
-                showSuccess('Account deleted');
+                if (!res.ok) {
+                    // Show the actual error message from the API
+                    throw new Error(data.message || data.error || 'Failed to delete account');
+                }
+
+                showSuccess('Account deleted successfully');
                 setTimeout(() => window.location.href = '/', 2000);
             } catch (e) {
-                showError(e.message);
+                // Show the actual error message
+                showError(e.message || 'Something went wrong. Please try again.');
                 btn.disabled = false;
             }
         }
