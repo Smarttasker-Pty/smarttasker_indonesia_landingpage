@@ -4,6 +4,12 @@
   "trailingSlash": false,
   "installCommand": "",
   "buildCommand": "",
+  "rewrites": [
+    {
+      "source": "/download",
+      "destination": "/api/download"
+    }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",

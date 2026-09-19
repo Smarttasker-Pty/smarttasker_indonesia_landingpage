@@ -10,7 +10,7 @@ const i18n = {
     /* ── HEADER ── */
     "nav.home": "Home",
     "nav.contact": "Contact",
-    "header.cta": "JOIN WAITLIST",
+    "header.cta": "DOWNLOAD NOW",
     "lang.toggle.en": "EN",
     "lang.toggle.id": "ID",
 
@@ -18,7 +18,7 @@ const i18n = {
     "hero.h1": "Never Pay A Stranger Again™",
     "hero.subline1": "Indonesia's trusted marketplace for local services.",
     "hero.subline2": "Find, compare and hire local professionals with confidence.",
-    "hero.cta": "JOIN WAITLIST",
+    "hero.cta": "DOWNLOAD NOW",
 
     /* ── HERO DOWNLOAD CARD ── */
     "hero.card.h3": "Join the waitlist now",
@@ -33,7 +33,7 @@ const i18n = {
     "post.step3.rest": " and select the best person for the job!",
     "post.step4.bold": "Get underway right away",
     "post.step4.rest": " – get started quickly and track progress with ease",
-    "post.cta": "JOIN WAITLIST",
+    "post.cta": "DOWNLOAD NOW",
     "post.img.alt": "Post a task on SmartTasker Indonesia",
 
     /* ── START EARNING ── */
@@ -50,7 +50,7 @@ const i18n = {
     "earn.bullet5.bold": "Free Verification",
     "earn.bullet5.rest": " for the first 1000 taskers for 12 months",
     "earn.closing": "Join SmartTasker Indonesia and get ready to start earning!",
-    "earn.cta": "JOIN WAITLIST",
+    "earn.cta": "DOWNLOAD NOW",
     "earn.tasker.name": "Sari Wulandari",
     "earn.tasker.role": "Tasker, Jakarta",
     "earn.img.alt": "Sari Wulandari — SmartTasker tasker",
@@ -86,7 +86,7 @@ const i18n = {
     "secure.f6.rest": " — no hidden fees, no surprises",
     "secure.f7.bold": "Get verified",
     "secure.f7.rest": " — Earn this trust badge and let customers know that you have been verified. Free Verification for the first 1000 taskers for 12 months",
-    "secure.cta": "JOIN WAITLIST",
+    "secure.cta": "DOWNLOAD NOW",
     "secure.img.alt": "Smart secure sorted — SmartTasker app",
 
     /* ── WAITLIST FORM ── */
@@ -130,7 +130,7 @@ const i18n = {
     "faq.a3": "If you have skills to share you can become a Tasker in just about any category. SmartTasker's main task categories include: Cleaning, Gardening, Landscaping, Handyperson, Building & Home Repair, Painting, Delivery, Electrical, Plumbing, Removalists, Furniture Assembly, Pet Care, Health & Fitness, Tutoring & Education, Event Planning, Business & Accounting, Graphic Design, Web & App Development, IT & Tech Support, Marketing & Advertising, Legal Services.",
     "faq.q4": "How do I sign up as a Tasker?",
     // NOTE: Answer pending client's updated copy
-    "faq.a4": "SmartTasker is getting ready to launch in Indonesia! Join our waitlist now to get notified when we launch.",
+    "faq.a4": "SmartTasker is now live in Indonesia! Download the app to sign up and start earning as a Tasker.",
     "faq.q5": "How do I get paid on SmartTasker?",
     // NOTE: Answer pending client's updated copy for Indonesia
     "faq.a5": "SmartTasker makes it easy to get paid. Customers have to pay up-front before a task can start. We hold those funds securely in Escrow and when you have completed the task you simply request the customer to release the payment. It's then deposited into your bank account less any fees. If the customer doesn't release the payment after 14 days, we automatically release the payout into your bank account.",
@@ -161,9 +161,9 @@ const i18n = {
     "footer.nav.privacy": "Privacy Policy",
     "footer.nav.terms": "Terms & Conditions",
     "footer.nav.community": "Community Guidelines",
-    "footer.cta.h2": "JOIN THE WAITLIST!",
-    "footer.cta.body": "Join SmartTasker Indonesia today and be the first to get your to-do list checked off. Or become a Tasker and start earning with low fees!",
-    "footer.cta.btn": "JOIN WAITLIST",
+    "footer.cta.h2": "DOWNLOAD THE APP NOW!",
+    "footer.cta.body": "Download SmartTasker Indonesia today and get your to-do list checked off. Or become a Tasker and start earning with low fees!",
+    "footer.cta.btn": "DOWNLOAD NOW",
     "footer.copyright": "© 2026 SmartTasker Indonesia — smarttasker.id",
   },
 
@@ -171,7 +171,7 @@ const i18n = {
     /* ── HEADER ── */
     "nav.home": "Beranda",
     "nav.contact": "Kontak",
-    "header.cta": "DAFTAR SEKARANG",
+    "header.cta": "UNDUH SEKARANG",
     "lang.toggle.en": "EN",
     "lang.toggle.id": "ID",
 
@@ -179,7 +179,7 @@ const i18n = {
     "hero.h1": "Tak Perlu Lagi Bayar Orang Asing™",
     "hero.subline1": "Marketplace layanan lokal terpercaya di Indonesia.",
     "hero.subline2": "Temukan, bandingkan, dan pilih profesional terbaik di sekitar Anda.",
-    "hero.cta": "DAFTAR SEKARANG",
+    "hero.cta": "UNDUH SEKARANG",
 
     /* ── HERO DOWNLOAD CARD ── */
     "hero.card.h3": "Daftar waitlist sekarang",
@@ -195,7 +195,7 @@ const i18n = {
     "post.step3.rest": " dan pilih orang yang paling tepat untuk pekerjaan itu!",
     "post.step4.bold": "Langsung mulai",
     "post.step4.rest": " — mulai dengan cepat dan pantau kemajuan dengan mudah",
-    "post.cta": "DAFTAR SEKARANG",
+    "post.cta": "UNDUH SEKARANG",
     "post.img.alt": "Posting tugas di SmartTasker Indonesia",
 
     /* ── START EARNING ── */
@@ -212,7 +212,7 @@ const i18n = {
     "earn.bullet5.bold": "Verifikasi Gratis",
     "earn.bullet5.rest": " untuk 1.000 tasker pertama selama 12 bulan",
     "earn.closing": "Bergabunglah dengan SmartTasker Indonesia dan mulai berpenghasilan sekarang!",
-    "earn.cta": "DAFTAR SEKARANG",
+    "earn.cta": "UNDUH SEKARANG",
     "earn.tasker.name": "Sari Wulandari",
     "earn.tasker.role": "Tasker, Jakarta",
     "earn.img.alt": "Sari Wulandari — Tasker SmartTasker",
@@ -248,7 +248,7 @@ const i18n = {
     "secure.f6.rest": " — tidak ada biaya tersembunyi, tidak ada kejutan",
     "secure.f7.bold": "Dapatkan Verifikasi",
     "secure.f7.rest": " — Raih lencana kepercayaan ini agar pelanggan tahu bahwa Anda telah terverifikasi. Verifikasi Gratis untuk 1.000 tasker pertama selama 12 bulan",
-    "secure.cta": "DAFTAR SEKARANG",
+    "secure.cta": "UNDUH SEKARANG",
     "secure.img.alt": "Cerdas, aman, dan terpercaya — Aplikasi SmartTasker",
 
     /* ── WAITLIST FORM ── */
@@ -292,7 +292,7 @@ const i18n = {
     "faq.a3": "Jika Anda memiliki keahlian, Anda bisa menjadi Tasker di hampir semua kategori. Kategori utama SmartTasker antara lain: Kebersihan, Taman &amp; Kebun, Landscaping, Tukang, Bangunan &amp; Renovasi, Pengecatan, Pengiriman, Listrik, Instalasi Pipa, Jasa Pindahan, Perakitan Furnitur, Perawatan Hewan Peliharaan, Kesehatan &amp; Kebugaran, Les &amp; Pendidikan, Perencanaan Acara, Bisnis &amp; Akuntansi, Desain Grafis, Web &amp; Aplikasi, IT &amp; Dukungan Teknis, Pemasaran &amp; Iklan, Layanan Hukum.",
     "faq.q4": "Bagaimana cara mendaftar sebagai Tasker?",
     // NOTE: Jawaban menunggu salinan final dari klien
-    "faq.a4": "SmartTasker sedang bersiap untuk diluncurkan di Indonesia! Daftarkan diri Anda ke waitlist sekarang agar mendapat notifikasi saat kami resmi meluncur.",
+    "faq.a4": "SmartTasker kini sudah tersedia di Indonesia! Unduh aplikasinya untuk mendaftar dan mulai berpenghasilan sebagai Tasker.",
     "faq.q5": "Bagaimana saya menerima pembayaran di SmartTasker?",
     // NOTE: Jawaban menunggu salinan final dari klien untuk Indonesia
     "faq.a5": "SmartTasker membuat proses pembayaran menjadi mudah. Pelanggan wajib membayar terlebih dahulu sebelum tugas dimulai. Dana tersebut kami simpan dengan aman melalui sistem Escrow, dan setelah Anda menyelesaikan tugas, cukup minta pelanggan untuk mencairkan pembayaran. Dana akan langsung masuk ke rekening bank Anda setelah dikurangi biaya layanan. Jika pelanggan tidak mencairkan pembayaran dalam 14 hari, kami akan otomatis mencairkannya ke rekening Anda.",
@@ -323,9 +323,9 @@ const i18n = {
     "footer.nav.privacy": "Kebijakan Privasi",
     "footer.nav.terms": "Syarat & Ketentuan",
     "footer.nav.community": "Panduan Komunitas",
-    "footer.cta.h2": "DAFTAR WAITLIST SEKARANG!",
-    "footer.cta.body": "Bergabunglah dengan SmartTasker Indonesia hari ini dan jadilah yang pertama menyelesaikan daftar tugas Anda. Atau jadilah Tasker dan mulai berpenghasilan dengan biaya rendah!",
-    "footer.cta.btn": "DAFTAR SEKARANG",
+    "footer.cta.h2": "UNDUH APLIKASINYA SEKARANG!",
+    "footer.cta.body": "Unduh SmartTasker Indonesia hari ini dan selesaikan daftar tugas Anda. Atau jadilah Tasker dan mulai berpenghasilan dengan biaya rendah!",
+    "footer.cta.btn": "UNDUH SEKARANG",
     "footer.copyright": "© 2026 SmartTasker Indonesia — smarttasker.id",
   }
 };
