@@ -21,7 +21,7 @@ const i18n = {
     "hero.cta": "DOWNLOAD NOW",
 
     /* ── HERO DOWNLOAD CARD ── */
-    "hero.card.h3": "Join the waitlist now",
+    "hero.card.h3": "Download the app now",
     "hero.card.body": "It's free to post tasks and make job offers. Join SmartTasker Indonesia today!",
 
     /* ── POST YOUR TASK ── */
@@ -182,7 +182,7 @@ const i18n = {
     "hero.cta": "UNDUH SEKARANG",
 
     /* ── HERO DOWNLOAD CARD ── */
-    "hero.card.h3": "Daftar waitlist sekarang",
+    "hero.card.h3": "Unduh aplikasinya sekarang",
     "hero.card.body": "Gratis memposting tugas dan memberikan penawaran. Bergabunglah dengan SmartTasker Indonesia hari ini!",
 
 
