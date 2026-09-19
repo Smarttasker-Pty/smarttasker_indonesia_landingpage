@@ -148,7 +148,7 @@ const i18n = {
     "faq.a9": "SmartTasker Indonesia is currently only available for customers and Taskers based in Indonesia.",
     "faq.q10": "When will SmartTasker launch in Indonesia?",
     // NOTE: Answer pending client's updated copy
-    "faq.a10": "We are getting ready to launch soon! Join our waitlist to be the first to know about our launch date.",
+    "faq.a10": "SmartTasker is now live in Indonesia! Download the app today to get started.",
 
     /* ── FINAL CTA ── */
     "finalcta.h2": "Ready to get started?",
@@ -310,7 +310,7 @@ const i18n = {
     "faq.a9": "SmartTasker Indonesia saat ini hanya tersedia bagi pelanggan dan Tasker yang berdomisili di Indonesia.",
     "faq.q10": "Kapan SmartTasker akan diluncurkan di Indonesia?",
     // NOTE: Jawaban menunggu salinan final dari klien
-    "faq.a10": "Kami sedang bersiap untuk segera meluncur! Bergabunglah dengan waitlist kami agar menjadi yang pertama mengetahui tanggal peluncuran.",
+    "faq.a10": "SmartTasker kini sudah tersedia di Indonesia! Unduh aplikasinya sekarang untuk mulai menggunakannya.",
 
     /* ── FINAL CTA ── */
     "finalcta.h2": "Siap untuk memulai?",
