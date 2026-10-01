@@ -120,34 +120,24 @@ const i18n = {
     "faq.taskers.h2": "FAQs for Taskers",
     "faq.customers.h2": "FAQs for Customers",
     "faq.q1": "What's the difference between SmartTasker and other task apps?",
-    // NOTE: Answer pending client's updated copy for Indonesia
-    "faq.a1": "SmartTasker is unlike other task apps – we've decided to do things differently, so you have more choice, lower fees and can post bigger tasks. Unlike other task apps that have high fees, we have designed things differently to ensure both our Customer and Tasker fees are always lower, making it cheaper to get tasks done, and allowing Taskers to keep more of what they earn. We also allow you to post jobs of any size.",
-    "faq.q2": "How are SmartTasker fees lower?",
-    // NOTE: Answer pending client's updated copy for Indonesia — fee tiers to be localised to Rupiah
-    "faq.a2": "<p>All task booking fees and Tasker service fees are lower than other task apps in Indonesia. We also like to be <b>completely transparent about our fees</b> and not hide them in the fine print like other platforms do.</p><p><strong>Task Booking Fee</strong>: just 10% of the task value, <b><u>up to a maximum of Rp 50.000</u></b> (minimum Rp 10.000), plus 11% PPN on that fee. It is paid by the person posting the job when they select and book their Tasker.</p><p>Our 4 tiers of <strong>Tasker Service Fees</strong> are based on the value of jobs completed in the last 30 days, and are deducted from the task total before payout, together with 11% PPN on the fee:</p><p><strong>TaskStarter</strong> &ndash; <em>less than Rp 1.000.000 in the last 30 days</em> = 20% service fee + PPN<br><strong>TaskPro</strong> &ndash; <em>Rp 1.000.000 to Rp 1.499.999</em> = 18% service fee + PPN<br><strong>TaskExpert</strong> &ndash; <em>Rp 1.500.000 to Rp 1.999.999</em> = 16% service fee + PPN<br><strong>TaskMaster</strong> &ndash; <em>Rp 2.000.000 or more</em> = 15% service fee + PPN</p>",
+    "faq.a1": "SmartTasker works differently from other task apps. Post your task for free, set your own budget and receive offers from Taskers near you. Compare their profiles, reviews and prices, then choose who you want. Your payment is held securely until the job is done, and you can post tasks of any size, from a small fix to a full renovation.",
+    "faq.q2": "What are SmartTasker's fees?",
+    "faq.a2": "<p>We keep our fees simple and transparent.</p><p><strong>Customers:</strong> posting a task is free. When you accept an offer, you pay the agreed price plus a 10% booking fee (minimum Rp10,000, maximum Rp50,000) + PPN.</p><p><strong>Taskers:</strong> signing up and making offers is free. When you complete a task, a service fee is deducted from your payment. The more you earn, the lower your fee:</p><ul><li>Task Starter (under Rp1,000,000 earned in the last 30 days): 20% + PPN</li><li>Task Pro (Rp1,000,000 &ndash; Rp1,499,999): 18% + PPN</li><li>Task Expert (Rp1,500,000 &ndash; Rp1,999,999): 16% + PPN</li><li>Task Master (Rp2,000,000 and above): 15% + PPN</li></ul><p>Example: on a Rp500,000 task at Task Master level, the service fee is Rp75,000 (+ PPN). Full details are in section 4 of our Terms &amp; Conditions.</p>",
     "faq.q3": "What types of tasks can I post or fulfil?",
-    // NOTE: Answer pending client's updated category list for Indonesia
     "faq.a3": "If you have skills to share you can become a Tasker in just about any category. SmartTasker's main task categories include: Cleaning, Gardening, Landscaping, Handyperson, Building & Home Repair, Painting, Delivery, Electrical, Plumbing, Removalists, Furniture Assembly, Pet Care, Health & Fitness, Tutoring & Education, Event Planning, Business & Accounting, Graphic Design, Web & App Development, IT & Tech Support, Marketing & Advertising, Legal Services.",
     "faq.q4": "How do I sign up as a Tasker?",
-    // NOTE: Answer pending client's updated copy
     "faq.a4": "SmartTasker is now live in Indonesia! Download the app to sign up and start earning as a Tasker.",
     "faq.q5": "How do I get paid on SmartTasker?",
-    // NOTE: Answer pending client's updated copy for Indonesia
     "faq.a5": "SmartTasker makes it easy to get paid. Customers have to pay up-front before a task can start. We hold those funds securely in Escrow and when you have completed the task you simply request the customer to release the payment. It's then deposited into your bank account less any fees. If the customer doesn't release the payment after 14 days, we automatically release the payout into your bank account.",
     "faq.q6": "Is it really free to post a task?",
-    // NOTE: Answer pending client's updated copy for Indonesia
-    "faq.a6": "Yes! It's totally free to post any task on SmartTasker. As a poster you only pay for the task cost once you have selected your Tasker and opted to commence task fulfilment. No hidden fees.",
+    "faq.a6": "Yes! Posting a task is completely free. You only pay once you accept a Tasker's offer: the agreed price plus a 10% booking fee (minimum Rp10,000, maximum Rp50,000) + PPN. There are no other fees.",
     "faq.q7": "How do I pay for my task?",
-    // NOTE: Answer pending client's updated copy for Indonesia
-    "faq.a7": "Payments are secure and easy with SmartTasker. Once you have selected your tasker and their offer, you will be prompted to pay for your task. Your payment will be held in escrow until you are satisfied with task completion. You then release payment to your Tasker. You can cancel or update your task at any time.",
+    "faq.a7": "Payments are safe and easy. When you accept a Tasker's offer, you pay in the app using QRIS, bank transfer (virtual account) or an e-wallet, or with cash at Alfamart or Indomaret. Your payment is held in escrow by our payment partner Xendit until you confirm the job is done, and only then is it released to the Tasker. Paying the Tasker directly in cash is not supported.",
     "faq.q8": "What value tasks can I get done on SmartTasker?",
-    // NOTE: Answer pending client's updated copy for Indonesia
     "faq.a8": "Unlike other task apps, SmartTasker doesn't cap the size of your jobs. SmartTasker gives you complete freedom to get all tasks completed, from large renovations to smaller assembly jobs, and everything in between.",
     "faq.q9": "Can I use SmartTasker if I'm not located in Indonesia?",
-    // NOTE: Answer pending client's updated copy
     "faq.a9": "SmartTasker Indonesia is currently only available for customers and Taskers based in Indonesia.",
     "faq.q10": "When will SmartTasker launch in Indonesia?",
-    // NOTE: Answer pending client's updated copy
     "faq.a10": "SmartTasker is now live in Indonesia! Download the app today to get started.",
 
     /* ── FINAL CTA ── */
@@ -283,10 +273,10 @@ const i18n = {
     "faq.customers.h2": "FAQs untuk Pelanggan",
     "faq.q1": "Apa perbedaan SmartTasker dengan aplikasi jasa lainnya?",
     // NOTE: Jawaban menunggu salinan final dari klien untuk Indonesia
-    "faq.a1": "SmartTasker hadir dengan cara yang berbeda — kami memberi Anda lebih banyak pilihan, biaya lebih rendah, dan kebebasan memposting tugas berukuran besar. Berbeda dengan aplikasi lain yang membebankan biaya tinggi, kami merancang platform ini agar biaya bagi Pelanggan maupun Tasker selalu lebih hemat, sehingga lebih murah untuk menyelesaikan pekerjaan dan Tasker bisa menyimpan lebih banyak dari pendapatannya. Tidak ada batasan ukuran pekerjaan di sini.",
-    "faq.q2": "Mengapa biaya SmartTasker lebih rendah?",
+    "faq.a1": "SmartTasker berbeda dari aplikasi jasa lainnya. Posting tugas Anda secara gratis, tentukan budget sendiri, dan terima penawaran dari Tasker di sekitar Anda. Bandingkan profil, ulasan, dan harga mereka, lalu pilih yang paling cocok. Pembayaran Anda disimpan dengan aman sampai pekerjaan selesai, dan Anda bisa memposting tugas dengan ukuran apa pun, dari perbaikan kecil hingga renovasi besar.",
+    "faq.q2": "Berapa biaya di SmartTasker?",
     // NOTE: Jawaban menunggu salinan final dari klien untuk Indonesia — tarif biaya akan disesuaikan ke Rupiah
-    "faq.a2": "<p>Semua biaya pemesanan tugas dan biaya layanan Tasker lebih rendah dibandingkan aplikasi jasa lain di Indonesia. Kami juga berkomitmen untuk selalu transparan mengenai biaya kami — tidak ada yang disembunyikan dalam syarat dan ketentuan seperti yang dilakukan platform lain.</p><p><strong>Biaya Pemesanan Tugas</strong>: hanya 10% dari nilai tugas, <b><u>maksimal Rp 50.000</u></b> (minimal Rp 10.000), ditambah PPN 11% dari biaya tersebut. Biaya ini dibayar oleh pemberi tugas saat memilih dan memesan Tasker.</p><p>4 tingkat <strong>Biaya Layanan Tasker</strong> kami ditentukan oleh nilai pekerjaan yang diselesaikan dalam 30 hari terakhir, dan dipotong dari total tugas sebelum pencairan, bersama PPN 11% dari biaya tersebut:</p><p><strong>TaskStarter</strong> &ndash; <em>kurang dari Rp 1.000.000 dalam 30 hari terakhir</em> = biaya layanan 20% + PPN<br><strong>TaskPro</strong> &ndash; <em>Rp 1.000.000 sampai Rp 1.499.999</em> = biaya layanan 18% + PPN<br><strong>TaskExpert</strong> &ndash; <em>Rp 1.500.000 sampai Rp 1.999.999</em> = biaya layanan 16% + PPN<br><strong>TaskMaster</strong> &ndash; <em>Rp 2.000.000 atau lebih</em> = biaya layanan 15% + PPN</p>",
+    "faq.a2": "<p>Biaya kami sederhana dan transparan.</p><p><strong>Pelanggan:</strong> memposting tugas gratis. Saat Anda menerima penawaran, Anda membayar harga yang disepakati ditambah biaya pemesanan 10% (minimal Rp10.000, maksimal Rp50.000) + PPN.</p><p><strong>Tasker:</strong> mendaftar dan mengajukan penawaran gratis. Saat tugas selesai, biaya layanan dipotong dari pembayaran Anda. Semakin besar penghasilan Anda, semakin kecil potongannya:</p><ul><li>Task Starter (penghasilan di bawah Rp1.000.000 dalam 30 hari terakhir): 20% + PPN</li><li>Task Pro (Rp1.000.000 &ndash; Rp1.499.999): 18% + PPN</li><li>Task Expert (Rp1.500.000 &ndash; Rp1.999.999): 16% + PPN</li><li>Task Master (Rp2.000.000 ke atas): 15% + PPN</li></ul><p>Contoh: untuk tugas Rp500.000 di tingkat Task Master, biaya layanannya Rp75.000 (+ PPN). Rincian lengkap ada di bagian 4 Syarat &amp; Ketentuan kami.</p>",
     "faq.q3": "Jenis pekerjaan apa saja yang bisa saya posting atau kerjakan?",
     // NOTE: Jawaban menunggu daftar kategori final dari klien untuk Indonesia
     "faq.a3": "Jika Anda memiliki keahlian, Anda bisa menjadi Tasker di hampir semua kategori. Kategori utama SmartTasker antara lain: Kebersihan, Taman &amp; Kebun, Landscaping, Tukang, Bangunan &amp; Renovasi, Pengecatan, Pengiriman, Listrik, Instalasi Pipa, Jasa Pindahan, Perakitan Furnitur, Perawatan Hewan Peliharaan, Kesehatan &amp; Kebugaran, Les &amp; Pendidikan, Perencanaan Acara, Bisnis &amp; Akuntansi, Desain Grafis, Web &amp; Aplikasi, IT &amp; Dukungan Teknis, Pemasaran &amp; Iklan, Layanan Hukum.",
@@ -298,10 +288,10 @@ const i18n = {
     "faq.a5": "SmartTasker membuat proses pembayaran menjadi mudah. Pelanggan wajib membayar terlebih dahulu sebelum tugas dimulai. Dana tersebut kami simpan dengan aman melalui sistem Escrow, dan setelah Anda menyelesaikan tugas, cukup minta pelanggan untuk mencairkan pembayaran. Dana akan langsung masuk ke rekening bank Anda setelah dikurangi biaya layanan. Jika pelanggan tidak mencairkan pembayaran dalam 14 hari, kami akan otomatis mencairkannya ke rekening Anda.",
     "faq.q6": "Apakah posting tugas benar-benar gratis?",
     // NOTE: Jawaban menunggu salinan final dari klien untuk Indonesia
-    "faq.a6": "Ya! Posting tugas apa saja di SmartTasker sepenuhnya gratis. Sebagai pelanggan, Anda hanya membayar biaya tugas setelah memilih Tasker dan memutuskan untuk memulai pekerjaan. Tidak ada biaya tersembunyi.",
+    "faq.a6": "Ya! Memposting tugas sepenuhnya gratis. Anda hanya membayar setelah menerima penawaran Tasker: harga yang disepakati ditambah biaya pemesanan 10% (minimal Rp10.000, maksimal Rp50.000) + PPN. Tidak ada biaya lain.",
     "faq.q7": "Bagaimana cara membayar tugas saya?",
     // NOTE: Jawaban menunggu salinan final dari klien untuk Indonesia
-    "faq.a7": "Pembayaran di SmartTasker aman dan mudah. Setelah Anda memilih tasker beserta penawarannya, Anda akan diminta untuk melakukan pembayaran. Dana Anda akan disimpan dalam escrow hingga Anda puas dengan hasil pekerjaan, kemudian Anda mencairkan pembayaran kepada Tasker. Anda dapat membatalkan atau mengubah tugas kapan saja.",
+    "faq.a7": "Pembayaran aman dan mudah. Saat Anda menerima penawaran Tasker, Anda membayar melalui aplikasi menggunakan QRIS, transfer bank (virtual account), atau e-wallet, atau dengan tunai di Alfamart atau Indomaret. Pembayaran Anda disimpan dalam escrow oleh mitra pembayaran kami, Xendit, sampai Anda mengonfirmasi pekerjaan selesai, dan baru kemudian diteruskan ke Tasker. Pembayaran tunai langsung ke Tasker tidak didukung.",
     "faq.q8": "Seberapa besar nilai tugas yang bisa diselesaikan di SmartTasker?",
     // NOTE: Jawaban menunggu salinan final dari klien untuk Indonesia
     "faq.a8": "Berbeda dengan aplikasi jasa lain, SmartTasker tidak membatasi ukuran pekerjaan Anda. Kami memberikan kebebasan penuh untuk menyelesaikan semua jenis tugas — dari renovasi skala besar hingga perakitan furnitur kecil, dan segalanya di antaranya.",
