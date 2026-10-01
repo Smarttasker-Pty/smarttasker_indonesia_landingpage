@@ -66,7 +66,7 @@ const i18n = {
     "promote.bullet3.rest": " and earn the SmartTasker trust badge",
     "promote.bullet4.bold": "Grow your income",
     "promote.bullet4.rest": " with a steady stream of local jobs near you",
-    "promote.cta": "JOIN WAITLIST",
+    "promote.cta": "DOWNLOAD THE APP",
     "promote.img.alt": "Indonesian service provider promoting their business on SmartTasker",
 
     /* ── SMART SECURE SORTED ── */
@@ -142,8 +142,8 @@ const i18n = {
 
     /* ── FINAL CTA ── */
     "finalcta.h2": "Ready to get started?",
-    "finalcta.body": "Join the SmartTasker waitlist today and be the first to know when we launch in Indonesia. Or become a Tasker and start earning with low fees!",
-    "finalcta.cta": "JOIN WAITLIST",
+    "finalcta.body": "Download SmartTasker Indonesia today and get your to-do list done. Or become a Tasker and start earning.",
+    "finalcta.cta": "DOWNLOAD NOW",
 
     /* ── FOOTER ── */
     "footer.nav.home": "Home",
@@ -218,7 +218,7 @@ const i18n = {
     "promote.bullet3.rest": " dan raih lencana kepercayaan SmartTasker",
     "promote.bullet4.bold": "Tingkatkan penghasilan Anda",
     "promote.bullet4.rest": " dengan aliran pekerjaan lokal yang terus-menerus di sekitar Anda",
-    "promote.cta": "DAFTAR SEKARANG",
+    "promote.cta": "UNDUH APLIKASI",
     "promote.img.alt": "Penyedia layanan Indonesia mempromosikan bisnis mereka di SmartTasker",
 
     /* ── SMART SECURE SORTED ── */
@@ -304,8 +304,8 @@ const i18n = {
 
     /* ── FINAL CTA ── */
     "finalcta.h2": "Siap untuk memulai?",
-    "finalcta.body": "Bergabunglah dengan waitlist SmartTasker hari ini dan jadilah yang pertama tahu saat kami meluncur di Indonesia. Atau jadilah Tasker dan mulai berpenghasilan dengan biaya rendah!",
-    "finalcta.cta": "DAFTAR SEKARANG",
+    "finalcta.body": "Unduh SmartTasker Indonesia sekarang dan selesaikan daftar tugas Anda. Atau jadilah Tasker dan mulai berpenghasilan.",
+    "finalcta.cta": "UNDUH SEKARANG",
 
     /* ── FOOTER ── */
     "footer.nav.home": "Beranda",
