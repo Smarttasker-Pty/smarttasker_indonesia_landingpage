@@ -118,7 +118,7 @@ Object.assign(i18n.en, {
 <ul>
   <li><strong>Offer prices</strong> When you make an offer, it must represent the total amount for that task. Offers must not be hourly, unit or quote based. Partial quotes mentioning further negotiation of prices off the platform are also not permitted.</li>
   <li><strong>No partial payments</strong> Any offers made on your task should be for the full scope of the task. When you accept an offer, that is the final amount that you are obligated to pay (in addition to the Booking Fee). Tasks offering partial payment, including sales and commission-based tasks, are not permitted and will be moderated and/or removed.</li>
-  <li><strong>Escrow Account</strong> For safety reasons, cash payments are not supported on the SmartTasker platform. Instead, to ensure that you are paid in full SmartTasker securely holds the task funds received from the poster until you mark the task as complete. Funds are held in escrow by our partner Stripe. This ensures that payouts are held safely and paid out in full at the completion of the Task.</li>
+  <li><strong>Escrow Account</strong> For safety reasons, cash is never paid directly to a Tasker on the SmartTasker platform. Instead, to ensure that you are paid in full SmartTasker securely holds the task funds received from the poster until you mark the task as complete. This includes payments a poster makes in cash over the counter at a convenience store (such as Alfamart or Indomaret) &mdash; those funds go straight into escrow via our payment partner Xendit, the same as any other payment method, and are never handed to the Tasker in cash. Funds are held in escrow by our partner Xendit. This ensures that payouts are held safely and paid out in full at the completion of the Task.</li>
   <li><strong>Accurate banking details</strong> To ensure seamless payment of funds, please ensure your banking details always remain up to date in your Account Settings.</li>
   <li><strong>Cancellation Fee</strong> As set out in the SmartTasker cancellation policy below, if you cancel a task after a Tasker has assigned it to you and are found responsible for that cancellation, you will be charged a Cancellation Fee that will be deducted from your next payment.</li>
 </ul>
@@ -129,8 +129,8 @@ Object.assign(i18n.en, {
 <ul>
   <li><strong>Task Starter</strong> are users who have earnt between Rp0 and Rp1.000.000 in the last 30 days. The service fee for this tier is 20% + PPN.</li>
   <li><strong>Task Pro</strong> are users who have earnt between Rp1.000.001 and Rp1.500.000 in the last 30 days. The service fee for this tier is 18% + PPN.</li>
-  <li><strong>Task Expert</strong> are users who have earnt between Rp1.500.001 and Rp2.000.000 in the last 30 days. The service fee for this tier is 20% + PPN.</li>
-  <li><strong>Task Master</strong> are users who have earnt Rp2.000.000 and above in the last 30 days. The service fee for this tier is 20% + PPN.</li>
+  <li><strong>Task Expert</strong> are users who have earnt between Rp1.500.001 and Rp2.000.000 in the last 30 days. The service fee for this tier is 16% + PPN.</li>
+  <li><strong>Task Master</strong> are users who have earnt Rp2.000.001 and above in the last 30 days. The service fee for this tier is 15% + PPN.</li>
 </ul>
 <p><strong>Poster Fees</strong></p>
 <p><strong>Booking Fee</strong> SmartTasker charges a Booking fee to posters for the creation and listing of Tasks when an offer is accepted. The fee is equal to 10% of the Task Offer. The minimum Booking Fee is Rp10.000 and the maximum fee is Rp50.000. These amounts are exclusive of PPN.</p>`,
@@ -302,7 +302,7 @@ Object.assign(i18n.id, {
 <ul>
   <li><strong>Harga penawaran</strong> Saat Anda mengajukan penawaran, itu harus mewakili jumlah total untuk tugas tersebut. Penawaran tidak boleh berdasarkan jam, unit, atau penawaran. Kutipan parsial yang menyebutkan negosiasi harga lebih lanjut di luar platform juga tidak diizinkan.</li>
   <li><strong>Tidak ada pembayaran parsial</strong> Setiap penawaran yang dibuat untuk tugas Anda harus untuk cakupan penuh tugas. Saat Anda menerima penawaran, itu adalah jumlah akhir yang wajib Anda bayar (selain Biaya Pemesanan). Tugas yang menawarkan pembayaran sebagian, termasuk tugas berbasis penjualan dan komisi, tidak diizinkan dan akan dimoderasi dan/atau dihapus.</li>
-  <li><strong>Akun Escrow</strong> Untuk alasan keamanan, pembayaran tunai tidak didukung di platform SmartTasker. Sebagai gantinya, untuk memastikan bahwa Anda dibayar penuh, SmartTasker dengan aman menyimpan dana tugas yang diterima dari poster hingga Anda menandai tugas sebagai selesai. Dana disimpan di escrow oleh mitra kami Stripe. Ini memastikan bahwa pembayaran disimpan dengan aman dan dibayarkan penuh setelah menyelesaikan Tugas.</li>
+  <li><strong>Akun Escrow</strong> Untuk alasan keamanan, uang tunai tidak pernah dibayarkan langsung kepada Tasker di platform SmartTasker. Sebagai gantinya, untuk memastikan bahwa Anda dibayar penuh, SmartTasker dengan aman menyimpan dana tugas yang diterima dari poster hingga Anda menandai tugas sebagai selesai. Ini termasuk pembayaran yang dilakukan poster secara tunai di gerai minimarket (seperti Alfamart atau Indomaret) &mdash; dana tersebut langsung masuk ke escrow melalui mitra pembayaran kami, Xendit, sama seperti metode pembayaran lainnya, dan tidak pernah diserahkan tunai kepada Tasker. Dana disimpan di escrow oleh mitra kami Xendit. Ini memastikan bahwa pembayaran disimpan dengan aman dan dibayarkan penuh setelah menyelesaikan Tugas.</li>
   <li><strong>Detail perbankan yang akurat</strong> Untuk memastikan pembayaran dana yang lancar, pastikan detail perbankan Anda selalu diperbarui di Pengaturan Akun Anda.</li>
   <li><strong>Biaya Pembatalan</strong> Seperti yang ditetapkan dalam kebijakan pembatalan SmartTasker di bawah ini, jika Anda membatalkan tugas setelah Tasker menetapkannya kepada Anda dan dinyatakan bertanggung jawab atas pembatalan tersebut, Anda akan dikenakan Biaya Pembatalan yang akan dipotong dari pembayaran Anda berikutnya.</li>
 </ul>
@@ -313,8 +313,8 @@ Object.assign(i18n.id, {
 <ul>
   <li><strong>Task Starter</strong> adalah pengguna yang telah mendapatkan penghasilan antara Rp0 dan Rp1.000.000 dalam 30 hari terakhir. Biaya layanan untuk tier ini adalah 20% + PPN.</li>
   <li><strong>Task Pro</strong> adalah pengguna yang telah mendapatkan penghasilan antara Rp1.000.001 dan Rp1.500.000 dalam 30 hari terakhir. Biaya layanan untuk tier ini adalah 18% + PPN.</li>
-  <li><strong>Task Expert</strong> adalah pengguna yang telah mendapatkan penghasilan antara Rp1.500.001 dan Rp2.000.000 dalam 30 hari terakhir. Biaya layanan untuk tier ini adalah 20% + PPN.</li>
-  <li><strong>Task Master</strong> adalah pengguna yang telah mendapatkan Rp2.000.000 ke atas dalam 30 hari terakhir. Biaya layanan untuk tier ini adalah 20% + PPN.</li>
+  <li><strong>Task Expert</strong> adalah pengguna yang telah mendapatkan penghasilan antara Rp1.500.001 dan Rp2.000.000 dalam 30 hari terakhir. Biaya layanan untuk tier ini adalah 16% + PPN.</li>
+  <li><strong>Task Master</strong> adalah pengguna yang telah mendapatkan Rp2.000.001 ke atas dalam 30 hari terakhir. Biaya layanan untuk tier ini adalah 15% + PPN.</li>
 </ul>
 <p><strong>Biaya Poster</strong></p>
 <p><strong>Biaya Pemesanan</strong> SmartTasker membebankan biaya Pemesanan ke poster untuk pembuatan dan daftar Tugas saat penawaran diterima. Biayanya sama dengan 10% dari Penawaran Tugas. Biaya Pemesanan minimum adalah Rp10.000 dan biaya maksimal adalah Rp50.000. Jumlah tersebut tidak termasuk PPN.</p>`,
